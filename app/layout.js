@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "welcome to fay's world",
-  description: "fay wu's personal portfolio",
+  title: "fay's world",
+  description: "personal portfolio",
 };
 
 export default function RootLayout({ children }) {

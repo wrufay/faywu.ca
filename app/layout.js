@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "fay's world",
+  title: "fay's world ⋆˚꩜｡",
   description: "personal portfolio",
 };
 

@@ -12,20 +12,20 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 typing-animation">
             hi there, i'm fay!
           </h1>
-          <p className="text-l md:text-2xl text-[#da6319] mb-6 fade-in delay-1">
+          <p className="text-l md:text-2xl text-[#da6319] mb-8 fade-in delay-1">
             studying cs @ uwaterloo (1a)
           </p>
           {/*buttons*/}
           <div className="flex gap-4 justify-center fade-in-bounce-delayed">
             <a
               href="https://www.linkedin.com/in/fayranw/"
-              className="px-3 py-1  text-black border border-black rounded-lg hover:bg-white transition"
+              className="px-2 py-1 md:px-4 md:py-2 text-black border border-black rounded-lg hover:bg-white transition"
             >
               connect with me!
             </a>
             <a
               href="https://github.com/wrufay"
-              className="px-3 py-1 border border-black text-black rounded-lg hover:bg-[#da6319] hover:bg-white transition"
+              className="px-2 py-1 md:px-4 md:py-2 border border-black text-black rounded-lg hover:bg-white transition"
             >
               view my github
             </a>

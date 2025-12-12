@@ -5,12 +5,21 @@ html {
 }
 
 .typing-animation {
-  width: 0;
+  display: inline-block;
+  max-width: 0;
   overflow: hidden;
   white-space: nowrap;
   border-right: 3px solid black;
   padding-bottom: 0.1em;
   animation: typing 1.8s steps(20) forwards, blink-and-hide 4s step-end forwards;
+}
+
+@media (max-width: 480px) {
+  .typing-animation {
+    white-space: normal;
+    max-width: 0;
+    animation: typing-mobile 1.8s ease-out forwards, blink-and-hide 4s step-end forwards;
+  }
 }
 
 @keyframes blink-and-hide {
@@ -38,7 +47,13 @@ html {
 
 @keyframes typing {
   to {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes typing-mobile {
+  to {
+    max-width: 100%;
   }
 }
 

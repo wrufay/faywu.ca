@@ -19,13 +19,13 @@ export default function Home() {
           <div className="flex gap-4 justify-center fade-in-bounce-delayed">
             <a
               href="https://www.linkedin.com/in/fayranw/"
-              className="px-2 py-1  text-black border border-black rounded-lg hover:bg-white transition"
+              className="px-3 py-1  text-black border border-black rounded-lg hover:bg-white transition"
             >
               connect with me!
             </a>
             <a
               href="https://github.com/wrufay"
-              className="px-2 py-1 border border-black text-black rounded-lg hover:bg-[#da6319] hover:bg-white transition"
+              className="px-3 py-1 border border-black text-black rounded-lg hover:bg-[#da6319] hover:bg-white transition"
             >
               view my github
             </a>

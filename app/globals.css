@@ -46,7 +46,7 @@ html {
 
 @keyframes typing {
   to {
-    width: max-content;
+    width: 7.5em;
   }
 }
 

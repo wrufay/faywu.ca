@@ -1,4 +1,13 @@
+"use client";
+import { useState, useEffect } from "react";
+
 export default function Home() {
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
+
   return (
     <main className="min-h-screen">
       {/*main title text section*/}
@@ -9,7 +18,7 @@ export default function Home() {
           alt=""
         /> */}
         <div className="max-w-2xl text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-10 typing-animation">
+          <h1 className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-10 ${animated ? "typing-animation" : ""}`}>
             hi there, i'm fay!
           </h1>
           <p className="text-l sm:text-2xl text-[#da6319] mb-8 fade-in delay-1">

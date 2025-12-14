@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.btn {
+  @apply px-2 py-1 md:px-4 md:py-2 border border-black text-black rounded-lg hover:bg-white transition;
+}
+
 html {
   scroll-behavior: smooth;
 }

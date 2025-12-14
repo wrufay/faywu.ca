@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#fdf2e3] text-black">
+    <main className="min-h-screen">
       {/*main title text section*/}
       <section className="flex flex-col items-center justify-center min-h-screen px-4">
         {/* <img
@@ -17,17 +17,11 @@ export default function Home() {
           </p>
           {/*buttons*/}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-bounce-delayed">
-            <a
-              href="https://www.linkedin.com/in/fayranw/"
-              className="px-2 py-1 md:px-4 md:py-2 text-black border border-black rounded-lg hover:bg-white transition"
-            >
+            <a href="https://www.linkedin.com/in/fayranw/" className="btn">
               connect with me!
             </a>
-            <a
-              href="https://github.com/wrufay"
-              className="px-2 py-1 md:px-4 md:py-2 border border-black text-black rounded-lg hover:bg-white transition"
-            >
-              view my github
+            <a href="https://github.com/wrufay" className="btn">
+              my github
             </a>
           </div>
         </div>

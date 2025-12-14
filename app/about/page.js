@@ -6,7 +6,7 @@ export default function About() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-10 typing-animation">
             coming soon...☺︎
           </h1>
-          <p className="text-l sm:text-2xl text-[#da6319] mb-8 fade-in delay-1">
+          <p className="text-l sm:text-xl text-[#da6319] mb-8 fade-in delay-1">
             stalk me in the meantime ↓
           </p>
 

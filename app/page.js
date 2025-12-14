@@ -1,13 +1,4 @@
-"use client";
-import { useState, useEffect } from "react";
-// animation class is added only AFTER confirmed mounted and visible compnent
 export default function Home() {
-  const [animated, setAnimated] = useState(false);
-
-  useEffect(() => {
-    setAnimated(true);
-  }, []);
-
   return (
     <main className="min-h-screen">
       {/*main title text section*/}
@@ -18,11 +9,7 @@ export default function Home() {
           alt=""
         /> */}
         <div className="max-w-2xl text-center">
-          <h1
-            className={`text-4xl sm:text-5xl md:text-6xl font-bold mb-10 ${
-              animated ? "typing-animation" : ""
-            }`}
-          >
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-10 typing-animation">
             hi there, i'm fay!
           </h1>
           <p className="text-l sm:text-2xl text-[#da6319] mb-8 fade-in delay-1">
@@ -33,9 +20,9 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/fayranw/" className="btn">
               let's connect!
             </a>
-            {/* <a href="https://github.com/wrufay" className="btn">
-              my github
-            </a> */}
+            <a href="https://github.com/wrufay" className="btn">
+              view my github
+            </a>
           </div>
         </div>
       </section>

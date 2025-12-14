@@ -4,7 +4,7 @@ export default function About() {
       <section className="flex flex-col items-center justify-center min-h-screen px-4">
         <div className="max-w-2xl text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-10 typing-animation">
-            coming soon...☺︎
+            coming soon..☺︎
           </h1>
           <p className="text-l sm:text-xl text-[#da6319] mb-8 fade-in delay-1">
             stalk me in the meantime ↓
@@ -21,8 +21,8 @@ export default function About() {
             resume
           </a> */}
           <div className="fade-in-bounce-delayed">
-            <a href="https://github.com/wrufay" className="btn">
-              view github
+            <a href="https://mydailybread.streamlit.app/" className="btn">
+              see recent project
             </a>
           </div>
         </div>

@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#fdf2e3] text-black">
+      <body className="bg-[#fdf2e3] text-black font-(family-name:--font-display)">
         {/* mini nav */}
         <nav className="fixed top-10 left-0 right-0 p-4 flex justify-center gap-6">
           <a href="/" className="hover:underline">

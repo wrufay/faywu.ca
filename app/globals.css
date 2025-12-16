@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --font-display: "Nanum Gothic", sans-serif;
+}
 .btn {
   @apply px-3 py-2 sm:px-4 sm:py-2 border border-black text-black rounded-lg hover:bg-white transition;
 }
@@ -54,7 +58,7 @@ html {
 
 @keyframes typing {
   to {
-    width: 7.5em;
+    width: 7.67em;
   }
 }
 

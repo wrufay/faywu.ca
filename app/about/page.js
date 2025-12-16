@@ -14,27 +14,27 @@ export default function About() {
             <div className="">
               <ul className="mb-8 fade-in-bounce-delayed text-justify text-sm sm:text-l list-none">
                 <li className="mb-2">
-                  •{" "}
+                  ✱{" "}
                   <a href="/collections" className="hover:underline">
                     Jesus
                   </a>
                   ! ♡{" "}
                   <a
                     href="https://www.bible.com/bible/114/1TH.5.16-18.NKJV"
-                    className="text-[#397ab3] hover:underline"
+                    className="text-gray-500 hover:underline"
                   >
                     1 thessalonians 5:16-18
                   </a>{" "}
                   (my favourite verse)
                 </li>
                 <li className="mb-2">
-                  • learning new tech and building meaningful{" "}
+                  ✱ learning new tech and building meaningful{" "}
                   <a href="/collections" className="hover:underline">
                     projects
                   </a>
                 </li>
                 <li className="mb-2">
-                  •{" "}
+                  ✱{" "}
                   <a href="/collections" className="hover:underline">
                     painting{" "}
                   </a>

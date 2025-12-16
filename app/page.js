@@ -9,10 +9,10 @@ export default function Home() {
           alt=""
         /> */}
         <div className="max-w-2xl text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-10 typing-animation">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-10 typing-animation">
             hi there, i'm fay!
           </h1>
-          <p className="text-l sm:text-2xl text-[#da6319] mb-8 fade-in delay-1">
+          <p className="text-l sm:text-2xl text-[#da6319] mb-8 fade-in delay-1 font-bold">
             studying cs @ uwaterloo (1a)
           </p>
           {/*buttons*/}

@@ -3,29 +3,29 @@ export default function About() {
     <main className="min-h-screen">
       <section className="flex flex-col items-center justify-center min-h-screen px-4">
         <div className="max-w-2xl text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-10 typing-animation">
+          <h1 className="text-4xl sm:text-5xl font-black mb-10 typing-animation">
             bits about me ☺︎
           </h1>
           <div className="">
-            <p className="text-l sm:text-xl text-[#da6319] mb-8 fade-in delay-1">
+            <p className="text-l sm:text-xl font-bold text-[#da6319] mb-8 fade-in delay-1">
               i'm somebody who loves...
             </p>
 
             <div className="">
-              <ul className="mb-8 fade-in-bounce-delayed text-justify text-sm sm:text-l list-none">
+              <ul className="mb-8 fade-in-bounce-delayed text-justify text-sm sm:text-l list-none font-bold">
                 <li className="mb-2">
                   ✱{" "}
                   <a href="/collections" className="hover:underline">
-                    Jesus
+                    Jesus!
                   </a>
-                  ! ♡{" "}
+                  {/* ! ♡{" "}
                   <a
                     href="https://www.bible.com/bible/114/1TH.5.16-18.NKJV"
                     className="text-gray-500 hover:underline"
                   >
                     1 thessalonians 5:16-18
                   </a>{" "}
-                  (my favourite verse)
+                  (my favourite verse) */}
                 </li>
                 <li className="mb-2">
                   ✱ learning new tech and building meaningful{" "}

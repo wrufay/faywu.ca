@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
 @import "tailwindcss";
 
 @theme {
+  /* font might be too playful lol. fine for now */
   --font-display: "Nanum Gothic", sans-serif;
 }
 .btn {
@@ -58,7 +59,7 @@ html {
 
 @keyframes typing {
   to {
-    width: 7.67em;
+    width: 7.8em;
   }
 }
 

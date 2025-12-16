@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
             about me
           </a>
           {/* <a className="hover:underline">my work</a> */}
-          {/* <a className="hover:underline">collections</a> */}
+          <a href="collections" className="hover:underline">
+            collections
+          </a>
         </nav>
         {children}
       </body>

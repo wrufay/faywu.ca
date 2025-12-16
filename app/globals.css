@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
 .btn {
-  @apply px-2 py-1 sm:px-4 sm:py-2 border border-black text-black rounded-lg hover:bg-white transition;
+  @apply px-3 py-2 sm:px-4 sm:py-2 border border-black text-black rounded-lg hover:bg-white transition;
 }
 html {
   scroll-behavior: smooth;
+}
+
+/* fix this */
+* {
+  transition: 0.3s ease;
 }
 
 .typing-animation {

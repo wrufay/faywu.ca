@@ -10,8 +10,9 @@ export default function About() {
           <div className="flex flex-col align-center">
             <p className="text-l sm:text-xl font-bold text-[var(--red-dark)] mb-8 fade-in delay-1">
               i love creating products that solve problems and implementing
-              user-centred ui/ux. the web is my canvas, my laptop is my brush.
-              <br></br>
+              user-centred ui/ux. the web is my canvas & code is my brush!
+              <br />
+              <br />
               when i'm not coding, i'm probably...
             </p>
 

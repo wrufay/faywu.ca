@@ -25,9 +25,7 @@ export default function About() {
                   </a>{" "}
                   a chrome extension that helps you organize job applications
                 </li>
-                <li className="mb-2">
-                  ✱ a bible app that reinvents the way you see words on the page
-                </li>
+                <li className="mb-2">✱ a bible app...</li>
                 <li className="mb-2">
                   ✱ fieldly, a full-stack animation-based physics learning
                   platform

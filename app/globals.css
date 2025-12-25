@@ -6,12 +6,18 @@
   --font-display: "Nanum Gothic", sans-serif;
 }
 .btn {
-  @apply px-3 py-2 sm:px-4 sm:py-2 border border-black text-black rounded-lg hover:bg-white transition;
+  @apply px-3 py-2 sm:px-4 sm:py-2  bg-[var(--og-red)] hover:bg-[var(--red-middle)] text-white rounded-lg;
 }
 html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --red-dark: #721121;
+  --red-middle: #a5402d;
+  --red-light: #f15156;
+  --og-red: #c13a3a;
+}
 /* fix this */
 * {
   transition: 0.3s ease;

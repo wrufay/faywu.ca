@@ -3,51 +3,38 @@ export default function About() {
     <main className="min-h-screen">
       <section className="flex flex-col items-center justify-center min-h-screen px-4">
         <div className="max-w-2xl text-center">
-          <h1 className="text-4xl sm:text-5xl font-black mb-10 typing-animation">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-10 typing-animation">
             bits about me ☺︎
           </h1>
-          <div className="">
-            <p className="text-l sm:text-xl font-bold text-[#da6319] mb-8 fade-in delay-1">
-              i'm somebody who loves...
+
+          <div className="flex flex-col align-center">
+            <p className="text-l sm:text-xl font-bold text-[var(--red-dark)] mb-8 fade-in delay-1">
+              i love creating products that solve problems and implementing
+              user-centred ui/ux. the web is my canvas, my laptop is my brush.
+              <br></br>
+              when i'm not coding, i'm probably...
             </p>
 
             <div className="">
-              <ul className="mb-8 fade-in-bounce-delayed text-justify text-sm sm:text-l list-none font-bold">
+              <ul className="mb-8 fade-in-bounce-delayed text-center text-sm sm:text-l list-none font-bold">
                 <li className="mb-2">
-                  ✱{" "}
-                  <a href="/collections" className="hover:underline">
-                    Jesus!
-                  </a>
-                  {/* ! ♡{" "}
-                  <a
-                    href="https://www.bible.com/bible/114/1TH.5.16-18.NKJV"
-                    className="text-gray-500 hover:underline"
-                  >
-                    1 thessalonians 5:16-18
-                  </a>{" "}
-                  (my favourite verse) */}
+                  ✱ talking, reading, journaling and learning about JESUS
                 </li>
                 <li className="mb-2">
-                  ✱ learning new tech and building meaningful{" "}
-                  <a href="/collections" className="hover:underline">
-                    projects
-                  </a>
+                  ✱ painting impressionistic landscapes or acrylic portraits
                 </li>
                 <li className="mb-2">
-                  ✱{" "}
-                  <a href="/collections" className="hover:underline">
-                    painting{" "}
-                  </a>
-                  people and places, and just art in general
+                  ✱ on a walk admiring the sunset or working out at the gym
                 </li>
               </ul>
             </div>
           </div>
-          <div className="fade-in-bounce-delayed">
+
+          {/* <div className="fade-in-bounce-delayed">
             <a href="https://mydailybread.streamlit.app/" className="btn">
-              a recent wip...
+              my resume
             </a>
-          </div>
+          </div> */}
 
           {/* <ul className="mb-10">
             <li className="text-l md:text-2xl text-black">✱ Jesus ♡</li>

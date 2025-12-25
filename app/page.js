@@ -5,7 +5,7 @@ export default function Home() {
       <section className="flex flex-col items-center min-h-screen px-4 justify-center">
         <img
           src="/me-best.png"
-          className="w-64 h-64 object-cover mx-auto mb-4 fade-in"
+          className="w-48 h-48 sm:w-64 sm:h-64 object-cover mx-auto mb-4 fade-in"
           alt=""
         />
         <div className="max-w-2xl text-center">

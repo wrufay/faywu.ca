@@ -29,26 +29,26 @@ export default function RootLayout({ children }) {
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
             <p className="pen-regular">made with ♡ by fay</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 items-center">
               <a
-                href="https://www.linkedin.com/in/fayranw/"
-                target="_blank"
-                className="hover:text-gray-700 transition-colors"
+                href="mailto:f26wu@uwaterloo.ca"
+                className="opacity-50 hover:opacity-67 w-5 h-5"
               >
-                linkedin
+                <img src="email.png" />
               </a>
               <a
                 href="https://github.com/wrufay"
                 target="_blank"
-                className="hover:text-gray-700 transition-colors"
+                className="opacity-50 hover:opacity-67 w-5 h-5"
               >
-                github
+                <img src="github.png" />
               </a>
               <a
-                href="mailto:f26wu@uwaterloo.ca"
-                className="hover:text-gray-700 transition-colors"
+                href="https://www.linkedin.com/in/fayranw/"
+                target="_blank"
+                className="opacity-50 hover:opacity-67 w-5 h-5"
               >
-                email
+                <img src="linkedin.png" />
               </a>
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function Home() {
             cs student @ uwaterloo + software developer who loves design
           </p>
           {/*buttons*/}
-          <div className="flex flex-row gap-2 sm:gap-4 justify-center items-center fade-in-bounce-delayed text-xs sm:text-sm">
+          <div className="flex flex-row gap-2 sm:gap-4 justify-center items-center fade-in-bounce-delayed text-sm sm:text-base">
             <a
               href="https://www.linkedin.com/in/fayranw/"
               target="_blank"

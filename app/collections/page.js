@@ -4,25 +4,27 @@ export default function About() {
   const collections = [
     {
       title: "projects",
-      description: "love to solve problems and design interfaces.",
+      description:
+        "ft. my obsession with solving silly problems and meticulously designing interfaces",
       image: "/projects.png",
       link: "#",
     },
     {
       title: "art",
-      description: "finally putting my creative past on display.",
+      description: "once an artist, always an artist",
       image: "/art.png",
       link: "#",
     },
     {
       title: "writing",
-      description: "words - sometimes coherently put together.",
+      description: "words - sometimes coherently put together",
       image: "/Writing.png",
       link: "#",
     },
     {
       title: "experience",
-      description: "unemployed but full of joy and stories to tell.",
+      description:
+        "resume coming soon. in the meantime, go enjoy the sunset with someone you love",
       image: "/experience.png",
       link: "#",
     },

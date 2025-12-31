@@ -18,7 +18,7 @@ export default function About() {
     {
       title: "writing",
       description: "words - sometimes coherently put together",
-      image: "/Writing.png",
+      image: "/writing.png",
       link: "#",
     },
     {

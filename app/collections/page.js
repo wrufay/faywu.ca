@@ -4,24 +4,23 @@ export default function About() {
   const collections = [
     {
       title: "projects",
-      description:
-        "a chrome extension that helps you organize job applications",
-      image: "",
+      description: "mostly solving problems and designing ui/ux.",
+      image: "/projects.png",
     },
     {
       title: "art",
-      description: "a beautiful and simple bible reading application",
-      image: "",
+      description: "finally putting my creative past on display.",
+      image: "/art.png",
     },
     {
       title: "writing",
-      description: "bridging the gap between uwaterloo students and sleep",
-      image: "",
+      description: "words, but sometimes coherently put together.",
+      image: "/Writing.png",
     },
     {
       title: "experience",
-      description: "bridging the gap between uwaterloo students and sleep",
-      image: "",
+      description: "unemployed to date but full of joy and stories to tell.",
+      image: "/experience.png",
     },
   ];
 
@@ -36,6 +35,7 @@ export default function About() {
                 title={item.title}
                 description={item.description}
                 image={item.image}
+                delay={i * 300}
               />
             ))}
           </div>

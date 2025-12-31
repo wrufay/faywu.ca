@@ -1,22 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&display=swap");
 @import "tailwindcss";
-
-@theme {
-  /* font might be too playful lol. fine for now */
-  --font-display: "Nanum Gothic", sans-serif;
-}
 
 html {
   scroll-behavior: smooth;
 }
 
+/* fonts */
+
+.serif-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.serif-bold {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.serif-extrabold {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.pen-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.coding-regular {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.coding-bold {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sans-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sans-bold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.sans-extrabold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
 :root {
   --red-dark: #721121;
   --red-middle: #a5402d;
   --red-light: #f15156;
   --og-red: #c13a3a;
 }
-/* fix this */
+
 * {
   transition: 0.3s ease;
 }
@@ -77,9 +120,17 @@ html {
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }
+}
+
+/* Card fade in animation */
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .fade-in-bounce-delayed {

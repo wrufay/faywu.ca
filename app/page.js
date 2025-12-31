@@ -15,8 +15,7 @@ export default function Home() {
             hi there, i'm <span className="pen-regular">fay wu</span>
           </h1>
           <p className="text-md sm:text-xl text-gray-600 mb-6 sm:mb-8 fade-in delay-1">
-            cs student @ uwaterloo + aspiring software developer who loves
-            design.
+            a cs student at uwaterloo & software developer who loves design.
           </p>
           {/*buttons*/}
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center fade-in-bounce-delayed text-sm sm:text-base">
@@ -25,14 +24,14 @@ export default function Home() {
               target="_blank"
               className="px-3 py-2 sm:px-4 sm:py-2 bg-white hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
             >
-              let's connect!
+              let's <span className="text-[var(--og-red)]">connect!</span>
             </a>
             <a
               href="https://github.com/wrufay"
               target="_blank"
               className="px-3 py-2 sm:px-4 bg-white sm:py-2 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
             >
-              visit my github
+              see my <span className="text-[var(--og-red)]">work</span>
             </a>
           </div>
         </div>

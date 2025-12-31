@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
-            <p>made with ♡ by fay</p>
+            <p className="pen-regular">made with ♡ by fay</p>
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/in/fayranw/"
@@ -43,6 +43,12 @@ export default function RootLayout({ children }) {
                 className="hover:text-gray-700 transition-colors"
               >
                 github
+              </a>
+              <a
+                href="mailto:f26wu@uwaterloo.ca"
+                className="hover:text-gray-700 transition-colors"
+              >
+                email
               </a>
             </div>
           </div>

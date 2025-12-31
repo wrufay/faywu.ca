@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* need to make a colour scheme :) */}
       {/* bg-linear-65 from-[#ffe3e0] to-[#ffcf99]  */}
-      <body className=" bg-white text-black serif-regular text-center min-h-screen items-center flex flex-col px-18">
+      <body className="bg-amber-50/30 text-black serif-regular text-center min-h-screen items-center flex flex-col px-18">
         {/* mini nav */}
         <nav className="mt-18 flex justify-center gap-6">
           <Link href="/" className="hover:opacity-67">

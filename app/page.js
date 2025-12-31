@@ -15,10 +15,10 @@ export default function Home() {
             hi there, i'm <span className="pen-regular">fay wu</span>
           </h1>
           <p className="text-md sm:text-xl text-gray-600 mb-6 sm:mb-8 fade-in delay-1">
-            a cs student at uwaterloo & software developer who loves design.
+            cs student @ uwaterloo + software developer who loves design
           </p>
           {/*buttons*/}
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center fade-in-bounce-delayed text-sm sm:text-base">
+          <div className="flex flex-row gap-2 sm:gap-4 justify-center items-center fade-in-bounce-delayed text-xs sm:text-sm">
             <a
               href="https://www.linkedin.com/in/fayranw/"
               target="_blank"

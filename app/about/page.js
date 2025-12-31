@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <main className="min-h-screen">
-      <section className="flex flex-col items-center justify-center min-h-screen px-4">
+    <main className="flex flex-grow">
+      <section className="flex flex-col items-center justify-center px-4">
         <div className="max-w-2xl text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-10 typing-animation">
             bits about me ☺︎

@@ -54,10 +54,7 @@ html {
   font-style: normal;
 }
 :root {
-  --red-dark: #721121;
-  --red-middle: #a5402d;
-  --red-light: #f15156;
-  --og-red: #c13a3a;
+  --aritzia-blue: 0582ca;
 }
 
 * {

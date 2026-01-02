@@ -73,12 +73,6 @@ html {
     blink-and-hide 4s step-end forwards;
 }
 
-@media (max-width: 480px) {
-  .typing-animation {
-    font-size: 1.5rem;
-  }
-}
-
 @keyframes blink-and-hide {
   0%,
   14%,
@@ -152,4 +146,10 @@ html {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}
+
+/* swal fade in */
+.animate-fade-in {
+  animation: fadeIn 0.67s ease-in forwards;
+  opacity: 0;
 }

@@ -9,20 +9,9 @@ export default function ProjectCard({
   delay = 0,
   tags,
 }) {
-  // ignore sweet alert for now, might incorporate later.
+  // still working on the sweetaler :(
+  // gonna try again later
 
-  // const openProjectInfo = (e) => {
-  //   Swal.fire({
-  //     title: title,
-  //     html: videoId
-  //       ? `<iframe src="https://www.youtube.com/embed/${videoId}">
-
-  //     </iframe>`
-  //       : "<p>test, image here</p>",
-  //     confirmButtonText: "Close",
-  //     animation: true,
-  //   });
-  // };
   return (
     <div
       className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 animate-fadeIn border border-gray-100"

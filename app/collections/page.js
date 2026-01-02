@@ -9,6 +9,7 @@ export default function About() {
       tags: ["java", "spring boot", "react"],
       image: "/uwsleeper.png",
       projectLink: "https://uwsleeper.vercel.app/",
+      insideDesc: "hi",
     },
     {
       title: "coco",
@@ -17,6 +18,7 @@ export default function About() {
       tags: ["javascript", "html", "tailwindcss"],
       image: "/coco.png",
       projectLink: "https://github.com/wrufay/coco",
+      insideDesc: "",
     },
     {
       title: "firstloved",
@@ -25,6 +27,7 @@ export default function About() {
       tags: ["python", "streamlit", "supabase"],
       image: "/firstloved.png",
       projectLink: "https://github.com/wrufay/firstlovedbible",
+      insideDesc: "",
     },
     {
       title: "clearpharma",
@@ -33,6 +36,7 @@ export default function About() {
       tags: ["javascript", "html", "css"],
       image: "/clearpharma.png",
       projectLink: "https://github.com/wrufay/clearpharma",
+      insideDesc: "",
     },
   ];
 
@@ -51,6 +55,7 @@ export default function About() {
                 delay={i * 300}
                 tags={item.tags}
                 projectLink={item.projectLink}
+                insideDesc={item.insideDesc}
               />
             ))}
           </div>

@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex flex-grow flex-col gap-10 items-center justify-center">
+    <main className="flex flex-grow flex-col gap-8 sm:gap-10 items-center justify-center">
       {/*main title text section*/}
 
       <div className="fade-in">
@@ -10,23 +10,23 @@ export default function Home() {
           alt=""
         />
       </div>
-      <div className="max-w-sm flex flex-col gap-6 sm:gap-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 typing-animation">
+      <div className="max-w-md flex flex-col gap-5 sm:gap-8">
+        <h1 className="text-2xl sm:text-5xl font-semibold text-gray-900 typing-animation">
           hi there, i'm <span className="pen-regular">fay wu</span>
         </h1>
 
-        <div className="text-md sm:text-lg md:text-xl text-gray-600 flex flex-col items-center fade-in delay-1 gap-1">
-          <p className="flex flex-row gap-2 items-center">
-            <img src="star.png" className="w-5 h-5" />
+        <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
+          <p className="flex flex-row gap-1 sm:gap-2 items-center">
+            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>cs @ uwaterloo</span>
           </p>
-          <p className="flex flex-row gap-2 items-center">
-            <img src="star.png" className="w-5 h-5" />
+          <p className="flex flex-row gap-1 sm:gap-2 items-center">
+            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>designer & software developer</span>
           </p>
         </div>
         {/*buttons*/}
-        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-sm sm:text-base">
+        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"

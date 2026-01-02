@@ -24,7 +24,7 @@ export default function About() {
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
       image: "/firstloved.png",
-      projectLink: "https://firstloved.cc/",
+      projectLink: "https://github.com/wrufay/firstlovedbible",
     },
     {
       title: "clearpharma",

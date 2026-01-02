@@ -2,8 +2,8 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "fay wu",
-  description: "fay wu's personal portfolio site",
+  title: "fay wu's portfolio",
+  description: "fay wu's personal portfolio site inspired by notion",
 };
 
 export default function RootLayout({ children }) {

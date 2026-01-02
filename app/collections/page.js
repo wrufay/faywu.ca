@@ -8,15 +8,15 @@ export default function About() {
         "so uw students can find the best napping spots on campus suited to their needs",
       tags: ["java", "spring boot", "react"],
       image: "/uwsleeper.png",
-      link: "#",
+      projectLink: "https://uwsleeper.vercel.app/",
     },
     {
-      title: "coco co-op coordinator",
+      title: "coco",
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],
       image: "/coco.png",
-      link: "#",
+      projectLink: "https://github.com/wrufay/coco",
     },
     {
       title: "firstloved",
@@ -24,7 +24,7 @@ export default function About() {
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
       image: "/firstloved.png",
-      link: "#",
+      projectLink: "https://firstloved.cc/",
     },
     {
       title: "clearpharma",
@@ -32,7 +32,7 @@ export default function About() {
         "facilitating communication betwen pharmacists and their patients in healthcare",
       tags: ["javascript", "html", "css"],
       image: "/clearpharma.png",
-      link: "#",
+      projectLink: "https://github.com/wrufay/clearpharma",
     },
   ];
 
@@ -50,6 +50,7 @@ export default function About() {
                 link={item.link}
                 delay={i * 300}
                 tags={item.tags}
+                projectLink={item.projectLink}
               />
             ))}
           </div>

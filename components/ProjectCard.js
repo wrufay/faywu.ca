@@ -1,16 +1,30 @@
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 export default function ProjectCard({
   title,
   description,
   image,
-  link,
+  projectLink,
   delay = 0,
   tags,
 }) {
+  // ignore sweet alert for now, might incorporate later.
+
+  // const openProjectInfo = (e) => {
+  //   Swal.fire({
+  //     title: title,
+  //     html: videoId
+  //       ? `<iframe src="https://www.youtube.com/embed/${videoId}">
+
+  //     </iframe>`
+  //       : "<p>test, image here</p>",
+  //     confirmButtonText: "Close",
+  //     animation: true,
+  //   });
+  // };
   return (
-    <Link
-      href={link}
+    <div
       className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 animate-fadeIn border border-gray-100"
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -18,9 +32,15 @@ export default function ProjectCard({
         src={image}
         className="h-32 w-full object-cover  opacity-86 rounded-t-lg"
       />
-      <div className="p-4 flex gap-2 flex-col">
+
+      {/* clickable part below the image */}
+      <Link
+        className="p-4 flex gap-2 flex-col cursor-pointer"
+        href={projectLink}
+        target="_blank"
+      >
         {/* emoji and title */}
-        <span className="flex items-center gap-2 cursor-pointer">
+        <span className="flex items-center gap-2 ">
           <img src="favicon.ico" className="w-5 h-5" />
           <h3 className="text-lg font-medium text-gray-800">{title}</h3>
         </span>
@@ -41,7 +61,7 @@ export default function ProjectCard({
 
         {/* description of project */}
         <p className="text-sm text-left text-gray-600">{description}</p>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

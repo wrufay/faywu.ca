@@ -6,6 +6,7 @@ export default function ProjectCard({
   image,
   link,
   delay = 0,
+  tags,
 }) {
   return (
     <Link
@@ -18,10 +19,27 @@ export default function ProjectCard({
         className="h-32 w-full object-cover  opacity-86 rounded-t-lg"
       />
       <div className="p-4 flex gap-2 flex-col">
+        {/* emoji and title */}
         <span className="flex items-center gap-2 cursor-pointer">
           <img src="favicon.ico" className="w-5 h-5" />
           <h3 className="text-lg font-medium text-gray-800">{title}</h3>
         </span>
+
+        <div className="flex flex-row gap-2">
+          {/* tags */}
+          {tags.map((tag, index) => {
+            return (
+              <span
+                key={index}
+                className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 sm:text-xs text-[8px] text-gray-500 bg-gray-100"
+              >
+                {tag}
+              </span>
+            );
+          })}
+        </div>
+
+        {/* description of project */}
         <p className="text-sm text-left text-gray-600">{description}</p>
       </div>
     </Link>

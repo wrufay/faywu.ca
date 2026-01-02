@@ -6,7 +6,7 @@ export default function Home() {
       <div className="fade-in">
         <img
           src="/flower.png"
-          className="w-36 h-36 sm:w-42 sm:h-42 object-cover mx-auto opacity-86 "
+          className="w-20 h-20 sm:w-30 sm:h-30 object-cover mx-auto opacity-86 "
           alt=""
         />
       </div>
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="text-md sm:text-lg md:text-xl text-gray-600 flex flex-col items-center fade-in delay-1 gap-1">
           <p className="flex flex-row gap-2 items-center">
             <img src="star.png" className="w-5 h-5" />
-            <span>studying cs @ uwaterloo</span>
+            <span>cs @ uwaterloo</span>
           </p>
           <p className="flex flex-row gap-2 items-center">
             <img src="star.png" className="w-5 h-5" />

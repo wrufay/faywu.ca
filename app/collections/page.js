@@ -4,25 +4,33 @@ export default function About() {
   const collections = [
     {
       title: "uw sleeper",
-      description: "",
+      description:
+        "so uw students can find the best napping spots on campus suited to their needs",
+      tags: ["java", "spring boot", "react"],
       image: "/uwsleeper.png",
       link: "#",
     },
     {
-      title: "coco the co-op coordinator",
-      description: "",
+      title: "coco co-op coordinator",
+      description:
+        "track, organize and plan your job applications with ai, all in one place",
+      tags: ["javascript", "html", "tailwindcss"],
       image: "/coco.png",
       link: "#",
     },
     {
-      title: "firstloved bible",
-      description: "",
+      title: "firstloved",
+      description:
+        "user-centered bible search tool with a llm chat for on-demand scripture commentary",
+      tags: ["python", "streamlit", "supabase"],
       image: "/firstloved.png",
       link: "#",
     },
     {
       title: "clearpharma",
-      description: "",
+      description:
+        "facilitating communication betwen pharmacists and their patients in healthcare",
+      tags: ["javascript", "html", "css"],
       image: "/clearpharma.png",
       link: "#",
     },
@@ -41,6 +49,7 @@ export default function About() {
                 image={item.image}
                 link={item.link}
                 delay={i * 300}
+                tags={item.tags}
               />
             ))}
           </div>

@@ -3,29 +3,27 @@ import ProjectCard from "@/components/ProjectCard";
 export default function About() {
   const collections = [
     {
-      title: "projects",
-      description:
-        "ft. my obsession with solving silly problems and meticulously designing interfaces",
-      image: "/projects.png",
+      title: "uw sleeper",
+      description: "",
+      image: "/uwsleeper.png",
       link: "#",
     },
     {
-      title: "art",
-      description: "once an artist, always an artist",
-      image: "/art.png",
+      title: "coco the co-op coordinator",
+      description: "",
+      image: "/coco.png",
       link: "#",
     },
     {
-      title: "writing",
-      description: "words - sometimes coherently put together",
-      image: "/writing.png",
+      title: "firstloved bible",
+      description: "",
+      image: "/firstloved.png",
       link: "#",
     },
     {
-      title: "experience",
-      description:
-        "resume coming soon. in the meantime, go enjoy the sunset with someone you love",
-      image: "/experience.png",
+      title: "clearpharma",
+      description: "",
+      image: "/clearpharma.png",
       link: "#",
     },
   ];

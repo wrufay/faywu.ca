@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           </Link> */}
           {/* <Link className="hover:underline">my work</Link> */}
           <Link href="/collections" className=" hover:opacity-67">
-            collections
+            projects
           </Link>
         </nav>
         {children}

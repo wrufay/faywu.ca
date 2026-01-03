@@ -22,7 +22,7 @@ export default function Home() {
           </p>
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>designer & software developer</span>
+            <span>aspiring designer & software developer</span>
           </p>
         </div>
         {/*buttons*/}

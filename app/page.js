@@ -18,11 +18,18 @@ export default function Home() {
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>cs @ uwaterloo</span>
+            <span>
+              <span className="serif-bold">cs @ uwaterloo</span>, from halifax,
+              nova scotia
+            </span>
           </p>
+
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>aspiring designer & software developer</span>
+            <span>
+              aspiring <span className="serif-bold">software developer</span>{" "}
+              who loves design
+            </span>
           </p>
         </div>
         {/*buttons*/}

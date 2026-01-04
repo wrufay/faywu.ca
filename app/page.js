@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center">
+    <main className="flex flex-grow flex-col gap-3 sm:gap-8 items-center justify-center">
       {/*main title text section*/}
 
       <div className="fade-in">

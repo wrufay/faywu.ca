@@ -106,10 +106,10 @@ html {
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) scale(1);
   }
   50% {
-    transform: translateY(-10px);
+    transform: scale(1.05) translateY(-15px);
   }
 }
 
@@ -176,4 +176,19 @@ html {
 .animate-fade-in {
   animation: fadeIn 0.67s ease-in forwards;
   opacity: 0;
+}
+
+/* footer icon bounce animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.footer-icon-bounce:hover {
+  animation: bounce 0.5s ease-in-out;
 }

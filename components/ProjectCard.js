@@ -41,7 +41,7 @@ export default function ProjectCard({
             return (
               <span
                 key={index}
-                className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 sm:text-xs text-[8px] text-gray-500 bg-gray-100"
+                className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-gray-100"
               >
                 {tag}
               </span>

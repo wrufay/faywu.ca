@@ -8,6 +8,7 @@ export default function ProjectCard({
   projectLink,
   delay = 0,
   tags,
+  logoLink,
 }) {
   // still working on the sweetaler :(
   // gonna try again later
@@ -30,7 +31,7 @@ export default function ProjectCard({
       >
         {/* emoji and title */}
         <span className="flex items-center gap-2 ">
-          <img src="favicon.ico" className="w-5 h-5" />
+          <img src={logoLink} className="w-5 h-5" />
           <h3 className="text-lg font-medium text-gray-800">{title}</h3>
         </span>
 

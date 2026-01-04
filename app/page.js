@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         {/* star bullets and lines */}
-        <div className="text-base sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
+        <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
@@ -37,7 +37,7 @@ export default function Home() {
           </p>
         </div>
         {/*buttons*/}
-        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-sm sm:text-base">
+        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"

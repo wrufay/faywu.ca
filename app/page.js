@@ -1,18 +1,18 @@
 export default function Home() {
   return (
-    <main className="flex flex-grow flex-col gap-8 sm:gap-10 items-center justify-center">
+    <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center">
       {/*main title text section*/}
 
       <div className="fade-in">
         <img
-          src="/flower.png"
-          className="w-20 h-20 sm:w-30 sm:h-30 object-cover mx-auto opacity-86 "
-          alt=""
+          src="/frontfay.png"
+          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float"
+          alt="colourful hand-drawn logo that says fay wu"
         />
       </div>
       <div className="max-w-md flex flex-col gap-5 sm:gap-8">
         <h1 className="text-2xl sm:text-5xl font-semibold text-gray-900 typing-animation">
-          hi there, i'm <span className="pen-regular">fay wu</span>
+          hey there, i'm <span className="pen-regular">fay!</span>
         </h1>
 
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
@@ -27,7 +27,7 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              aspiring <span className="serif-bold">software developer</span>{" "}
+              full-stack <span className="serif-bold">software developer</span>{" "}
               who loves design
             </span>
           </p>

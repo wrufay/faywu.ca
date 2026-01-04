@@ -33,21 +33,21 @@ export default function RootLayout({ children }) {
             <div className="flex gap-4 items-center">
               <a
                 href="mailto:f26wu@uwaterloo.ca"
-                className="opacity-50 hover:opacity-67 w-5 h-5"
+                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
                 <img src="email.png" />
               </a>
               <a
                 href="https://github.com/wrufay"
                 target="_blank"
-                className="opacity-50 hover:opacity-67 w-5 h-5"
+                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
                 <img src="github.png" />
               </a>
               <a
                 href="https://www.linkedin.com/in/fayranw/"
                 target="_blank"
-                className="opacity-50 hover:opacity-67 w-5 h-5"
+                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
                 <img src="linkedin.png" />
               </a>

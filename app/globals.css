@@ -109,12 +109,12 @@ html {
     transform: translateY(0px) scale(1);
   }
   50% {
-    transform: scale(1.05) translateY(-15px);
+    transform: scale(1.02) translateY(-11px);
   }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 2.67s ease-in-out infinite;
 }
 
 @keyframes fadeIn {

@@ -9,21 +9,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* need to make a colour scheme :) */}
-      {/* bg-linear-65 from-[#ffe3e0] to-[#ffcf99]  */}
       <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-8">
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
           <Link href="/" className="hover:opacity-67">
             ↻
           </Link>
-
-          {/* <Link href="/about" className=" hover:opacity-67 font-black">
-            about me
-          </Link> */}
-          {/* <Link className="hover:underline">my work</Link> */}
           <Link href="/collections" className=" hover:opacity-67">
             projects
+          </Link>
+          <Link href="/about" className=" hover:opacity-67">
+            about
           </Link>
         </nav>
         {children}

@@ -6,7 +6,7 @@ export default function About() {
       title: "uw sleeper",
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
-      tags: ["java", "spring boot", "react"],
+      tags: ["typescript", "spring boot", "react.js"],
       image: "/uwsleeper.png",
       logo: "/uwsleeperlogo.png",
       projectLink: "https://uwsleeper.vercel.app/",

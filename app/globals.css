@@ -98,7 +98,7 @@ html {
 
 @keyframes typing {
   to {
-    width: 8em;
+    width: 7.8em;
   }
 }
 
@@ -132,7 +132,7 @@ html {
 }
 
 .delay-1 {
-  animation-delay: 2.67s;
+  animation-delay: 2.3s;
 }
 
 @keyframes fadeIn {
@@ -151,7 +151,7 @@ html {
 
 .fade-in-bounce-delayed {
   opacity: 0;
-  animation: fadeInBounce 0.5s ease-out 3.67s forwards;
+  animation: fadeInBounce 0.5s ease-out 3.3s forwards;
 }
 
 @keyframes fadeInBounce {

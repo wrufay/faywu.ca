@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center">
+    <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
       {/*main title text section*/}
 
       <div className="fade-in">
@@ -11,29 +11,33 @@ export default function Home() {
         />
       </div>
       <div className="max-w-md flex flex-col gap-5 sm:gap-8">
-        <h1 className="text-2xl sm:text-5xl font-semibold text-gray-900 typing-animation">
+        <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
           hey there, i'm <span className="pen-regular">fay!</span>
         </h1>
 
-        <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
+        {/* star bullets and lines */}
+        <div className="text-base sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              <span className="serif-bold">cs @ uwaterloo</span>, from halifax,
-              nova scotia
+              cs @{" "}
+              <a
+                className="serif-bold hover:opacity-67"
+                target="_blank"
+                href="https://uwaterloo.ca/"
+              >
+                uwaterloo
+              </a>
             </span>
           </p>
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>
-              full-stack <span className="serif-bold">software developer</span>{" "}
-              who loves design
-            </span>
+            <span>software developer + design</span>
           </p>
         </div>
         {/*buttons*/}
-        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
+        <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-sm sm:text-base">
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"

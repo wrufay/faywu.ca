@@ -11,7 +11,7 @@ export default function AboutCard({ delay = 0, title, descriptions, imgLink }) {
     // card styling
     <div
       style={{ animationDelay: `${delay}ms` }}
-      className="px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-48 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
+      className="px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
     >
       <div className="flex flex-col gap-3">
         <h1 className="text-2xl sm:text-3xl flex flex-row justify-center items-center gap-3">

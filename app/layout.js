@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
-            <p className="pen-regular">made with ᡣ𐭩</p>
+            <p className="pen-regular">made with ♡ by fay</p>
             <div className="flex gap-4 items-center">
               <a
                 href="mailto:f26wu@uwaterloo.ca"

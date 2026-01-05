@@ -54,7 +54,12 @@ html {
   font-style: normal;
 }
 :root {
+  /* --aritzia-blue: #0466c8; */
+
+  /* ok idk what to do with the colours tbh */
   --aritzia-blue: #0466c8;
+  --crimson-red: #ef5f33;
+  --sunny-yellow: #f1c40f;
 }
 
 * {

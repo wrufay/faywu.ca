@@ -32,8 +32,8 @@ export default function AboutCard({ delay = 0, title, descriptions, imgLink }) {
         style={{
           background: useMotionTemplate`
             radial-gradient(
-              350px circle at ${mouseX}px ${mouseY}px,
-              rgba(4, 102, 200, 0.15),
+              167px circle at ${mouseX}px ${mouseY}px,
+              rgba(239, 95, 51, 0.1),
               transparent 80%
             )
           `,

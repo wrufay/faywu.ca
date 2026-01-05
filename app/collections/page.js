@@ -45,8 +45,8 @@ export default function About() {
   ];
 
   return (
-    <main className="flex flex-grow">
-      <section className="flex flex-col items-center justify-center py-8">
+    <main className="flex flex-grow py-10">
+      <section className="flex flex-col items-center justify-center">
         <div className="">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {collections.map((item, i) => (

@@ -3,6 +3,7 @@ import AboutCard from "@/components/AboutCard";
 const timeline = [
   {
     title: "past",
+    imgLink: "past.png",
     descriptions: [
       {
         description:
@@ -85,6 +86,7 @@ const timeline = [
   },
   {
     title: "present",
+    imgLink: "present.png",
     descriptions: [
       {
         description: "cooking @ university of waterloo",
@@ -100,16 +102,17 @@ const timeline = [
   },
   {
     title: "future",
+    imgLink: "future.png",
     descriptions: "incoming @ ??? summer '26 co-op pending",
   },
 ];
 
 export default function About() {
   return (
-    <main className="flex flex-grow flex-col gap-10 items-center justify-center py-8">
+    <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 serif-bold">
-        a bit about my life, if you care to stalk
+      <p className="px-10 serif-bold text-">
+        a bit about my life, if you care to stalk.
       </p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* about/timeline cards */}
@@ -119,6 +122,7 @@ export default function About() {
             title={item.title}
             descriptions={item.descriptions}
             delay={i * 300}
+            imgLink={item.imgLink}
           />
         ))}
       </section>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function AboutCard({ delay = 0, title, descriptions }) {
+export default function AboutCard({ delay = 0, title, descriptions, imgLink }) {
   const [curIndex, setCurIndex] = useState(0);
   const nextExperience = () => {
     setCurIndex((prev) => (prev == descriptions.length - 1 ? 0 : prev + 1));
@@ -14,7 +14,8 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
       className="px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-48 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
     >
       <div className="flex flex-col gap-3">
-        <h1 className="text-2xl sm:text-3xl">
+        <h1 className="text-2xl sm:text-3xl flex flex-row justify-center items-center gap-3">
+          <img src={imgLink} className="w-8 h-8 opacity-67" />
           <span className="pen-regular text-3xl sm:text-4xl">{title}</span>
         </h1>
 
@@ -32,7 +33,10 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
           {/* also this could just be hard coded since its only used here lol */}
           {/* also you could make the tag into a custom component */}
           {title == "present" && descriptions[curIndex].tags && (
-            <div key={`tags-${curIndex}`} className="flex flex-wrap gap-2 justify-center mt-1 animate-scroll-up">
+            <div
+              key={`tags-${curIndex}`}
+              className="flex flex-wrap gap-2 justify-center mt-1 animate-scroll-up"
+            >
               {descriptions[curIndex].tags.map((tag, index) => (
                 <span
                   key={index}

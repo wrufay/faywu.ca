@@ -34,12 +34,13 @@ export default function ProjectCard({
         {/* clickable part below the image */}
         <div className="p-4 flex gap-2 flex-col">
           {/* emoji and title */}
-
-          <span className="flex items-center gap-2">
-            <img src={logoLink} className="w-5 h-5" />
-            <h3 className="text-lg text-gray-800">{title}</h3>
-          </span>
-
+          <div className="flex flex-row justify-between items-center">
+            <span className="flex items-center gap-2">
+              <img src={logoLink} className="w-5 h-5" />
+              <h3 className="text-lg text-gray-800">{title}</h3>
+            </span>
+            <p className="text-xs coding-regular text-gray-300">{date}</p>
+          </div>
           <div className="flex flex-row gap-2">
             {/* tags */}
             {tags.map((tag, index) => {
@@ -81,9 +82,9 @@ export default function ProjectCard({
           )}
 
           {/* stuff below the video */}
-          <div className="flex flex-col sm:flex-row items-start gap-4 justify-between">
+          <div className="flex flex-col sm:flex-row items-start gap-8 justify-between">
             {insideDesc && (
-              <p className="text-gray-700 serif-regular text-left text-sm">
+              <p className="text-gray-700 serif-regular text-sm text-left">
                 {insideDesc}
               </p>
             )}
@@ -119,9 +120,6 @@ export default function ProjectCard({
                   <img className="w-5 h-5" src="linkedin.png" />
                 </a>
               )}
-              <p className="text-xs coding-regular w-5 text-[var(--aritzia-blue)]">
-                {date}
-              </p>
             </div>
           </div>
         </div>

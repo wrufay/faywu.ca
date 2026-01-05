@@ -68,7 +68,6 @@ export default function ProjectCard({
               className="w-full rounded-lg border border-gray-200"
               controls
               autoPlay
-              muted
               loop
             >
               <source src={demoVideo} type="video/mp4" />

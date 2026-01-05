@@ -43,7 +43,7 @@ export default function About() {
       logo: "/flowerlogo.png",
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
-      demoVideo: "firstlovedbest.mp4",
+      demoVideo: "firstloved.mp4",
       insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with first loved bible's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
       date: "nov 2025",
     },

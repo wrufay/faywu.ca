@@ -4,7 +4,7 @@ const timeline = [
   {
     title: "past",
     imgLink: "past.png",
-    bgColour: "rgba(241, 196, 15, 0.1)",
+    bgColour: "rgba(241, 196, 15, 0.08)",
     descriptions: [
       {
         description:
@@ -24,7 +24,7 @@ const timeline = [
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67 serif-bold"
+              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
             >
               {" "}
               codepen collection{" "}
@@ -56,7 +56,7 @@ const timeline = [
               href="https://hfxcodecircle.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67 serif-bold"
+              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
             >
               halifax code circle
             </a>{" "}
@@ -65,7 +65,7 @@ const timeline = [
               href="https://hfxlanguages.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67 serif-bold"
+              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
             >
               halifax language exchange
             </a>
@@ -89,7 +89,7 @@ const timeline = [
   {
     title: "present",
     imgLink: "present.png",
-    bgColour: "rgba(239, 95, 51, 0.1)",
+    bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
         description: "cooking @ university of waterloo",
@@ -106,7 +106,7 @@ const timeline = [
   {
     title: "future",
     imgLink: "future.png",
-    bgColour: "rgba(241, 196, 15, 0.1)",
+    bgColour: "rgba(241, 196, 15, 0.08)",
     descriptions: "incoming @ ??? summer '26 co-op pending",
   },
 ];
@@ -115,7 +115,7 @@ export default function About() {
   return (
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 serif-bold text-">
+      <p className="px-10 serif-bold text-gray-700">
         a bit about my life, if you care to stalk.
       </p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">

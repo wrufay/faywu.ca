@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import LikeCounter from "@/components/LikeCounter";
 
 export const metadata = {
   title: "fay wu's portfolio",
@@ -21,13 +22,14 @@ export default function RootLayout({ children }) {
           <Link href="/about" className=" hover:opacity-67">
             about
           </Link>
-          <Link href="/collections" className=" hover:opacity-67">
+          {/* <Link href="/collections" className=" hover:opacity-67">
             collections
-          </Link>
+          </Link> */}
         </nav>
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
+            <LikeCounter />
             <p className="pen-regular">1 thessalonians 5:16-18</p>
             <div className="flex gap-4 items-center">
               <a

@@ -4,7 +4,13 @@ import { useState } from "react";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
 import React from "react"; //repeated
 
-export default function AboutCard({ delay = 0, title, descriptions, imgLink }) {
+export default function AboutCard({
+  delay = 0,
+  title,
+  descriptions,
+  imgLink,
+  bgColour,
+}) {
   // hover animation
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -32,12 +38,11 @@ export default function AboutCard({ delay = 0, title, descriptions, imgLink }) {
         style={{
           background: useMotionTemplate`
             radial-gradient(
-              167px circle at ${mouseX}px ${mouseY}px,
-              rgba(239, 95, 51, 0.1),
+              150px circle at ${mouseX}px ${mouseY}px,
+              ${bgColour},
               transparent 80%
             )
           `,
-          transition: "opacity 0.3s",
         }}
       />
       <div className="flex flex-col gap-3 relative z-10">

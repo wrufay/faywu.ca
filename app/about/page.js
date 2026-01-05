@@ -4,6 +4,7 @@ const timeline = [
   {
     title: "past",
     imgLink: "past.png",
+    bgColour: "rgba(241, 196, 15, 0.1)",
     descriptions: [
       {
         description:
@@ -88,6 +89,7 @@ const timeline = [
   {
     title: "present",
     imgLink: "present.png",
+    bgColour: "rgba(239, 95, 51, 0.1)",
     descriptions: [
       {
         description: "cooking @ university of waterloo",
@@ -104,6 +106,7 @@ const timeline = [
   {
     title: "future",
     imgLink: "future.png",
+    bgColour: "rgba(241, 196, 15, 0.1)",
     descriptions: "incoming @ ??? summer '26 co-op pending",
   },
 ];
@@ -124,6 +127,7 @@ export default function About() {
             descriptions={item.descriptions}
             delay={i * 300}
             imgLink={item.imgLink}
+            bgColour={item.bgColour}
           />
         ))}
       </section>

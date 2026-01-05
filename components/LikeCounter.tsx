@@ -6,6 +6,7 @@ export default function LikeCounter() {
   const [likes, setLikes] = useState<number>(0);
   const [hasLiked, setHasLiked] = useState<boolean>(false);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchLikes = async () => {
@@ -13,8 +14,8 @@ export default function LikeCounter() {
         const response = await fetch("/api/likes");
         const data = await response.json();
         setLikes(data.likes);
-      } catch (error) {
-        console.error("Failed to fetch likes:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -50,11 +51,15 @@ export default function LikeCounter() {
     setTimeout(() => setIsAnimating(false), 300);
   };
 
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <button
       onClick={handleLike}
       disabled={hasLiked}
-      className={`flex items-center gap-2 text-xs ${
+      className={`flex items-center gap-2 text-xs fade-in ${
         hasLiked
           ? "text-gray-400 cursor-default"
           : "text-gray-500 hover:text-[var(--crimson-red)] cursor-pointer"

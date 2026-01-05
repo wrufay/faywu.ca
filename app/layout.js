@@ -15,11 +15,14 @@ export default function RootLayout({ children }) {
           <Link href="/" className="hover:opacity-67">
             ↻
           </Link>
-          <Link href="/collections" className=" hover:opacity-67">
+          <Link href="/projects" className=" hover:opacity-67">
             projects
           </Link>
           <Link href="/about" className=" hover:opacity-67">
             about
+          </Link>
+          <Link href="/collections" className=" hover:opacity-67">
+            collections
           </Link>
         </nav>
         {children}

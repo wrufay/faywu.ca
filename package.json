@@ -9,7 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.9",
+    "framer-motion": "^12.24.0",
+    "next": "^16.1.1",
     "react": "19.2.1",
     "react-dom": "19.2.1",
     "sweetalert2": "^11.26.17"

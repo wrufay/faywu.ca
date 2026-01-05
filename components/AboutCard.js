@@ -20,9 +20,9 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
 
         {/* description */}
         {title == "future" ? (
-          <p className="text-sm sm:text-base">2026 co-op pending</p>
+          <p className="text-sm">2026 co-op pending</p>
         ) : (
-          <p key={curIndex} className="animate-scroll-up text-sm sm:text-base">
+          <p key={curIndex} className="animate-scroll-up text-sm">
             {descriptions[curIndex].description}
           </p>
         )}

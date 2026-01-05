@@ -59,7 +59,7 @@ export default function LikeCounter() {
     <button
       onClick={handleLike}
       disabled={hasLiked}
-      className={`flex items-center gap-2 text-xs fade-in ${
+      className={`flex items-center gap-1 text-xs fade-in ${
         hasLiked
           ? "text-gray-400 cursor-default"
           : "text-gray-500 hover:text-[var(--crimson-red)] cursor-pointer"
@@ -68,9 +68,7 @@ export default function LikeCounter() {
       <span className={isAnimating ? "animate-bounce" : ""}>
         {hasLiked ? "♥" : "♡"}
       </span>
-      <span className="coding-regular">
-        {likes} {likes === 1 ? "like" : "likes"}
-      </span>
+      <span className="coding-regular">{likes}</span>
     </button>
   );
 }

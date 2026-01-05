@@ -31,7 +31,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
-            <LikeCounter />
             <p className="pen-regular">1 thessalonians 5:16-18</p>
             <div className="flex gap-4 items-center">
               <a
@@ -54,6 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               >
                 <img src="linkedin.png" />
               </a>
+              <LikeCounter />
             </div>
           </div>
         </footer>

@@ -1,24 +1,54 @@
-export default function AboutCard({ delay = 0 }) {
+"use client";
+
+import { useState } from "react";
+
+export default function AboutCard({ delay = 0, title, descriptions }) {
+  const [curIndex, setCurIndex] = useState(0);
+  const nextExperience = () => {
+    setCurIndex((prev) => (prev == descriptions.length - 1 ? 0 : prev + 1));
+  };
   return (
-    <section
+    // card styling
+    <div
       style={{ animationDelay: `${delay}ms` }}
-      className="p-10 w-full max-w-2xl bg-white shadow-sm border border-gray-100 rounded-lg"
+      className="p-6 w-2xs h-48 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
     >
-      <h1 className="text-2xl sm:text-3xl">
-        <span className="pen-regular text-3xl sm:text-4xl">fay</span> loves:
-      </h1>
-      <div>
-        <ul className="flex flex-col gap-2">
-          <li className="flex flex-row gap-1 sm:gap-2 items-center">
-            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>Jesus</span>
-          </li>
-          <li className="flex flex-row gap-1 sm:gap-2 items-center">
-            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>Waterloo</span>
-          </li>
-        </ul>
+      <div className="flex flex-col gap-3">
+        <h1 className="text-2xl sm:text-3xl">
+          <span className="pen-regular text-3xl sm:text-4xl">{title}</span>
+        </h1>
+
+        {/* description */}
+        {title == "future" ? (
+          <p className="">
+            incoming @ ??? <br />
+            <span className="serif-bold">'26 co-op pending</span>
+          </p>
+        ) : (
+          <p key={curIndex}>{descriptions[curIndex]}</p>
+        )}
+
+        {/* add the down button, allow cycling through experiences in the past and present cards*/}
+
+        {(title == "past" || title == "present") && (
+          <p className="absolute bottom-6 left-6 right-6 flex flex-row justify-between text-xs">
+            <span>2021</span>
+            <span
+              onClick={nextExperience}
+              className="select-none hover:scale-110 hover:text-[var(--aritzia-blue)]"
+            >
+              ▽
+            </span>
+          </p>
+        )}
+
+        {/* add resume button for the future card */}
+        {title == "future" && (
+          <button className="cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-gray-800 rounded-lg text-sm hover:bg-gray-100/50">
+            <span className="text-[var(--aritzia-blue)]">hire me </span>(resume)
+          </button>
+        )}
       </div>
-    </section>
+    </div>
   );
 }

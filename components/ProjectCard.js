@@ -14,7 +14,7 @@ export default function ProjectCard({
 
   return (
     <div
-      className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 animate-fadeIn border border-gray-100"
+      className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100"
       style={{ animationDelay: `${delay}ms` }}
     >
       <img

@@ -24,7 +24,7 @@ add a "timeline" for experience and life
 - future
   - seeking 2026 summer co-op
 
-\*\* wanna add a lot of "interactive" real-time stuff, like my habit trackers etc
+\*\* wanna add a lot of "interactive" real-time stuff, like my habit trackers, last updated, etc
 
 - [ ] add resume
 - [ ] also add the model popup cards for each project

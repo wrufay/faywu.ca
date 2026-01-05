@@ -6,7 +6,7 @@ export default function About() {
       title: "uw sleeper",
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
-      tags: ["typescript", "spring boot", "react.js"],
+      tags: ["typescript", "spring boot", "react"],
       image: "/uwsleeper.png",
       logo: "/uwsleeperlogo.png",
       projectLink: "https://uwsleeper.vercel.app/",
@@ -46,7 +46,7 @@ export default function About() {
 
   return (
     <main className="flex flex-grow">
-      <section className="flex flex-col items-center justify-center px-4 py-8">
+      <section className="flex flex-col items-center justify-center py-8">
         <div className="">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {collections.map((item, i) => (

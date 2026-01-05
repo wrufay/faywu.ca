@@ -70,7 +70,8 @@ const timeline = [
     title: "present",
     descriptions: [
       {
-        description: "cooking @ university of waterloo + building fun stuff!",
+        description: "cooking @ university of waterloo",
+        tags: ["cs136", "math136", "math138"],
         year: "sep 2025",
       },
       // {
@@ -87,7 +88,7 @@ const timeline = [
 
 export default function About() {
   return (
-    <main className="flex flex-grow items-center justify-center px-4">
+    <main className="flex flex-grow items-center justify-center py-8">
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {timeline.map((item, i) => (
           <AboutCard

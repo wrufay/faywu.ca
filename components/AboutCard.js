@@ -19,13 +19,31 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
         </h1>
 
         {/* description */}
-        {title == "future" ? (
-          <p className="text-sm">2026 co-op pending</p>
-        ) : (
-          <p key={curIndex} className="animate-scroll-up text-sm">
-            {descriptions[curIndex].description}
-          </p>
-        )}
+        <div>
+          {title == "future" ? (
+            <p className="text-sm">2026 co-op pending</p>
+          ) : (
+            <p key={curIndex} className="animate-scroll-up text-sm">
+              {descriptions[curIndex].description}
+            </p>
+          )}
+
+          {/* add tags only for the present card (might change it later) */}
+          {/* also this could just be hard coded since its only used here lol */}
+          {/* also you could make the tag into a custom component */}
+          {title == "present" && (
+            <div className="flex flex-wrap gap-2 justify-center mt-1">
+              {descriptions[0].tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-gray-100"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
 
         {/* add the down button, allow cycling through experiences in the past and present cards*/}
 

@@ -9,11 +9,6 @@ idea for about page:
 
 - 4 notion-like cards (same size as projects page, dif design)
 
-1. where i'm from
-2.
-3.
-4.
-
 add a "timeline" for experience and life
 
 - past
@@ -23,6 +18,8 @@ add a "timeline" for experience and life
   - waterloo + courses
 - future
   - seeking 2026 summer co-op
+
+\*\*\* need to add more info about me, brief description with small text
 
 \*\* wanna add a lot of "interactive" real-time stuff, like my habit trackers, last updated, etc
 

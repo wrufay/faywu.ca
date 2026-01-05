@@ -11,7 +11,7 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
     // card styling
     <div
       style={{ animationDelay: `${delay}ms` }}
-      className="p-6 w-2xs h-48 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
+      className="p-8 w-full max-w-2xs md:w-2xs h-48 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative"
     >
       <div className="flex flex-col gap-3">
         <h1 className="text-2xl sm:text-3xl">
@@ -20,12 +20,9 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
 
         {/* description */}
         {title == "future" ? (
-          <p className="">
-            incoming @ ??? <br />
-            2026 co-op pending
-          </p>
+          <p className="text-sm sm:text-base">2026 co-op pending</p>
         ) : (
-          <p key={curIndex} className="animate-scroll-up">
+          <p key={curIndex} className="animate-scroll-up text-sm sm:text-base">
             {descriptions[curIndex].description}
           </p>
         )}
@@ -33,7 +30,7 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
         {/* add the down button, allow cycling through experiences in the past and present cards*/}
 
         {(title == "past" || title == "present") && (
-          <p className="absolute bottom-6 left-6 right-6 flex flex-row items-center justify-between text-xs text-[var(--aritzia-blue)]">
+          <p className="absolute bottom-6 left-6 right-6 flex flex-row items-center justify-between text-xs text-[var(--aritzia-blue)] coding-regular">
             <span>{descriptions[curIndex].year}</span>
             <img
               onClick={nextExperience}
@@ -48,9 +45,9 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
           <a
             href="https://drive.google.com/file/d/1IK1cd7bbhFNEUXKcY5QIXNgciX4qh4J0/view?usp=sharing"
             target="_blank"
-            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-gray-800 rounded-lg text-sm hover:bg-gray-100/50"
+            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-gray-100/50"
           >
-            <span className="text-[var(--aritzia-blue)]">hire me </span>(resume)
+            fay's resume
           </a>
         )}
       </div>

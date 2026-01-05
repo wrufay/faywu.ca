@@ -4,14 +4,14 @@ const timeline = [
   {
     title: "past",
     descriptions: [
-      {
-        description: "became a resident of halifax, nova scotia for 18 years",
-        year: "jun 2007",
-      },
+      // {
+      //   description: "became a resident of halifax, nova scotia for 18 years",
+      //   year: "jun 2007",
+      // },
       {
         description: (
           <>
-            started a collection of mini html, css & js projects on
+            started a
             <a
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
@@ -19,17 +19,18 @@ const timeline = [
               className="hover:opacity-67"
             >
               {" "}
-              codepen
+              collection{" "}
             </a>
+            of mini html, css & javascript projects
           </>
         ),
 
         year: "jun 2020",
       },
-      {
-        description: "watched 1000+ episodes of one piece over a few months",
-        year: "aug 2021",
-      },
+      // {
+      //   description: "watched 1000+ episodes of one piece over a few months",
+      //   year: "aug 2021",
+      // },
       {
         description: "became a nova scotia international student ambassador",
         year: "may 2023",
@@ -69,7 +70,7 @@ const timeline = [
     title: "present",
     descriptions: [
       {
-        description: "cooking @ university of waterloo",
+        description: "cooking @ university of waterloo + building fun stuff!",
         year: "sep 2025",
       },
       // {

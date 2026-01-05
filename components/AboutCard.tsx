@@ -1,8 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
-import React from "react"; //repeated
+import React from "react";
+
+interface Description {
+  description: string | ReactNode;
+  year: string;
+  tags?: string[];
+}
+
+interface AboutCardProps {
+  delay?: number;
+  title: string;
+  descriptions: Description[];
+  imgLink: string;
+  bgColour: string;
+}
 
 export default function AboutCard({
   delay = 0,
@@ -10,12 +24,12 @@ export default function AboutCard({
   descriptions,
   imgLink,
   bgColour,
-}) {
+}: AboutCardProps) {
   // hover animation
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  function handleMouseMove({ currentTarget, clientX, clientY }) {
+  function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent<HTMLDivElement>) {
     const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);

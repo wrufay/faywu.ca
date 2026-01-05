@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 
 export default function LikeCounter() {
-  const [likes, setLikes] = useState(0);
-  const [hasLiked, setHasLiked] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [likes, setLikes] = useState<number>(0);
+  const [hasLiked, setHasLiked] = useState<boolean>(false);
+  const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchLikes = async () => {
@@ -21,10 +21,10 @@ export default function LikeCounter() {
     fetchLikes();
 
     // get from local storage to prevent multiple likes on same server
-    // const userHasLiked = localStorage.getItem("userHasLiked");
-    // if (userHasLiked === "true") {
-    //   setHasLiked(true);
-    // }
+    const userHasLiked = localStorage.getItem("userHasLiked");
+    if (userHasLiked === "true") {
+      setHasLiked(true);
+    }
   }, []);
 
   const handleLike = async () => {

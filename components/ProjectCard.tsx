@@ -3,6 +3,21 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  image: string;
+  projectLink?: string;
+  githubLink?: string;
+  demoVideo?: string;
+  delay?: number;
+  tags: string[];
+  logoLink: string;
+  linkedinLink?: string;
+  insideDesc?: string;
+  date: string;
+}
+
 export default function ProjectCard({
   title,
   description,
@@ -16,7 +31,7 @@ export default function ProjectCard({
   linkedinLink,
   insideDesc,
   date,
-}) {
+}: ProjectCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (

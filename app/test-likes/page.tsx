@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function TestLikes() {
-  const [result, setResult] = useState("Loading...");
+  const [result, setResult] = useState<string>("Loading...");
 
   useEffect(() => {
     async function test() {
@@ -22,7 +22,7 @@ export default function TestLikes() {
 
         setResult(output);
       } catch (error) {
-        setResult(`Error: ${error.message}`);
+        setResult(`Error: ${error instanceof Error ? error.message : 'Unknown error'}`);
       }
     }
 

@@ -1,13 +1,15 @@
 import "./globals.css";
 import Link from "next/link";
 import LikeCounter from "@/components/LikeCounter";
+import { Metadata } from "next";
+import { ReactNode } from "react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "fay wu's portfolio",
   description: "fay wu's personal portfolio site inspired by notion",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-8">

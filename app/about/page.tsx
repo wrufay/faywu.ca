@@ -1,6 +1,20 @@
 import AboutCard from "@/components/AboutCard";
+import { ReactNode } from "react";
 
-const timeline = [
+interface Description {
+  description: string | ReactNode;
+  year: string;
+  tags?: string[];
+}
+
+interface TimelineItem {
+  title: string;
+  imgLink: string;
+  bgColour: string;
+  descriptions: Description[] | string;
+}
+
+const timeline: TimelineItem[] = [
   {
     title: "past",
     imgLink: "past.png",
@@ -124,7 +138,18 @@ export default function About() {
           <AboutCard
             key={i}
             title={item.title}
-            descriptions={item.descriptions}
+            descriptions={
+              Array.isArray(item.descriptions)
+                ? item.descriptions.map((desc) => ({
+                    description:
+                      typeof desc.description === "string"
+                        ? desc.description
+                        : desc.description,
+                    year: desc.year,
+                    tags: desc.tags,
+                  }))
+                : []
+            }
             delay={i * 300}
             imgLink={item.imgLink}
             bgColour={item.bgColour}

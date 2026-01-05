@@ -43,7 +43,7 @@ export default function About() {
       logo: "/flowerlogo.png",
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
-      demoVideo: "",
+      demoVideo: "firstlovedbest.mp4",
       insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with first loved bible's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
       date: "nov 2025",
     },
@@ -56,7 +56,7 @@ export default function About() {
       logo: "/search.svg",
       projectLink: "https://wrufay.github.io/clearpharma/",
       githubLink: "https://github.com/wrufay/clearpharma",
-      demoVideo: "",
+      demoVideo: "clearpharmabest.mp4",
       insideDesc:
         "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
       date: "nov 2025",

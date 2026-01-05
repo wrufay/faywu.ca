@@ -22,31 +22,36 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
         {title == "future" ? (
           <p className="">
             incoming @ ??? <br />
-            <span className="serif-bold">'26 co-op pending</span>
+            2026 co-op pending
           </p>
         ) : (
-          <p key={curIndex}>{descriptions[curIndex]}</p>
+          <p key={curIndex} className="animate-scroll-up">
+            {descriptions[curIndex].description}
+          </p>
         )}
 
         {/* add the down button, allow cycling through experiences in the past and present cards*/}
 
         {(title == "past" || title == "present") && (
-          <p className="absolute bottom-6 left-6 right-6 flex flex-row justify-between text-xs">
-            <span>2021</span>
-            <span
+          <p className="absolute bottom-6 left-6 right-6 flex flex-row items-center justify-between text-xs text-[var(--aritzia-blue)]">
+            <span>{descriptions[curIndex].year}</span>
+            <img
               onClick={nextExperience}
-              className="select-none hover:scale-110 hover:text-[var(--aritzia-blue)]"
-            >
-              ▽
-            </span>
+              className="select-none hover:scale-110 w-3 h-3"
+              src="/arrowdown.png"
+            />
           </p>
         )}
 
         {/* add resume button for the future card */}
         {title == "future" && (
-          <button className="cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-gray-800 rounded-lg text-sm hover:bg-gray-100/50">
+          <a
+            href="https://drive.google.com/file/d/1IK1cd7bbhFNEUXKcY5QIXNgciX4qh4J0/view?usp=sharing"
+            target="_blank"
+            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-gray-800 rounded-lg text-sm hover:bg-gray-100/50"
+          >
             <span className="text-[var(--aritzia-blue)]">hire me </span>(resume)
-          </button>
+          </a>
         )}
       </div>
     </div>

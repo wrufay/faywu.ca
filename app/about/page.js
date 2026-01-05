@@ -4,16 +4,78 @@ const timeline = [
   {
     title: "past",
     descriptions: [
-      "resident @ halifax nova scotia of 18 years.",
-      "halifax code circle",
+      {
+        description: "became a resident of halifax, nova scotia for 18 years",
+        year: "jun 2007",
+      },
+      {
+        description: (
+          <>
+            started a collection of mini html, css & js projects on
+            <a
+              href="https://codepen.io/collection/ZQLJbJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-67"
+            >
+              {" "}
+              codepen
+            </a>
+          </>
+        ),
+
+        year: "jun 2020",
+      },
+      {
+        description: "watched 1000+ episodes of one piece over a few months",
+        year: "aug 2021",
+      },
+      {
+        description: "became a nova scotia international student ambassador",
+        year: "may 2023",
+      },
+      {
+        description: (
+          <>
+            founded{" "}
+            <a
+              href="https://hfxcodecircle.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-67"
+            >
+              halifax code circle
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://hfxlanguages.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-67"
+            >
+              halifax language exchange
+            </a>
+          </>
+        ),
+        year: "nov 2024",
+      },
+      {
+        description: "attended robofest world championships in detroit",
+        year: "may 2025",
+      },
     ],
   },
   {
     title: "present",
     descriptions: [
-      "cooking @ university of waterloo",
-      "currently taking math 136, math 138, cs136, econ101, earth122",
-      "web dev @ watonomous",
+      {
+        description: "cooking @ university of waterloo",
+        year: "sep 2025",
+      },
+      // {
+      //   description: " web dev @ watonomous",
+      //   year: "jan 2026",
+      // },
     ],
   },
   {

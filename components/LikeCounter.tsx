@@ -52,7 +52,7 @@ export default function LikeCounter() {
   };
 
   if (isLoading) {
-    return null;
+    return "...";
   }
 
   return (

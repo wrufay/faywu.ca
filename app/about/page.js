@@ -43,7 +43,8 @@ const timeline = [
         year: "may 2023",
       },
       {
-        description: "bench pressed 75lbs for the first time, felt proud",
+        description:
+          "bench pressed 75lbs for the first time; felt proud of myself",
         year: "aug 2024",
       },
       {

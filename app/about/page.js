@@ -4,10 +4,16 @@ const timeline = [
   {
     title: "past",
     descriptions: [
-      // {
-      //   description: "became a resident of halifax, nova scotia for 18 years",
-      //   year: "jun 2007",
-      // },
+      {
+        description:
+          "was born in halifax, nova scotia. lived there for 18 years",
+        year: "jun 2007",
+      },
+      {
+        description:
+          "started an art youtube channel, got 200+ subscribers but quit",
+        year: "dec 2017",
+      },
       {
         description: (
           <>
@@ -16,10 +22,10 @@ const timeline = [
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67"
+              className="hover:opacity-67 serif-bold"
             >
               {" "}
-              collection{" "}
+              codepen collection{" "}
             </a>
             of mini html, css & javascript projects
           </>
@@ -27,13 +33,17 @@ const timeline = [
 
         year: "jun 2020",
       },
-      // {
-      //   description: "watched 1000+ episodes of one piece over a few months",
-      //   year: "aug 2021",
-      // },
+      {
+        description: "binged watched 1000+ episodes of one piece in 8th grade",
+        year: "aug 2021",
+      },
       {
         description: "became a nova scotia international student ambassador",
         year: "may 2023",
+      },
+      {
+        description: "bench pressed 75lbs for the first time, felt proud",
+        year: "aug 2024",
       },
       {
         description: (
@@ -43,7 +53,7 @@ const timeline = [
               href="https://hfxcodecircle.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67"
+              className="hover:opacity-67 serif-bold"
             >
               halifax code circle
             </a>{" "}
@@ -52,7 +62,7 @@ const timeline = [
               href="https://hfxlanguages.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-67"
+              className="hover:opacity-67 serif-bold"
             >
               halifax language exchange
             </a>
@@ -60,8 +70,15 @@ const timeline = [
         ),
         year: "nov 2024",
       },
+
       {
-        description: "attended robofest world championships in detroit",
+        description:
+          "attended robofest robotics world championships in detroit",
+        year: "may 2025",
+      },
+      {
+        description:
+          "got accepted into uw cs, changing the trajectory of my life.",
         year: "may 2025",
       },
     ],
@@ -74,10 +91,11 @@ const timeline = [
         tags: ["cs136", "math136", "math138"],
         year: "sep 2025",
       },
-      // {
-      //   description: " web dev @ watonomous",
-      //   year: "jan 2026",
-      // },
+      {
+        description: "incoming @ ???",
+        tags: ["next.js", "flow state"],
+        year: "jan 2026",
+      },
     ],
   },
   {
@@ -88,8 +106,13 @@ const timeline = [
 
 export default function About() {
   return (
-    <main className="flex flex-grow items-center justify-center py-8">
+    <main className="flex flex-grow flex-col gap-10 items-center justify-center py-8">
+      {/* intro text */}
+      <p className="px-10 serif-bold">
+        a bit about my life, if you care to stalk
+      </p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        {/* about/timeline cards */}
         {timeline.map((item, i) => (
           <AboutCard
             key={i}

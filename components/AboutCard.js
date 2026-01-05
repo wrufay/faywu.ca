@@ -31,9 +31,9 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
           {/* add tags only for the present card (might change it later) */}
           {/* also this could just be hard coded since its only used here lol */}
           {/* also you could make the tag into a custom component */}
-          {title == "present" && (
-            <div className="flex flex-wrap gap-2 justify-center mt-1">
-              {descriptions[0].tags.map((tag, index) => (
+          {title == "present" && descriptions[curIndex].tags && (
+            <div key={`tags-${curIndex}`} className="flex flex-wrap gap-2 justify-center mt-1 animate-scroll-up">
+              {descriptions[curIndex].tags.map((tag, index) => (
                 <span
                   key={index}
                   className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-gray-100"
@@ -65,7 +65,7 @@ export default function AboutCard({ delay = 0, title, descriptions }) {
             target="_blank"
             className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-gray-100/50"
           >
-            fay's resume
+            hire me (resume)
           </a>
         )}
       </div>

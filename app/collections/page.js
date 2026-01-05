@@ -16,6 +16,7 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
         "bridging the gap between uw students and sleep - because sleep is your superpower, more than a human necessity. take a rest, uwsleeper. you deserve it. ♡",
+      date: "dec 2025",
     },
     {
       title: "coco",
@@ -31,6 +32,7 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
         "keeping track of hundreds of job apps as an incoming co-op student? ... no thank you, i'll let coco work things out for me.",
+      date: "dec 2025",
     },
     {
       title: "firstloved",
@@ -43,6 +45,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "",
       insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with first loved bible's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
+      date: "nov 2025",
     },
     {
       title: "clearpharma",
@@ -56,6 +59,7 @@ export default function About() {
       demoVideo: "",
       insideDesc:
         "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
+      date: "nov 2025",
     },
   ];
 
@@ -78,6 +82,7 @@ export default function About() {
                 logoLink={item.logo}
                 insideDesc={item.insideDesc}
                 linkedinLink={item.linkedinLink}
+                date={item.date}
               />
             ))}
           </div>

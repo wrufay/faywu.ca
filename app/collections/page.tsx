@@ -24,7 +24,8 @@ export default function Test() {
       url: "/paintings/bus.png",
       year: "2022",
       medium: "acrylic on paper",
-      description: "a bus to nowhere, and everywhere at the same time.",
+      description:
+        "let's hop on a bus that goes nowhere, yet everywhere at the same time.",
     },
     {
       title: "a house in a peaceful neighbourhood",
@@ -46,8 +47,7 @@ export default function Test() {
       url: "/paintings/cats.png",
       year: "2022",
       medium: "oil pastel on paper",
-      description:
-        "spent my nye doing a couple strokes here, a couple strokes there...",
+      description: "a couple strokes here, a couple strokes there...",
     },
 
     {
@@ -63,7 +63,7 @@ export default function Test() {
       year: "2023",
       medium: "acrylic on mixed media sketchbook",
       description:
-        "hello left hand. you don't do much, but i love you as my reference, 4ever",
+        "dear left hand, you don't do much, but i'll forever love you as my reference.",
     },
 
     {
@@ -89,11 +89,12 @@ export default function Test() {
         "wind blows, water flows. love grows, and so do the things we'll never know.",
     },
     {
-      title: "citadel hill, halifax",
+      title: "halifax, nova scotia",
       url: "/paintings/citadel.png",
       year: "2023",
       medium: "acrylic on paper",
-      description: "the only citadel i know and love.",
+      description:
+        "citadel hill: a place of peace and perhaps longing for change.",
     },
 
     {
@@ -101,15 +102,15 @@ export default function Test() {
       url: "/paintings/grandma.png",
       year: "2024",
       medium: "acrylic on paper",
-      description: "time's a thief; when will she be caught...",
+      description:
+        "the sad part is that time's a thief, and she'll never be caught.",
     },
     {
-      title: "view from a friend's window in japan",
+      title: "window view",
       url: "/paintings/japan.jpg",
       year: "2024",
       medium: "acrylic on muji sketchbook",
-      description:
-        "maybe one day i'll look back and it'll be a thankful memory, not a regretful one.",
+      description: "shout out to the roads we'll never walk.",
     },
   ];
   const [curPainting, setCurPainting] = useState(0);

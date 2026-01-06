@@ -121,7 +121,7 @@ export default function ProjectCard({
                   rel="noopener noreferrer"
                   className="bg-gray-200 border border-gray-300 p-2 text-gray-700 rounded-full hover:shadow-sm opacity-67 hover:translate-y-[-2px]"
                 >
-                  <img className="w-5 h-5" src="github.png" />
+                  <img className="w-5 h-5" src="/icons/github.png" />
                 </a>
               )}
               {linkedinLink && (
@@ -131,7 +131,7 @@ export default function ProjectCard({
                   rel="noopener noreferrer"
                   className="bg-gray-200 border border-gray-300 p-2 text-gray-700 rounded-full hover:shadow-sm opacity-67 hover:translate-y-[-2px]"
                 >
-                  <img className="w-5 h-5" src="linkedin.png" />
+                  <img className="w-5 h-5" src="/icons/linkedin.png" />
                 </a>
               )}
             </div>

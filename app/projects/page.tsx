@@ -25,7 +25,8 @@ export default function About() {
       tags: ["javascript", "html", "tailwindcss"],
       image: "/projectpics/coco.png",
       logo: "/projectlogos/cocologo.png",
-      projectLink: "",
+      projectLink:
+        "https://chromewebstore.google.com/detail/coco-%E0%B3%80%E2%8B%86%EF%BD%A1%CB%9A/ochcceodajaggjehdmifggimjmffbapc",
       githubLink: "https://github.com/wrufay/coco",
       demoVideo: "/demos/coco.mp4",
       linkedinLink:
@@ -60,6 +61,8 @@ export default function About() {
       insideDesc:
         "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
       date: "nov 2025",
+      linkedinLink:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",
     },
   ];
 

@@ -17,7 +17,7 @@ interface TimelineItem {
 const timeline: TimelineItem[] = [
   {
     title: "past",
-    imgLink: "past.png",
+    imgLink: "/icons/past.png",
     bgColour: "rgba(241, 196, 15, 0.08)",
     descriptions: [
       {
@@ -102,7 +102,7 @@ const timeline: TimelineItem[] = [
   },
   {
     title: "present",
-    imgLink: "present.png",
+    imgLink: "/icons/present.png",
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
@@ -119,7 +119,7 @@ const timeline: TimelineItem[] = [
   },
   {
     title: "future",
-    imgLink: "future.png",
+    imgLink: "/icons/future.png",
     bgColour: "rgba(241, 196, 15, 0.08)",
     descriptions: "incoming @ ??? summer '26 co-op pending",
   },

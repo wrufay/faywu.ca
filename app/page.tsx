@@ -5,7 +5,7 @@ export default function Home() {
 
       <div className="fade-in">
         <img
-          src="/frontfay.png"
+          src="/designs/frontfay.png"
           className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float"
           alt="colourful hand-drawn logo that says fay wu"
         />
@@ -18,7 +18,7 @@ export default function Home() {
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
-            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
+            <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
               cs @{" "}
               <a
@@ -32,7 +32,7 @@ export default function Home() {
           </p>
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
-            <img src="star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
+            <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>software developer who loves design</span>
           </p>
         </div>

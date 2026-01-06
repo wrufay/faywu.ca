@@ -114,7 +114,7 @@ export default function AboutCard({
           <img
             onClick={nextExperience}
             className="select-none hover:scale-110 w-3 h-3"
-            src="/arrowdown.png"
+            src="/icons/arrowdown.png"
           />
         </p>
       )}

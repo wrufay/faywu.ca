@@ -7,11 +7,11 @@ export default function About() {
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
       tags: ["typescript", "spring boot", "react"],
-      image: "/uwsleeper.png",
-      logo: "/uwsleeperlogo.png",
+      image: "/projectpics/uwsleeper.png",
+      logo: "/projectlogos/uwsleeperlogo.png",
       projectLink: "https://uwsleeper.vercel.app/",
       githubLink: "https://github.com/wrufay/uwsleeper",
-      demoVideo: "/uwsleeper.mp4",
+      demoVideo: "/demos/uwsleeper.mp4",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
@@ -23,11 +23,11 @@ export default function About() {
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],
-      image: "/coco.png",
-      logo: "/cocologo.png",
+      image: "/projectpics/coco.png",
+      logo: "/projectlogos/cocologo.png",
       projectLink: "",
       githubLink: "https://github.com/wrufay/coco",
-      demoVideo: "/coco.mp4",
+      demoVideo: "/demos/coco.mp4",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
@@ -39,11 +39,11 @@ export default function About() {
       description:
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
-      image: "/firstloved.png",
-      logo: "/flowerlogo.png",
+      image: "/projectpics/firstloved.png",
+      logo: "/projectlogos/flowerlogo.png",
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
-      demoVideo: "firstloved.mp4",
+      demoVideo: "/demos/firstloved.mp4",
       insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with first loved bible's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
       date: "nov 2025",
     },
@@ -52,11 +52,11 @@ export default function About() {
       description:
         "facilitating communication betwen pharmacists and their patients in healthcare",
       tags: ["javascript", "html", "css"],
-      image: "/clearpharma.png",
-      logo: "/search.svg",
+      image: "/projectpics/clearpharma.png",
+      logo: "/projectlogos/search.svg",
       projectLink: "https://wrufay.github.io/clearpharma/",
       githubLink: "https://github.com/wrufay/clearpharma",
-      demoVideo: "clearpharmabest.mp4",
+      demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
         "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
       date: "nov 2025",

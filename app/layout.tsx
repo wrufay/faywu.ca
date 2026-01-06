@@ -37,21 +37,21 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 href="mailto:f26wu@uwaterloo.ca"
                 className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
-                <img src="email.png" />
+                <img src="/icons/email.png" />
               </a>
               <a
                 href="https://github.com/wrufay"
                 target="_blank"
                 className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
-                <img src="github.png" />
+                <img src="/icons/github.png" />
               </a>
               <a
                 href="https://www.linkedin.com/in/fayranw/"
                 target="_blank"
                 className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
               >
-                <img src="linkedin.png" />
+                <img src="/icons/linkedin.png" />
               </a>
               <LikeCounter />
             </div>

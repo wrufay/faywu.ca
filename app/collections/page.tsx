@@ -123,13 +123,13 @@ export default function Test() {
   return (
     <main className="py-10 flex flex-grow justify-center items-center">
       {/* painting card */}
-      <div className="max-w-sm flex flex-col gap-4 bg-white shadow-sm px-10 py-8 border border-gray-100 rounded-sm fade-in">
+      <div className="max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-sm fade-in">
         <p className="text-xs text-gray-500 flex flex-row justify-between coding-regular">
           {/* index+1 and title  */}
           <span className="text-left">{paintings[curPainting].title}</span>
           <span className="text-right">{curPainting + 1}</span>{" "}
         </p>
-        <div className="flex flex-row justify-center items-center gap-4">
+        <div className="flex flex-row justify-center items-center gap-2 sm:gap-4">
           {/* prev button */}
           <img
             src="/icons/leftarrow.png"
@@ -150,7 +150,7 @@ export default function Test() {
           />
         </div>
         {/* item description */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-3 sm:gap-6">
           <p className="text-xs text-gray-500 flex flex-row justify-between coding-regular">
             {/* year and medium  */}
             <span className="text-left">

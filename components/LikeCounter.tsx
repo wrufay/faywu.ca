@@ -22,10 +22,10 @@ export default function LikeCounter() {
     fetchLikes();
 
     // get from local storage to prevent multiple likes on same server
-    const userHasLiked = localStorage.getItem("userHasLiked");
-    if (userHasLiked === "true") {
-      setHasLiked(true);
-    }
+    // const userHasLiked = localStorage.getItem("userHasLiked");
+    // if (userHasLiked === "true") {
+    //   setHasLiked(true);
+    // }
   }, []);
 
   const handleLike = async () => {
@@ -40,9 +40,10 @@ export default function LikeCounter() {
       });
       const data = await response.json();
       setLikes(data.likes);
+      setHasLiked(false);
 
       // save like in localsotrage
-      localStorage.setItem("userHasLiked", "true");
+      // localStorage.setItem("userHasLiked", "true");
     } catch (error) {
       console.error("Failed to increment likes:", error);
       setLikes((prev) => prev - 1);
@@ -58,7 +59,6 @@ export default function LikeCounter() {
   return (
     <button
       onClick={handleLike}
-      disabled={hasLiked}
       className={`flex items-center gap-1 text-xs fade-in ${
         hasLiked
           ? "text-gray-400 cursor-default"

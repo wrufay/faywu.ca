@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Test() {
   const paintings = [
@@ -137,10 +138,14 @@ export default function Test() {
             onClick={prevPic}
           />
 
-          <img
+          <Image
             key={curPainting}
             className="w-full border border-gray-200 opacity-86 rounded-sm select-none"
             src={paintings[curPainting].url}
+            alt={paintings[curPainting].title}
+            width={400}
+            height={400}
+            priority
           />
           {/* next button */}
           <img
@@ -160,6 +165,20 @@ export default function Test() {
           </p>
           <p className="text-sm">{paintings[curPainting].description}</p>
         </div>
+      </div>
+
+      {/* Hidden preload images */}
+      <div className="hidden">
+        {paintings.map((painting, index) => (
+          <Image
+            key={painting.url}
+            src={painting.url}
+            alt={painting.title}
+            width={400}
+            height={400}
+            priority={index < 3}
+          />
+        ))}
       </div>
     </main>
   );

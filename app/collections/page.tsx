@@ -129,7 +129,7 @@ export default function Test() {
           <span className="text-left">{paintings[curPainting].title}</span>
           <span className="text-right">{curPainting + 1}</span>{" "}
         </p>
-        <div className="flex flex-row justify-center items-center gap-2 sm:gap-4">
+        <div className="flex flex-row justify-center items-center gap-3 sm:gap-4">
           {/* prev button */}
           <img
             src="/icons/leftarrow.png"
@@ -150,7 +150,7 @@ export default function Test() {
           />
         </div>
         {/* item description */}
-        <div className="flex flex-col gap-3 sm:gap-6">
+        <div className="flex flex-col gap-4 sm:gap-6">
           <p className="text-xs text-gray-500 flex flex-row justify-between coding-regular">
             {/* year and medium  */}
             <span className="text-left">

@@ -111,8 +111,8 @@ const timeline: TimelineItem[] = [
         year: "sep 2025",
       },
       {
-        description: "incoming @ ???",
-        tags: ["next.js", "flow state"],
+        description: "building fun stuff",
+        tags: ["flow state", "web dev"],
         year: "jan 2026",
       },
     ],

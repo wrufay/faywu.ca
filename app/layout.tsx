@@ -24,9 +24,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Link href="/about" className=" hover:opacity-67">
             about
           </Link>
-          {/* <Link href="/collections" className=" hover:opacity-67">
-            collections
-          </Link> */}
+          <Link href="/collections" className=" hover:opacity-67">
+            gallery
+          </Link>
         </nav>
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">

@@ -104,7 +104,6 @@ export default function Test() {
   };
   return (
     <main className="py-10 flex flex-grow flex-col gap-4 sm:gap-6 justify-center items-center">
-      <p className="text-sm">favourite pieces throughout the years</p>
       {/* painting card */}
       <div className="max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-sm fade-in">
         <p className="text-[9px] sm:text-xs text-gray-500 flex flex-row justify-between coding-regular">

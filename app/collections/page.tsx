@@ -123,7 +123,8 @@ export default function Test() {
     setCurPainting((cur) => (cur <= 0 ? maxIndex : cur - 1));
   };
   return (
-    <main className="py-10 flex flex-grow justify-center items-center">
+    <main className="py-10 flex flex-col gap-3 sm:gap-4 flex-grow justify-center items-center">
+      <p>once an artist, always an artist.</p>
       {/* painting card */}
       <div className="max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-sm fade-in">
         <p className="text-[9px] sm:text-xs text-gray-500 flex flex-row justify-between coding-regular">
@@ -164,7 +165,7 @@ export default function Test() {
             </span>{" "}
             <span className="text-right">{paintings[curPainting].medium}</span>
           </p>
-          <p className="text-xs sm:ext-sm">
+          <p className="text-xs sm:text-sm">
             {paintings[curPainting].description}
           </p>
         </div>

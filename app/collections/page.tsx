@@ -45,7 +45,8 @@ export default function Test() {
       url: "/paintings/cats.png",
       year: "2022",
       medium: "oil pastel on paper",
-      description: "a couple strokes here, a couple strokes there...",
+      description:
+        "spent my nye doing a couple strokes here, a couple strokes there...",
     },
 
     {
@@ -56,12 +57,12 @@ export default function Test() {
       description: "sunny days won't last forever, you know.",
     },
     {
-      title: "sketch of my left hand from life",
+      title: "sketch from life",
       url: "/paintings/hand.png",
       year: "2023",
       medium: "acrylic on mixed media sketchbook",
       description:
-        "although you're mostly useless, you have a unique purpose of being my reference.",
+        "hello left hand. you don't do much, but i love you as my reference, 4ever",
     },
 
     {
@@ -125,8 +126,8 @@ export default function Test() {
       <div className="max-w-sm flex flex-col gap-4 bg-white shadow-sm px-10 py-8 border border-gray-100 rounded-sm fade-in">
         <p className="text-xs text-gray-500 flex flex-row justify-between coding-regular">
           {/* index+1 and title  */}
-          <span className="">{paintings[curPainting].title}</span>
-          <span className="">{curPainting + 1}</span>{" "}
+          <span className="text-left">{paintings[curPainting].title}</span>
+          <span className="text-right">{curPainting + 1}</span>{" "}
         </p>
         <div className="flex flex-row justify-center items-center gap-4">
           {/* prev button */}
@@ -152,8 +153,10 @@ export default function Test() {
         <div className="flex flex-col gap-6">
           <p className="text-xs text-gray-500 flex flex-row justify-between coding-regular">
             {/* year and medium  */}
-            <span className="">{paintings[curPainting].year}</span>{" "}
-            <span className="">{paintings[curPainting].medium}</span>
+            <span className="text-left">
+              {paintings[curPainting].year}
+            </span>{" "}
+            <span className="text-right">{paintings[curPainting].medium}</span>
           </p>
           <p className="text-sm">{paintings[curPainting].description}</p>
         </div>

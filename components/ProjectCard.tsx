@@ -37,9 +37,8 @@ export default function ProjectCard({
   return (
     <>
       <div
-        className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100 cursor-pointer"
+        className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100 "
         style={{ animationDelay: `${delay}ms` }}
-        onClick={() => setIsModalOpen(true)}
       >
         <img
           src={image}
@@ -47,7 +46,10 @@ export default function ProjectCard({
         />
 
         {/* clickable part below the image */}
-        <div className="p-4 flex gap-2 flex-col">
+        <div
+          className="p-4 flex gap-2 flex-col cursor-pointer"
+          onClick={() => setIsModalOpen(true)}
+        >
           {/* emoji and title */}
           <div className="flex flex-row justify-between items-center">
             <span className="flex items-center gap-2">

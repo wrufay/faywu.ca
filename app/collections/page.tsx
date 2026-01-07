@@ -7,11 +7,13 @@ export default function Collections() {
         name="blog"
         description="words and thoughts, sometimes coherently put together"
         img="/projectpics/blog.png"
+        keyword="writing"
       ></CollectionsItem>
       <CollectionsItem
         name="gallery"
         description="some of my favourite art pieces throughout the years"
         img="/projectpics/gallery.png"
+        keyword="artwork"
       ></CollectionsItem>
     </main>
   );

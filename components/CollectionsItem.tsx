@@ -4,6 +4,7 @@ interface CollectionsItemProps {
   name: string;
   description: string;
   img: string;
+  keyword: string;
 }
 
 export default function CollectionsItem(props: CollectionsItemProps) {
@@ -26,8 +27,10 @@ export default function CollectionsItem(props: CollectionsItemProps) {
               <img src="icons/star.png" className="w-5 h-5 " />
               <h3 className="text-lg text-gray-800">{props.name}</h3>
             </span>
-            {/* date thing idk what to put here yet */}
-            {/* <p className="text-xs coding-regular text-gray-300">hdas</p> */}
+
+            <p className="text-xs coding-regular text-gray-300">
+              {props.keyword}
+            </p>
           </div>
 
           {/* description of project */}

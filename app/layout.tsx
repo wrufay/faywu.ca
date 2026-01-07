@@ -46,6 +46,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               >
                 <img src="/icons/github.png" />
               </a>
+
+              <LikeCounter />
               <a
                 href="https://www.linkedin.com/in/fayranw/"
                 target="_blank"
@@ -53,7 +55,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               >
                 <img src="/icons/linkedin.png" />
               </a>
-              <LikeCounter />
+              <a
+                href="https://x.com/wrufay"
+                target="_blank"
+                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
+              >
+                <img src="/icons/x.png" />
+              </a>
             </div>
           </div>
         </footer>

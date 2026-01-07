@@ -5,15 +5,20 @@ interface CollectionsItemProps {
   description: string;
   img: string;
   keyword: string;
+  delay: number;
 }
 
 export default function CollectionsItem(props: CollectionsItemProps) {
   return (
     <>
-      <div className="flex flex-col hover:translate-y-[-4px] w-full max-w-xs sm:w-xs transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100">
+      {/* card itself */}
+      <div
+        className="flex flex-col hover:translate-y-[-4px] w-full max-w-xs sm:w-xs transition-transform shadow-sm hover:shadow-md serif-regular bg-white w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100"
+        style={{ animationDelay: `${props.delay}ms` }}
+      >
         <img
           src={props.img}
-          className="h-32 w-full object-cover opacity-86 rounded-t-lg"
+          className="h-32 w-full object-cover opacity-76 rounded-t-lg"
         />
 
         {/* clickable part below the image */}

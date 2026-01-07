@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             about
           </Link>
           <Link href="/collections" className=" hover:opacity-67">
-            gallery
+            collections
           </Link>
         </nav>
         {children}
@@ -35,30 +35,31 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="flex gap-4 items-center">
               <a
                 href="mailto:f26wu@uwaterloo.ca"
-                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
+                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
               >
                 <img src="/icons/email.png" />
               </a>
               <a
                 href="https://github.com/wrufay"
                 target="_blank"
-                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
+                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px]"
               >
                 <img src="/icons/github.png" />
               </a>
 
               <LikeCounter />
+              {/* i could make these into components too lol */}
               <a
                 href="https://www.linkedin.com/in/fayranw/"
                 target="_blank"
-                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
+                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
               >
                 <img src="/icons/linkedin.png" />
               </a>
               <a
                 href="https://x.com/wrufay"
                 target="_blank"
-                className="opacity-50 hover:opacity-67 w-5 h-5 hover:translate-y-[-2px]"
+                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
               >
                 <img src="/icons/x.png" />
               </a>

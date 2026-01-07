@@ -22,7 +22,7 @@ export default function Home() {
             <span>
               cs @{" "}
               <a
-                className="text-[var(--crimson-red)] opacity-67 hover:opacity-100"
+                className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://uwaterloo.ca/"
               >

@@ -10,7 +10,6 @@ interface BlogPost {
   title: string;
   slug: string;
   content: string;
-  excerpt: string;
   published_at: string;
   tags: string[];
 }
@@ -51,8 +50,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | fay wu's blog`,
-    description: post.excerpt || post.title,
+    title: `${post.title}`,
+    description: post.title,
   };
 }
 
@@ -69,19 +68,24 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="max-w-2xl mx-auto mt-12 mb-20">
-      <Link
-        href="/blog"
-        className="text-sm text-gray-500 hover:opacity-70 mb-8 inline-block"
-      >
-        ← back to blog
-      </Link>
+    <div className="max-w-2xl py-10">
+      <article className="prose prose-gray max-w-none flex flex-col gap-2">
+        {/* back arrow and title */}
+        <div className="flex flex-row gap-4 items-center">
+          <Link href="/collections/blog">
+            <img
+              className="w-5 h-5 opacity-67 cursor-pointer"
+              src="/icons/leftarrow.png"
+            />
+          </Link>
+          <span className="text-2xl font-bold pen-regular mt-1">
+            {post.title}
+          </span>
+        </div>
 
-      <article className="prose prose-gray max-w-none">
-        <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-8">
-          <time dateTime={post.published_at}>
+        {/* this stuff is repeated, the date and tags */}
+        <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
+          <time dateTime={post.published_at} className="coding-regular">
             {new Date(post.published_at).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
@@ -93,7 +97,7 @@ export default async function BlogPostPage({
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2 py-1 bg-amber-100 rounded text-xs"
+                  className="rounded-full border border-[var(--sunny-yellow)] px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-[var(--sunny-yellow)]/41"
                 >
                   {tag}
                 </span>
@@ -102,7 +106,8 @@ export default async function BlogPostPage({
           )}
         </div>
 
-        <div className="text-left leading-relaxed prose prose-gray prose-headings:font-bold prose-a:text-blue-600 prose-a:hover:opacity-70 prose-img:rounded-lg prose-img:shadow-md max-w-none">
+        {/* body text */}
+        <div className="text-left text-sm leading-relaxed prose prose-gray prose-headings:font-bold prose-a:text-blue-600 prose-a:hover:opacity-70 prose-img:rounded-lg prose-img:shadow-md max-w-none">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
           </ReactMarkdown>

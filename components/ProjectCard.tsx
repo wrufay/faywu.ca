@@ -60,6 +60,7 @@ export default function ProjectCard({
           </div>
           <div className="flex flex-row gap-2">
             {/* tags */}
+            {/* lowkey should make tag into a component */}
             {tags.map((tag, index) => {
               return (
                 <span

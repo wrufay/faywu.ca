@@ -10,7 +10,7 @@ export default function Home() {
           alt="colourful hand-drawn logo that says fay wu"
         />
       </div>
-      <div className="max-w-md flex flex-col gap-5 sm:gap-8">
+      <div className="max-w-md flex flex-col gap-4 sm:gap-6">
         <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
           hey there, i'm <span className="pen-regular">fay!</span>
         </h1>
@@ -33,7 +33,7 @@ export default function Home() {
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>software developer who loves design</span>
+            <span>software developer x designer</span>
           </p>
         </div>
         {/*buttons*/}

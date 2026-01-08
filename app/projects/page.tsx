@@ -69,26 +69,24 @@ export default function About() {
   return (
     <main className="flex flex-grow py-10">
       <section className="flex flex-col items-center justify-center">
-        <div className="">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {collections.map((item, i) => (
-              <ProjectCard
-                key={i}
-                title={item.title}
-                description={item.description}
-                image={item.image}
-                delay={i * 300}
-                tags={item.tags}
-                projectLink={item.projectLink}
-                githubLink={item.githubLink}
-                demoVideo={item.demoVideo}
-                logoLink={item.logo}
-                insideDesc={item.insideDesc}
-                linkedinLink={item.linkedinLink}
-                date={item.date}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {collections.map((item, i) => (
+            <ProjectCard
+              key={i}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              delay={i * 300}
+              tags={item.tags}
+              projectLink={item.projectLink}
+              githubLink={item.githubLink}
+              demoVideo={item.demoVideo}
+              logoLink={item.logo}
+              insideDesc={item.insideDesc}
+              linkedinLink={item.linkedinLink}
+              date={item.date}
+            />
+          ))}
         </div>
       </section>
     </main>

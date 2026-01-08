@@ -6,7 +6,7 @@ export default function Collections() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {/* only gonna be like 2 items so not gomnna put an array */}
         <CollectionsItem
-          name="blog"
+          name="notes"
           description="words and thoughts, sometimes coherently put together"
           img="/projectpics/blog.png"
           keyword="writing"

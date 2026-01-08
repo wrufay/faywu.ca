@@ -6,7 +6,6 @@ interface BlogPost {
   title: string;
   slug: string;
   published_at: string;
-  tags: string[];
 }
 
 export const revalidate = 60;
@@ -15,7 +14,7 @@ async function getBlogPosts(): Promise<BlogPost[]> {
   try {
     const { data, error } = await supabase
       .from("blog_posts")
-      .select("id, title, slug, published_at, tags")
+      .select("id, title, slug, published_at")
       .eq("published", true)
       .order("published_at", { ascending: false });
 
@@ -44,33 +43,27 @@ export default async function BlogPage() {
               href={`/collections/blog/${post.slug}`}
               className="block hover:opacity-70 transition-opacity"
             >
-              <article className="border-b border-t border-gray-200 py-6">
-                <h2 className="text-2xl pen-regular font-semibold mb-2">
-                  {post.title}
-                </h2>
+              <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">
+                <h2 className="text-base font-semibold mb-2">{post.title}</h2>
 
-                <div className="flex items-center gap-4  text-sm text-gray-400">
+                <div className="flex items-center gap-4  justify-center text-xs text-gray-400">
                   <time dateTime={post.published_at} className="coding-regular">
                     {new Date(post.published_at).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "long",
                       day: "numeric",
+                    })}{" "}
+                    •{" "}
+                    {new Date(post.published_at).toLocaleTimeString("en-US", {
+                      hour: "numeric",
+                      minute: "2-digit",
+                      hour12: true,
+                      timeZone: "America/New_York",
+                      timeZoneName: "short",
                     })}
                   </time>
-                  {post.tags && post.tags.length > 0 && (
-                    <div className="flex gap-2 ">
-                      {post.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border border-[var(--sunny-yellow)] px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-[var(--sunny-yellow)]/41"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
                 </div>
-              </article>
+              </div>
             </Link>
           ))}
         </div>

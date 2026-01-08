@@ -6,16 +6,18 @@ export default function Collections() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {/* only gonna be like 2 items so not gomnna put an array */}
         <CollectionsItem
-          name="notes"
-          description="words and thoughts, sometimes coherently put together"
+          name="notebook"
+          description="i like to write about my life"
           img="/projectpics/blog.png"
           keyword="writing"
           delay={0}
+          link="/collections/notebook"
         ></CollectionsItem>
         <CollectionsItem
-          name="gallery"
-          description="some of my favourite art pieces throughout the years"
+          name="art gallery"
+          description="favourite pieces throughout the years"
           img="/projectpics/gallery.png"
+          link="/collections/gallery"
           keyword="artwork"
           delay={300}
         ></CollectionsItem>

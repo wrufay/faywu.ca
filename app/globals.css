@@ -155,6 +155,11 @@ html {
   animation: fadeInBounce 0.5s ease-out 3.3s forwards;
 }
 
+.fade-in-bounce {
+  opacity: 0;
+  animation: fadeInBounce 0.5s ease-out 0s forwards;
+}
+
 @keyframes fadeInBounce {
   0% {
     opacity: 0;
@@ -171,12 +176,6 @@ html {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
-
-/* swal fade in */
-.animate-fade-in {
-  animation: fadeIn 0.67s ease-in forwards;
-  opacity: 0;
 }
 
 /* footer icon bounce animation */

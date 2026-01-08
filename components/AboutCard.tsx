@@ -29,7 +29,11 @@ export default function AboutCard({
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent<HTMLDivElement>) {
+  function handleMouseMove({
+    currentTarget,
+    clientX,
+    clientY,
+  }: React.MouseEvent<HTMLDivElement>) {
     const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
@@ -45,7 +49,7 @@ export default function AboutCard({
     <div
       onMouseMove={handleMouseMove}
       style={{ animationDelay: `${delay}ms` }}
-      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg animate-fade-in relative overflow-hidden"
+      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg fade-in relative overflow-hidden"
     >
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100"

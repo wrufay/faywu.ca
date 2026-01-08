@@ -38,7 +38,7 @@ const timeline: TimelineItem[] = [
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
             >
               {" "}
               codepen collection{" "}
@@ -54,12 +54,25 @@ const timeline: TimelineItem[] = [
         year: "aug 2021",
       },
       {
-        description: "became a nova scotia international student ambassador",
+        description: (
+          <>
+            became a nova scotia
+            <a
+              href="https://www.nsisp.ca/our_programs/nova_scotia_student_ambassadors_program"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+            >
+              {" "}
+              student ambassador{" "}
+            </a>
+            for the nsisp
+          </>
+        ),
         year: "may 2023",
       },
       {
-        description:
-          "bench pressed 75lbs for the first time; felt proud of myself",
+        description: "bench pressed 75lbs for the first time and felt proud",
         year: "aug 2024",
       },
       {
@@ -70,7 +83,7 @@ const timeline: TimelineItem[] = [
               href="https://hfxcodecircle.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
             >
               halifax code circle
             </a>{" "}
@@ -79,7 +92,7 @@ const timeline: TimelineItem[] = [
               href="https://hfxlanguages.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
             >
               halifax language exchange
             </a>
@@ -89,13 +102,25 @@ const timeline: TimelineItem[] = [
       },
 
       {
-        description:
-          "attended robofest robotics world championships in detroit",
-        year: "may 2025",
+        description: (
+          <>
+            won 3rd at
+            <a
+              href="https://www.youtube.com/live/14qxzaPh_ME?si=ZLDmthqI6U2gizWK&t=18532"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+            >
+              {" "}
+              robofest robotics{" "}
+            </a>
+            acadia, attended worlds @ ltu
+          </>
+        ),
+        year: "march 2025",
       },
       {
-        description:
-          "got accepted into uw cs, changing the trajectory of my life.",
+        description: "got accepted into university of waterloo's cs program.",
         year: "may 2025",
       },
     ],
@@ -111,8 +136,8 @@ const timeline: TimelineItem[] = [
         year: "sep 2025",
       },
       {
-        description: "building fun stuff",
-        tags: ["flow state", "web dev"],
+        description: "incoming web dev @ watonomous",
+        tags: ["locked in", "next.js"],
         year: "jan 2026",
       },
     ],

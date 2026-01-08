@@ -27,7 +27,7 @@ export default function CollectionsItem(props: CollectionsItemProps) {
           {/* emoji and title */}
           <div className="flex flex-row justify-between items-center">
             <span className="flex items-center gap-2">
-              <img src="icons/flower.png" className="w-5 h-5 " />
+              <img src="/icons/flower.png" className="w-5 h-5 " />
               <h3 className="text-lg text-gray-800">{props.name}</h3>
             </span>
 

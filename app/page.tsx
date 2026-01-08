@@ -48,14 +48,14 @@ export default function Home() {
               connect!
             </span>
           </a>
-          <a
+          {/* <a
             href="https://github.com/wrufay"
             target="_blank"
             className="px-3 py-2 sm:px-4 bg-white sm:py-2 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
           >
             see my{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">work</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </main>

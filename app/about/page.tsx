@@ -120,7 +120,7 @@ const timeline: TimelineItem[] = [
         year: "march 2025",
       },
       {
-        description: "got accepted into university of waterloo's cs program.",
+        description: "got accepted into university of waterloo's cs program",
         year: "may 2025",
       },
     ],
@@ -136,8 +136,8 @@ const timeline: TimelineItem[] = [
         year: "sep 2025",
       },
       {
-        description: "incoming web dev @ watonomous",
-        tags: ["locked in", "next.js"],
+        description: "started web dev @ watonomous",
+        tags: ["locked in"],
         year: "jan 2026",
       },
     ],
@@ -154,7 +154,7 @@ export default function About() {
   return (
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 serif-bold text-gray-700">a bit about my life.</p>
+      {/* <p className="px-10 serif-bold text-gray-700">a bit about my life.</p> */}
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* about/timeline cards */}
         {timeline.map((item, i) => (

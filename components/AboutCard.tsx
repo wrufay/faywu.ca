@@ -104,7 +104,7 @@ export default function AboutCard({
           <a
             href="https://drive.google.com/file/d/1IK1cd7bbhFNEUXKcY5QIXNgciX4qh4J0/view?usp=sharing"
             target="_blank"
-            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-transform coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-gray-100/50"
+            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-colors coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15"
           >
             hire me (resume)
           </a>

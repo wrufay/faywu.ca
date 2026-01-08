@@ -12,19 +12,28 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-8">
+      <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-10">
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
-          <Link href="/" className="hover:opacity-67">
+          <Link href="/" className="text-sm sm:text-base hover:opacity-67">
             ↻
           </Link>
-          <Link href="/projects" className=" hover:opacity-67">
+          <Link
+            href="/projects"
+            className=" text-sm sm:text-base hover:opacity-67"
+          >
             projects
           </Link>
-          <Link href="/about" className=" hover:opacity-67">
+          <Link
+            href="/about"
+            className=" text-sm sm:text-base hover:opacity-67"
+          >
             about
           </Link>
-          <Link href="/collections" className=" hover:opacity-67">
+          <Link
+            href="/collections"
+            className="text-sm sm:text-base hover:opacity-67"
+          >
             collections
           </Link>
         </nav>

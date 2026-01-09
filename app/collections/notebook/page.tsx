@@ -40,7 +40,7 @@ export default async function BlogPage() {
           {posts.map((post) => (
             <Link
               key={post.id}
-              href={`/collections/blog/${post.slug}`}
+              href={`/collections/notebook/${post.slug}`}
               className="block hover:opacity-70 transition-opacity"
             >
               <div className="p-6 border border-gray-200 rounded-lg shadow-sm bg-white">

@@ -71,7 +71,7 @@ export default async function BlogPostPage({
       <article className="prose prose-gray max-w-none flex flex-col gap-2">
         {/* back arrow and title */}
         <div className="flex flex-row gap-4 items-center">
-          <Link href="/collections/blog">
+          <Link href="/collections/notebook">
             <img
               className="w-5 h-5 opacity-67 cursor-pointer"
               src="/icons/leftarrow.png"

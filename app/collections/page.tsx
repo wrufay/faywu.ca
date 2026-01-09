@@ -7,7 +7,7 @@ export default function Collections() {
         {/* only gonna be like 2 items so not gomnna put an array */}
         <CollectionsItem
           name="notebook"
-          description="i like to ponder and write about life!"
+          description="i like to ponder and write"
           img="/projectpics/blog.png"
           keyword="writing"
           delay={0}

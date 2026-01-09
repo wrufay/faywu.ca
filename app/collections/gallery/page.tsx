@@ -6,42 +6,36 @@ import Image from "next/image";
 export default function Test() {
   const paintings = [
     {
-      id: "cole-harbour-nova-scotia",
       title: "cole harbour, nova scotia",
       url: "/paintings/colby.png",
       year: "2021",
       medium: "oil pastel on watercolour paper",
     },
     {
-      id: "friends-doggos",
       title: "friend's doggos",
       url: "/paintings/dogs.jpg",
       year: "2022",
       medium: "acrylic on canvas",
     },
     {
-      id: "bus-somewhere-japan",
       title: "a bus somewhere in japan",
       url: "/paintings/bus.png",
       year: "2022",
       medium: "acrylic on paper",
     },
     {
-      id: "house-peaceful-neighbourhood",
       title: "a house in a peaceful neighbourhood",
       url: "/paintings/house.png",
       year: "2022",
       medium: "acrylic on paper",
     },
     {
-      id: "highway-somewhere",
       title: "highway somewhere",
       url: "/paintings/cars.png",
       year: "2022",
       medium: "oil pastel on paper",
     },
     {
-      id: "my-cats",
       title: "my cats",
       url: "/paintings/cats.png",
       year: "2022",
@@ -49,14 +43,12 @@ export default function Test() {
     },
 
     {
-      id: "halifax-public-gardens",
       title: "halifax public gardens",
       url: "/paintings/garden.png",
       year: "2023",
       medium: "charcoal on paper",
     },
     {
-      id: "sketch-from-life",
       title: "sketch from life",
       url: "/paintings/hand.png",
       year: "2023",
@@ -64,28 +56,24 @@ export default function Test() {
     },
 
     {
-      id: "art-10-final-project",
       title: "art 10 final project",
       url: "/paintings/abstract.png",
       year: "2023",
       medium: "mixed media on watercolour paper",
     },
     {
-      id: "still-life",
       title: "still life",
       url: "/paintings/stilllife.png",
       year: "2023",
       medium: "acrylic on paper",
     },
     {
-      id: "wolfville-nova-scotia",
       title: "wolfville, nova scotia",
       url: "/paintings/valley.png",
       year: "2023",
       medium: "acrylic on paper",
     },
     {
-      id: "halifax-nova-scotia",
       title: "halifax, nova scotia",
       url: "/paintings/citadel.png",
       year: "2023",
@@ -93,14 +81,12 @@ export default function Test() {
     },
 
     {
-      id: "painting-for-grandma",
       title: "painting for my grandma",
       url: "/paintings/grandma.png",
       year: "2024",
       medium: "acrylic on paper",
     },
     {
-      id: "japan-window-view",
       title: "japan window view",
       url: "/paintings/japan.jpg",
       year: "2024",

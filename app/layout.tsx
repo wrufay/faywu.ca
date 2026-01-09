@@ -3,6 +3,7 @@ import Link from "next/link";
 import LikeCounter from "@/components/LikeCounter";
 import { Metadata } from "next";
 import { ReactNode } from "react";
+import Webring from "@/components/Webring";
 
 export const metadata: Metadata = {
   title: "fay wu's portfolio",
@@ -37,6 +38,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             collections
           </Link>
         </nav>
+        <div className="fixed bottom-4 right-4 z-50">
+          <LikeCounter />
+        </div>
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500">
           <div className="flex flex-col gap-2 items-center">
@@ -56,7 +60,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <img src="/icons/github.png" />
               </a>
 
-              <LikeCounter />
+              <Webring />
               {/* i could make these into components too lol */}
               <a
                 href="https://www.linkedin.com/in/fayranw/"

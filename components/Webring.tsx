@@ -7,7 +7,7 @@ export default function Webring() {
         gap: "8px",
       }}
     >
-      <a href="https://cs.uwatering.com/#https://faywu.ca/?nav=prev">←</a>
+      <a href="https://cs.uwatering.com/#https://faywu.ca?nav=prev">←</a>
       <a href="https://cs.uwatering.com/#https://faywu.ca/" target="_blank">
         <img
           src="https://cs.uwatering.com/icon.black.svg"

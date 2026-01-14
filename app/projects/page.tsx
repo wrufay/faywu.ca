@@ -16,7 +16,8 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
         "Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway. Bridging the gap between Waterloo students and sleep - because sleep is your superpower.",
-      date: "Dec 2025",
+      date: "Click me!",
+      // temporarily changing the date to click me, seeing how it looks like that.
     },
     {
       title: "Coco Co-op Tracker",
@@ -33,7 +34,7 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
         "Facilitate co-op application tracking with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization. Currently working on implementing a backend to improve security and user experience!",
-      date: "Dec 2025",
+      date: "Click me!",
     },
     {
       title: "FirstLoved",
@@ -46,7 +47,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "/demos/firstloved.mp4",
       insideDesc: `Reducing Bible study friction through Python application made with Streamlit using Anthropic API and Supabase data storage, containerized with Docker, deployed on Render. No more opening a hundred tabs for a Bible study - everything's in one place with FirstLoved.`,
-      date: "Nov 2025",
+      date: "Click me!",
     },
     {
       title: "ClearPharma",
@@ -60,7 +61,7 @@ export default function About() {
       demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
         "Allowing patients and pharmacists to communicate transparently with our HTML, CSS and Javascript web application, built in 36 hours for UW's Technology in Pharmacy hackathon. Featuring a dual-dashboard display, securely storing sensitive data in Firebase.",
-      date: "Nov 2025",
+      date: "Click me!",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",
     },
@@ -69,6 +70,7 @@ export default function About() {
   return (
     <main className="flex flex-grow py-10">
       <section className="flex flex-col items-center justify-center">
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {collections.map((item, i) => (
             <ProjectCard

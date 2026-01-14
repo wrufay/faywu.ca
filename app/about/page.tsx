@@ -22,13 +22,13 @@ const timeline: TimelineItem[] = [
     descriptions: [
       {
         description:
-          "was born in halifax, nova scotia. lived there for 18 years",
-        year: "jun 2007",
+          "was born in Halifax, Nova Scotia. lived there for 18 years",
+        year: "Jun 2007",
       },
       {
         description:
           "started an art youtube channel, got 200+ subscribers but quit",
-        year: "dec 2017",
+        year: "Dec 2017",
       },
       {
         description: (
@@ -38,42 +38,42 @@ const timeline: TimelineItem[] = [
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
               codepen collection{" "}
             </a>
-            of mini html, css & javascript projects
+            of mini HTML, CSS & JavaScript projects
           </>
         ),
 
-        year: "jun 2020",
+        year: "Jun 2020",
       },
       {
-        description: "binged watched 1000+ episodes of one piece in 8th grade",
-        year: "aug 2021",
+        description: "binged watched 1000+ episodes of One Piece in 8th grade",
+        year: "Aug 2021",
       },
       {
         description: (
           <>
-            became a nova scotia
+            became a Nova Scotia
             <a
               href="https://www.nsisp.ca/our_programs/nova_scotia_student_ambassadors_program"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
               student ambassador{" "}
             </a>
-            for the nsisp
+            for the NSISP
           </>
         ),
-        year: "may 2023",
+        year: "May 2023",
       },
       {
         description: "bench pressed 75lbs for the first time and felt proud",
-        year: "aug 2024",
+        year: "Aug 2024",
       },
       {
         description: (
@@ -83,22 +83,22 @@ const timeline: TimelineItem[] = [
               href="https://hfxcodecircle.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
-              halifax code circle
+              Halifax Code Circle
             </a>{" "}
             &{" "}
             <a
               href="https://hfxlanguages.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
-              halifax language exchange
+              Halifax Language Exchange
             </a>
           </>
         ),
-        year: "nov 2024",
+        year: "Nov 2024",
       },
 
       {
@@ -109,19 +109,19 @@ const timeline: TimelineItem[] = [
               href="https://www.youtube.com/live/14qxzaPh_ME?si=ZLDmthqI6U2gizWK&t=18532"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 text-[var(--aritzia-blue)]"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
-              robofest robotics{" "}
+              Robofest Robotics{" "}
             </a>
-            acadia, attended worlds @ ltu
+            Acadia, attended worlds @ LTU
           </>
         ),
-        year: "march 2025",
+        year: "March 2025",
       },
       {
-        description: "got accepted into university of waterloo's cs program",
-        year: "may 2025",
+        description: "got accepted into University of Waterloo's computer science program",
+        year: "May 2025",
       },
     ],
   },
@@ -131,14 +131,14 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "cooking @ university of waterloo",
+        description: "cooking @ University of Waterloo",
         tags: ["cs136", "math136", "math138"],
         year: "sep 2025",
       },
       {
-        description: "started web dev @ watonomous",
-        tags: ["locked in"],
-        year: "jan 2026",
+        description: "web dev @ Watonomous",
+        tags: ["tbd"],
+        year: "Jan 2026",
       },
     ],
   },

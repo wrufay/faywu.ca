@@ -90,7 +90,7 @@ export default function AboutCard({
               {descriptions[curIndex].tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-gray-100"
+                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-[var(--sunny-yellow)]/15"
                 >
                   {tag}
                 </span>
@@ -106,7 +106,7 @@ export default function AboutCard({
             target="_blank"
             className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-colors coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15"
           >
-            hire me (resume)
+            <span className="text-[var(--crimson-red)]">hire me</span> (resume)
           </a>
         )}
       </div>

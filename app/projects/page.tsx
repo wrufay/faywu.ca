@@ -20,7 +20,7 @@ export default function About() {
       // temporarily changing the date to click me, seeing how it looks like that.
     },
     {
-      title: "Coco Co-op Tracker",
+      title: "Coco",
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],

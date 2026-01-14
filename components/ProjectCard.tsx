@@ -56,7 +56,7 @@ export default function ProjectCard({
               <img src={logoLink} className="w-5 h-5" />
               <h3 className="md:text-2xl text-xl text-gray-800 pen-regular">{title}</h3>
             </span>
-            <p className="text-xs coding-regular text-gray-300">{date}</p>
+            <p className="text-xs coding-regular text-gray-400">{date}</p>
           </div>
           <div className="flex flex-row gap-2">
             {/* tags */}

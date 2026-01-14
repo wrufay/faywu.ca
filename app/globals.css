@@ -178,20 +178,6 @@ html {
   }
 }
 
-/* footer icon bounce animation */
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.footer-icon-bounce:hover {
-  animation: bounce 0.5s ease-in-out;
-}
 
 /* scroll up animation for changing description text */
 @keyframes scrollUp {

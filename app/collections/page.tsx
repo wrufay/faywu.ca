@@ -7,7 +7,7 @@ export default function Collections() {
         {/* only gonna be like 2 items so not gomnna put an array */}
         <CollectionsItem
           name="notebook"
-          description="i like to ponder"
+          description="pondering, writing and everything in between"
           img="/projectpics/blog.png"
           keyword="writing"
           delay={0}
@@ -15,7 +15,7 @@ export default function Collections() {
         ></CollectionsItem>
         <CollectionsItem
           name="art gallery"
-          description="favourite pieces throughout the years ☺︎"
+          description="favourite pieces throughout the years "
           img="/projectpics/gallery.png"
           link="/collections/gallery"
           keyword="artwork"

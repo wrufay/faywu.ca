@@ -46,8 +46,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="flex flex-col gap-2">
             <p className="pen-regular text-center">1 Thessalonians 5:16-18</p>
 
-            <div className="flex items-center justify-between w-full">
-              <Webring/>
+            <div className="relative flex items-center justify-center w-full">
+              <div className="absolute left-0">
+                <Webring/>
+              </div>
 
               <div className="flex gap-4 items-center">
                 <a
@@ -79,7 +81,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </a>
               </div>
 
-              <LikeCounter/>
+              <div className="absolute right-0">
+                <LikeCounter/>
+              </div>
             </div>
 
           </div>

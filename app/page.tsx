@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <div className="max-w-md flex flex-col gap-4 sm:gap-6">
         <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
-          hi, my name is<span className="pen-regular"> Fay!</span>
+          hello! I'm<span className="pen-regular"> Fay ☺︎</span>
         </h1>
 
         {/* star bullets and lines */}

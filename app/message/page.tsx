@@ -6,7 +6,7 @@ export default function Message() {
       <div className="max-w-md w-full flex flex-col gap-6 sm:gap-8">
         <div className="text-center fade-in">
           <h1 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-2 pen-regular">
-          <span className="text-[var(--aritzia-blue)]">✎</span> Leave me a note 
+          <span className="text-[var(--crimson-red)]">✏︎</span> Leave me a note 
           </h1>
           <p className="text-xs sm:text-sm text-gray-600 coding-regular">
             Questions, suggestions, and comments welcome!

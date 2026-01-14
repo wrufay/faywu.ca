@@ -7,8 +7,8 @@ import Webring from "@/components/Webring";
 import ViewerTracker from "@/components/ViewerTracker";
 
 export const metadata: Metadata = {
-  title: "fay wu's portfolio",
-  description: "fay wu's personal portfolio site inspired by notion",
+  title: "Fay Wu",
+  description: "Personal website somewhat inspired by Notion",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -42,46 +42,46 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </nav>
         
         {children}
-        <footer className="mt-auto py-6 text-xs text-gray-500">
-          <div className="flex flex-col gap-2 items-center">
-            <p className="pen-regular">1 Thessalonians 5:16-18</p>
+        <footer className="mt-auto py-6 text-xs text-gray-500 w-full -mx-10">
+          <div className="flex flex-col gap-2">
+            <p className="pen-regular text-center">1 Thessalonians 5:16-18</p>
 
+            <div className="flex items-center justify-between w-full">
+              <Webring/>
 
+              <div className="flex gap-4 items-center">
+                <a
+                  href="mailto:f26wu@uwaterloo.ca"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
+                >
+                  <img src="/icons/email.png" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/fayranw/"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
+                >
+                  <img src="/icons/linkedin.png" />
+                </a>
+                <a
+                  href="https://x.com/wrufay"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
+                >
+                  <img src="/icons/x.png" />
+                </a>
+                <a
+                  href="https://github.com/wrufay"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px]"
+                >
+                  <img src="/icons/github.png" />
+                </a>
+              </div>
 
-            
-            <div className="flex gap-4 items-center">
-            <Webring/>
-            
-              <a
-                href="mailto:f26wu@uwaterloo.ca"
-                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-              >
-                <img src="/icons/email.png" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/fayranw/"
-                target="_blank"
-                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-              >
-                <img src="/icons/linkedin.png" />
-              </a>
-              
-              <a
-                href="https://x.com/wrufay"
-                target="_blank"
-                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-              >
-                <img src="/icons/x.png" />
-              </a>
-              <a
-                href="https://github.com/wrufay"
-                target="_blank"
-                className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px]"
-              >
-                <img src="/icons/github.png" />
-              </a>
               <LikeCounter/>
             </div>
+
           </div>
         </footer>
       </body>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
@@ -12,7 +13,7 @@ export default function Home() {
       </div>
       <div className="max-w-md flex flex-col gap-4 sm:gap-6">
         <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
-          hey there, i'm <span className="pen-regular">fay!</span>
+          hey there, it's<span className="pen-regular"> Fay!</span>
         </h1>
 
         {/* star bullets and lines */}
@@ -20,20 +21,21 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              cs @{" "}
+              computer science @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://uwaterloo.ca/"
               >
-                uwaterloo
+                <span className="pen-regular">UWaterloo</span>
+                
               </a>
             </span>
           </p>
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>software developer x designer</span>
+            <span>software developer <span className="pen-regular">x</span> designer</span>
           </p>
         </div>
         {/*buttons*/}
@@ -48,16 +50,15 @@ export default function Home() {
               connect!
             </span>
           </a>
-          <a
-            href="https://github.com/wrufay"
-            target="_blank"
+          <Link
+            href="/message"
             className="px-3 py-2 sm:px-4 bg-white sm:py-2 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
           >
-            my{" "}
+            send me a{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
-              github
+              message
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function About() {
   const collections = [
     {
-      title: "uw sleeper",
+      title: "UW Sleeper",
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
       tags: ["typescript", "spring boot", "react"],
@@ -15,11 +15,11 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
-        "bridging the gap between uw students and sleep - because sleep is your superpower, more than a human necessity. take a rest, uwsleeper. you deserve it. ♡",
-      date: "dec 2025",
+        "Bridging the gap between Waterloo students and sleep. Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway.",
+      date: "Dec 2025",
     },
     {
-      title: "coco",
+      title: "Coco Co-op Tracker",
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],
@@ -32,11 +32,11 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
-        "keeping track of hundreds of job apps as an incoming co-op student? ... no thank you, i'll let coco work things out for me.",
-      date: "dec 2025",
+        "Facilitate co-op tracking and alleviate stress with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization.",
+      date: "Dec 2025",
     },
     {
-      title: "firstloved",
+      title: "FirstLoved",
       description:
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
@@ -46,10 +46,10 @@ export default function About() {
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "/demos/firstloved.mp4",
       insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with firstloved's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
-      date: "nov 2025",
+      date: "Nov 2025",
     },
     {
-      title: "clearpharma",
+      title: "ClearPharma",
       description:
         "facilitating communication betwen pharmacists and their patients in healthcare",
       tags: ["javascript", "html", "css"],
@@ -60,7 +60,7 @@ export default function About() {
       demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
         "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
-      date: "nov 2025",
+      date: "Nov 2025",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",
     },

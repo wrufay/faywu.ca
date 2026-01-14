@@ -4,18 +4,19 @@ export default function Webring() {
       style={{
         display: "flex",
         alignItems: "center",
-        gap: "8px",
+        gap: "3px",
       }}
+      className="coding-regular"
     >
-      <a href="https://cs.uwatering.com/#https://faywu.ca?nav=prev">←</a>
+      <a href="https://cs.uwatering.com/#https://faywu.ca?nav=prev">⤺</a>
       <a href="https://cs.uwatering.com/#https://faywu.ca/" target="_blank">
         <img
           src="https://cs.uwatering.com/icon.black.svg"
           alt="CS Webring"
-          style={{ width: "20px", height: "auto", opacity: 0.41 }}
+          style={{ width: "18px", height: "auto", opacity: 0.41 }}
         />
       </a>
-      <a href="https://cs.uwatering.com/#https://faywu.ca?nav=next">→</a>
+      <a href="https://cs.uwatering.com/#https://faywu.ca?nav=next">⤻</a>
     </div>
   );
 }

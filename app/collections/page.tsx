@@ -28,12 +28,14 @@ export default function Collections() {
       </div>
       <Link
             href="/message"
-            className="px-3 py-2 sm:px-4 sm:py-2 max-w-xs sm:w-xs hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg bg-[var(--sunny-yellow)]/15"
+            className="px-3 py-2 sm:px-4 coding-regular sm:py-2 max-w-xs sm:w-xs hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg bg-[var(--sunny-yellow)]/15 animate-float"
           >
-            have a{" "}
-            <span className="text-[var(--aritzia-blue)] coding-bold">
-              suggestion
-            </span> for me?
+            <span className="text-[var(--aritzia-blue)] ">
+              question
+            </span> or {" "}
+            <span className="text-[var(--aritzia-blue)] ">
+              suggestion?
+            </span> 
           </Link>
     </main>
   );

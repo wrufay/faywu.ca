@@ -15,7 +15,7 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
-        "Bridging the gap between Waterloo students and sleep. Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway.",
+        "Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway. Bridging the gap between Waterloo students and sleep - because sleep is your superpower.",
       date: "Dec 2025",
     },
     {
@@ -32,7 +32,7 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
-        "Facilitate co-op tracking and alleviate stress with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization.",
+        "Facilitate co-op application tracking with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization. Currently working on implementing a backend to improve security and user experience!",
       date: "Dec 2025",
     },
     {
@@ -45,7 +45,7 @@ export default function About() {
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "/demos/firstloved.mp4",
-      insideDesc: `"bible study" and "browser with 100 tabs open" shouldn't go together. fret no more, with firstloved's all-in-one simple search & llm powered commentary tools, picking up your bible has never been easier.`,
+      insideDesc: `Reducing Bible study friction through Python application made with Streamlit using Anthropic API and Supabase data storage, containerized with Docker, deployed on Render. No more opening a hundred tabs for a Bible study - everything's in one place with FirstLoved.`,
       date: "Nov 2025",
     },
     {
@@ -59,7 +59,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/clearpharma",
       demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
-        "lack of communication & transparency in healthcare is far too prevalent. but with clearpharma, pharmacists and patients have a way to be on the same page.",
+        "Allowing patients and pharmacists to communicate transparently with our HTML, CSS and Javascript web application, built in 36 hours for UW's Technology in Pharmacy hackathon. Featuring a dual-dashboard display, securely storing sensitive data in Firebase.",
       date: "Nov 2025",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",

@@ -33,7 +33,7 @@ export default function Collections() {
             have a{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
               suggestion
-            </span> for my site?
+            </span> for me?
           </Link>
     </main>
   );

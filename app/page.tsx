@@ -54,7 +54,7 @@ export default function Home() {
             href="/message"
             className="px-3 py-2 sm:px-4 bg-white sm:py-2 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-[var(--sunny-yellow)]/15"
           >
-            send a{" "}
+            leave a{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
               message
             </span>

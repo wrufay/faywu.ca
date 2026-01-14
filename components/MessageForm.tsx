@@ -115,7 +115,7 @@ export default function MessageForm() {
             setFormData({ ...formData, message: e.target.value })
           }
           rows={6}
-          className="px-4 py-2.5 text-xs sm:text-sm border border-gray-300 shadow-sm rounded-lg bg-white focus:outline-none focus:border-[var(--aritzia-blue)] resize-none"
+          className="px-4 py-2.5 text-xs sm:text-sm border border-gray-300 rounded-lg bg-white focus:outline-none focus:border-[var(--aritzia-blue)] resize-none"
           placeholder="Lorem ipsum dolor sit amet..."
         />
       </div>

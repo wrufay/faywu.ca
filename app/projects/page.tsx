@@ -3,7 +3,21 @@ import ProjectCard from "@/components/ProjectCard";
 export default function About() {
   const collections = [
     {
-      title: "UW Sleeper",
+      title: "project origin",
+      description:
+        "culture-focused duolingo in real life, reconnecting with your lost identity",
+      tags: ["typescript", "react native", "mongodb"],
+      image: "/projectpics/best.png",
+      logo: "/projectlogos/projectoriginlogo.png",
+      githubLink: "https://github.com/wrufay/project_origin",
+      demoVideo: "/demos/projectoriginlow.mp4",
+      insideDesc:
+        "Project submitted to UofTHacks13. Built first mobile app, learning how to use Blender to create 3d models and implement them into the UI",
+      date: "Click me!",
+      // temporarily changing the date to click me, seeing how it looks like that.
+    },
+    {
+      title: "uw sleeper",
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
       tags: ["typescript", "spring boot", "react"],
@@ -20,7 +34,7 @@ export default function About() {
       // temporarily changing the date to click me, seeing how it looks like that.
     },
     {
-      title: "Coco",
+      title: "coco",
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],
@@ -37,7 +51,7 @@ export default function About() {
       date: "Click me!",
     },
     {
-      title: "FirstLoved",
+      title: "firstloved",
       description:
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
@@ -50,7 +64,7 @@ export default function About() {
       date: "Click me!",
     },
     {
-      title: "ClearPharma",
+      title: "clearpharma",
       description:
         "facilitating communication betwen pharmacists and their patients in healthcare",
       tags: ["javascript", "html", "css"],
@@ -70,7 +84,7 @@ export default function About() {
   return (
     <main className="flex flex-grow py-10">
       <section className="flex flex-col items-center justify-center">
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {collections.map((item, i) => (
             <ProjectCard

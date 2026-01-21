@@ -1,7 +1,22 @@
 import ProjectCard from "@/components/ProjectCard";
 
 export default function About() {
+  
   const collections = [
+    {
+      title: "koinYou",
+      description:
+        "the bible is better together, and there's no koinonia without you.",
+      tags: ["typescript", "mern-stack", "tailwindcss"],
+      image: "/projectpics/koinyou.png",
+      logo: "/projectlogos/koinyoulogo.png",
+      projectLink: "https://koinyou.com/",
+      githubLink: "https://github.com/wrufay/koinyou",
+      // demoVideo: "/demos/projectoriginlow.mp4",
+      insideDesc:
+        "Open source project + a work in progress :)",
+      date: "Click me!",
+    },
     {
       title: "project origin",
       description:
@@ -14,7 +29,6 @@ export default function About() {
       insideDesc:
         "Project submitted to UofTHacks13. Built first mobile app, learning how to use Blender to create 3d models and implement them into the UI",
       date: "Click me!",
-      // temporarily changing the date to click me, seeing how it looks like that.
     },
     {
       title: "uw sleeper",

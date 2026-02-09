@@ -130,15 +130,33 @@ const timeline: TimelineItem[] = [
     imgLink: "/icons/present.png",
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
+      
       {
-        description: "cooking @ University of Waterloo",
-        tags: ["cs136", "math136", "math138"],
-        year: "sep 2025",
+        description: <>
+        building @
+        <a
+          href="https://curioseed-waitlist.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+        >
+          {" "}
+          CurioSeed{" "}
+        </a>
+        
+      </>,
+        tags: ["swe", "design", "three.js"],
+        year: "Jan 2026",
       },
       {
         description: "web dev @ Watonomous",
-        tags: ["tbd"],
+        tags: ["next.js", "git", "ui/ux"],
         year: "Jan 2026",
+      },
+      {
+        description: "cooking @ University of Waterloo",
+        tags: ["cs136", "math136", "math138"],
+        year: "Sep 2025",
       },
     ],
   },

@@ -41,7 +41,7 @@ const timeline: TimelineItem[] = [
               className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
-              codepen collection{" "}
+              collection{" "}
             </a>
             of mini HTML, CSS & JavaScript projects
           </>
@@ -70,10 +70,6 @@ const timeline: TimelineItem[] = [
           </>
         ),
         year: "May 2023",
-      },
-      {
-        description: "bench pressed 75lbs for the first time and felt proud",
-        year: "Aug 2024",
       },
       {
         description: (
@@ -119,10 +115,6 @@ const timeline: TimelineItem[] = [
         ),
         year: "March 2025",
       },
-      {
-        description: "got accepted into University of Waterloo's computer science program",
-        year: "May 2025",
-      },
     ],
   },
   {
@@ -130,24 +122,6 @@ const timeline: TimelineItem[] = [
     imgLink: "/icons/present.png",
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
-      
-      {
-        description: <>
-        building @
-        <a
-          href="https://curioseed-waitlist.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
-        >
-          {" "}
-          CurioSeed{" "}
-        </a>
-        
-      </>,
-        tags: ["swe", "design", "three.js"],
-        year: "Jan 2026",
-      },
       {
         description: "web dev @ Watonomous",
         tags: ["next.js", "git", "ui/ux"],
@@ -164,7 +138,7 @@ const timeline: TimelineItem[] = [
     title: "future",
     imgLink: "/icons/future.png",
     bgColour: "rgba(241, 196, 15, 0.08)",
-    descriptions: "incoming @ ??? summer '26 co-op pending",
+    descriptions: "",
   },
 ];
 

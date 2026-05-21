@@ -1,5 +1,9 @@
 todo / want to add
 
+- [ ] add skills somewhere + programming languages
+- [ ] current endeavours, hobbies, more about me etc OH and spotify for music, current dfo project
+- [ ] more art & creativity & photos?
+
 - [ ] put the data into one file
 - [ ] make a colour scheme
 

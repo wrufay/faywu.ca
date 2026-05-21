@@ -72,7 +72,7 @@ export default function AboutCard({
         {/* description */}
         <div>
           {title == "future" ? (
-            <p className="text-sm">looking for a winter 2027 co-op!</p>
+            <p className="text-sm">seeking winter 2027 co-op!</p>
           ) : (
             <p key={curIndex} className="animate-scroll-up text-sm">
               {descriptions[curIndex].description}

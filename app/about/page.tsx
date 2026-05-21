@@ -21,13 +21,27 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(241, 196, 15, 0.08)",
     descriptions: [
       {
-        description:
-          "was born in Halifax, Nova Scotia. lived there for 18 years",
+        description: (
+          <>
+            resident of the
+            <a
+              href="https://www.google.com/search?q=nova+scotia&oq=nova+scotia&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg8IARAuGBQYhwIYsQMYgAQyBggCECMYJzIPCAMQABhDGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyFQgFEC4YFBjHARiHAhixAxjRAxiABDIGCAYQRRhBMgYIBxBFGEHSAQgxMDYzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+            >
+              {" "}
+              big NS{" "}
+            </a>
+            (home is where the heart is)
+          </>
+        ),
+
         year: "Jun 2007",
       },
       {
         description:
-          "started an art youtube channel, got 200+ subscribers but quit",
+          "started an art youtube channel, quit after 200+ subscribers",
         year: "Dec 2017",
       },
       {
@@ -43,20 +57,20 @@ const timeline: TimelineItem[] = [
               {" "}
               collection{" "}
             </a>
-            of mini HTML, CSS & JavaScript projects
+            of mini HTML, CSS & JS projects
           </>
         ),
 
         year: "Jun 2020",
       },
       {
-        description: "binged watched 1000+ episodes of One Piece in 8th grade",
+        description: "binged watched 1000+ episodes of One Piece",
         year: "Aug 2021",
       },
       {
         description: (
           <>
-            became a Nova Scotia
+            became an
             <a
               href="https://www.nsisp.ca/our_programs/nova_scotia_student_ambassadors_program"
               target="_blank"
@@ -64,9 +78,9 @@ const timeline: TimelineItem[] = [
               className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
-              student ambassador{" "}
+              NSISP ambassador{" "}
             </a>
-            for the NSISP
+            for international students
           </>
         ),
         year: "May 2023",
@@ -74,7 +88,7 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            founded{" "}
+            started{" "}
             <a
               href="https://hfxcodecircle.ca"
               target="_blank"
@@ -108,7 +122,7 @@ const timeline: TimelineItem[] = [
               className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
             >
               {" "}
-              Robofest Robotics{" "}
+              Robofest{" "}
             </a>
             Acadia, attended worlds @ LTU
           </>
@@ -124,20 +138,14 @@ const timeline: TimelineItem[] = [
     descriptions: [
       {
         description: "research assistant @ DFO",
-        tags: ["full-stack swe", "design", "data eng"],
+        tags: ["full-stack swe", "ux", "data viz"],
         year: "May 2026",
       },
       {
-        description: "web dev @ Watonomous",
-        tags: ["next.js", "git", "uix"],
-        year: "Jan 2026",
-      },
-      {
         description: "cooking @ University of Waterloo",
-        tags: ["cs136", "math136", "math138"],
+        tags: ["uwccf", "watonomous", "dsa"],
         year: "Sep 2025",
       },
-      
     ],
   },
   {

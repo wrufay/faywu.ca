@@ -123,6 +123,11 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
+        description: "research assistant @ Fisheries and Oceans Canada",
+        tags: ["full-stack development", "fastapi", "react.js"],
+        year: "May 2026",
+      },
+      {
         description: "web dev @ Watonomous",
         tags: ["next.js", "git", "ui/ux"],
         year: "Jan 2026",
@@ -138,7 +143,7 @@ const timeline: TimelineItem[] = [
     title: "future",
     imgLink: "/icons/future.png",
     bgColour: "rgba(241, 196, 15, 0.08)",
-    descriptions: "",
+    descriptions: "searching for winter 2027 co-op positions!",
   },
 ];
 

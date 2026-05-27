@@ -10,6 +10,7 @@ interface Node {
   sublabel: string;
   tag: string;
   tagColor: string;
+  icons?: string[];
   sections: { heading: string; body: string; code?: string }[];
   note?: string;
 }
@@ -63,6 +64,7 @@ const nodes: Node[] = [
     label: "aisdb",
     sublabel: "Rust-core Python library — decodes and stores in one step",
     tag: "Ingestion",
+    icons: ["/week1/aisdb.jpeg"],
     tagColor: "bg-amber-50 text-amber-600 border-amber-200",
     sections: [
       {
@@ -91,6 +93,7 @@ const nodes: Node[] = [
     label: "DuckDB",
     sublabel: "SQL directly on compressed files — no memory overhead",
     tag: "Ingestion",
+    icons: ["/week1/duckdb.png"],
     tagColor: "bg-amber-50 text-amber-600 border-amber-200",
     sections: [
       {
@@ -146,6 +149,7 @@ const nodes: Node[] = [
     label: "SQLite",
     sublabel: "data/ais.db · 213 MB · 3 tables",
     tag: "Database",
+    icons: ["/week1/sqlite.png"],
     tagColor: "bg-purple-50 text-purple-500 border-purple-200",
     sections: [
       {
@@ -169,6 +173,7 @@ const nodes: Node[] = [
     label: "Postgres (Goal)",
     sublabel: "Why this matters at scale",
     tag: "Target Database",
+    icons: ["/week1/postgres.png", "/week1/neon.png"],
     tagColor: "bg-violet-50 text-violet-500 border-violet-200",
     sections: [
       {
@@ -195,6 +200,7 @@ const nodes: Node[] = [
     label: "FastAPI",
     sublabel: "Python · 3 endpoints · deployed on Railway",
     tag: "Backend",
+    icons: ["/week1/railway.svg"],
     tagColor: "bg-orange-50 text-orange-500 border-orange-200",
     sections: [
       {
@@ -219,6 +225,7 @@ const nodes: Node[] = [
     label: "React + OpenLayers",
     sublabel: "Vite · Tailwind CSS · deployed on Vercel",
     tag: "Frontend",
+    icons: ["/week1/react.png", "/week1/openlayers.png", "/week1/vercel.svg"],
     tagColor: "bg-teal-50 text-teal-600 border-teal-200",
     sections: [
       {
@@ -282,9 +289,18 @@ const NodeCard = ({ node, onClick, wide }: NodeCardProps) => (
     onClick={onClick}
     className={`bg-white border border-gray-100 rounded-lg px-4 py-3 shadow-sm hover:shadow-md hover:translate-y-[-2px] text-left cursor-pointer ${wide ? "w-full max-w-xs" : "w-full max-w-[180px] sm:max-w-[210px]"}`}
   >
-    <span className={`text-[10px] coding-regular border rounded-full px-2 py-0.5 ${node.tagColor}`}>
-      {node.tag}
-    </span>
+    <div className="flex items-center justify-between gap-2">
+      <span className={`text-[10px] coding-regular border rounded-full px-2 py-0.5 ${node.tagColor}`}>
+        {node.tag}
+      </span>
+      {node.icons && (
+        <div className="flex items-center gap-1">
+          {node.icons.map((src, i) => (
+            <img key={i} src={src} alt="" className="w-4 h-4 object-contain rounded-sm opacity-70" />
+          ))}
+        </div>
+      )}
+    </div>
     <p className="text-sm text-gray-800 mt-2 serif-regular">{node.label}</p>
     <p className="text-[11px] coding-regular text-gray-400 mt-1 leading-tight">{node.sublabel}</p>
   </button>
@@ -362,9 +378,18 @@ export default function Week1() {
         {active && (
           <div className="flex flex-col gap-6">
             <div>
-              <span className={`text-[10px] coding-regular border rounded-full px-2 py-0.5 ${active.tagColor}`}>
-                {active.tag}
-              </span>
+              <div className="flex items-center justify-between gap-4">
+                <span className={`text-[10px] coding-regular border rounded-full px-2 py-0.5 ${active.tagColor}`}>
+                  {active.tag}
+                </span>
+                {active.icons && (
+                  <div className="flex items-center gap-1.5">
+                    {active.icons.map((src, i) => (
+                      <img key={i} src={src} alt="" className="w-5 h-5 object-contain rounded opacity-60" />
+                    ))}
+                  </div>
+                )}
+              </div>
               <h2 className="text-xl serif-bold text-gray-800 mt-3">{active.label}</h2>
               <p className="coding-regular text-xs text-gray-400 mt-1">{active.sublabel}</p>
             </div>

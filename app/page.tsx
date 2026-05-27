@@ -35,13 +35,13 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              swe @{" "}
+              research assistant @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular">Fisheries & Oceans Canada</span>
+                <span className="pen-regular">DFO</span>
               </a>{" "}
               🐠
             </span>

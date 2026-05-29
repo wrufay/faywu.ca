@@ -106,7 +106,7 @@ export default function AboutCard({
             target="_blank"
             className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-colors coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15"
           >
-            my resume
+            view my resume
           </a>
         )}
       </div>

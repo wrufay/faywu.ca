@@ -104,7 +104,7 @@ html {
 
 @keyframes typing {
   to {
-    width: 6.7em;
+    width: 8.2em;
   }
 }
 
@@ -121,6 +121,12 @@ html {
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+/* dog float — starts after typing animation finishes, no transition interference */
+.dawg-float {
+  animation: float 3s ease-in-out 1.67s infinite;
+  transition: none !important;
 }
 
 @keyframes fadeIn {

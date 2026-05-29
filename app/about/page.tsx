@@ -23,7 +23,7 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            resident of the
+            became aresident of the
             <a
               href="https://www.google.com/search?q=nova+scotia&oq=nova+scotia&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg8IARAuGBQYhwIYsQMYgAQyBggCECMYJzIPCAMQABhDGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyFQgFEC4YFBjHARiHAhixAxjRAxiABDIGCAYQRRhBMgYIBxBFGEHSAQgxMDYzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
               target="_blank"
@@ -137,8 +137,8 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "research assistant @ DFO",
-        tags: ["full-stack swe", "ux", "data viz"],
+        description: "software developer @ DFO",
+        tags: ["full-stack", "uix", "python"],
         year: "May 2026",
       },
       {
@@ -160,7 +160,7 @@ export default function About() {
   return (
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 serif-bold text-gray-700">a bit about my life.</p>
+      <p className="px-10 serif-bold text-gray-700">take a peek into my life ᝰ.ᐟ</p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* about/timeline cards */}
         {timeline.map((item, i) => (

@@ -13,7 +13,18 @@ export default function Home() {
       </div>
       <div className="max-w-md flex flex-col gap-4 sm:gap-6">
         <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
-          hello! I'm<span className="pen-regular"> Fay ☺︎</span>
+          hi there! I'm
+          <span className="pen-regular">
+            {" "}
+            Fay{" "}
+            <a href="https://swwd.vercel.app" target="_blank" className="inline-block align-top -translate-y-2">
+              <img
+                src="/icons/dawg.png"
+                className="w-10 h-10 sm:w-14 sm:h-14 hover:scale-110 hover:animate-float transition-transform cursor-pointer"
+                alt="dawg"
+              />
+            </a>
+          </span>
         </h1>
 
         {/* star bullets and lines */}
@@ -35,7 +46,7 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              research assistant @{" "}
+              software developer intern @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
@@ -43,15 +54,11 @@ export default function Home() {
               >
                 <span className="pen-regular">DFO</span>
               </a>{" "}
-              🐠
             </span>
           </p>
-
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>
-              software developer <span className="pen-regular">x</span> designer
-            </span>
+            <span>design enthusiast + ai lover ᢉ𐭩</span>
           </p>
         </div>
         {/*buttons*/}
@@ -66,15 +73,6 @@ export default function Home() {
               connect!
             </span>
           </a>
-          <Link
-            href="/message"
-            className="px-3 py-2 sm:px-4 bg-white sm:py-2 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-[var(--sunny-yellow)]/15"
-          >
-            leave a{" "}
-            <span className="text-[var(--aritzia-blue)] coding-bold">
-              message
-            </span>
-          </Link>
         </div>
       </div>
     </main>

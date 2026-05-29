@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NowPlaying from "@/components/NowPlaying";
 export default function Home() {
   return (
     <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
@@ -63,6 +64,7 @@ export default function Home() {
         </div>
         {/*buttons*/}
         <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
+          <NowPlaying />
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"

@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 
-const basic = Buffer.from(
-  `${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`
-).toString("base64");
-
 async function getAccessToken() {
+  const basic = Buffer.from(
+    `${process.env.SPOTIFY_CLIENT_ID}:${process.env.SPOTIFY_CLIENT_SECRET}`
+  ).toString("base64");
+
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
     headers: {
@@ -21,7 +21,9 @@ async function getAccessToken() {
 }
 
 export async function GET() {
-  const { access_token } = await getAccessToken();
+  const tokenData = await getAccessToken();
+  if (!tokenData.access_token) return NextResponse.json({ title: null, debug: tokenData });
+  const { access_token } = tokenData;
 
   const currentRes = await fetch(
     "https://api.spotify.com/v1/me/player/currently-playing",

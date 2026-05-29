@@ -9,6 +9,7 @@ import ViewerTracker from "@/components/ViewerTracker";
 export const metadata: Metadata = {
   title: "Fay Wu",
   description: "Personal website somewhat inspired by Notion",
+  icons: { icon: "/icons/dawg.png" },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

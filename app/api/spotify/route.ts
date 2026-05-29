@@ -54,7 +54,7 @@ export async function GET() {
   const recentData = await recentRes.json();
   const track = recentData.items?.[0]?.track;
 
-  if (!track) return NextResponse.json({ title: null });
+  if (!track) return NextResponse.json({ title: null, debug: { status: recentRes.status, data: recentData } });
 
   return NextResponse.json({
     isPlaying: false,

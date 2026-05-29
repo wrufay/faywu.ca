@@ -21,9 +21,8 @@ async function getAccessToken() {
 }
 
 export async function GET() {
-  const tokenData = await getAccessToken();
-  if (!tokenData.access_token) return NextResponse.json({ title: null, debug: tokenData });
-  const { access_token } = tokenData;
+  const { access_token } = await getAccessToken();
+  if (!access_token) return NextResponse.json({ title: null });
 
   const currentRes = await fetch(
     "https://api.spotify.com/v1/me/player/currently-playing",
@@ -56,7 +55,7 @@ export async function GET() {
   const recentData = await recentRes.json();
   const track = recentData.items?.[0]?.track;
 
-  if (!track) return NextResponse.json({ title: null, debug: { status: recentRes.status, data: recentData } });
+  if (!track) return NextResponse.json({ title: null });
 
   return NextResponse.json({
     isPlaying: false,

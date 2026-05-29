@@ -7,7 +7,7 @@ export default function Collections() {
       
       <CollectionsItem
           name="art gallery"
-          description="favourite pieces throughout the years "
+          description="favourite pieces throughout the years"
           img="/projectpics/gallery.png"
           link="/collections/gallery"
           keyword="artwork"

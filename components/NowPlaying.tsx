@@ -28,7 +28,7 @@ export default function NowPlaying() {
     <a
       href={song.songUrl}
       target="_blank"
-      className="group flex items-center gap-2 bg-white hover:bg-gray-100/50 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg px-3 py-2 sm:px-4 sm:py-2 max-w-[160px] sm:max-w-[200px]"
+      className="group flex items-center gap-2 bg-white hover:bg-gray-100/50 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg px-3 py-2 sm:px-4 sm:py-2 w-full"
     >
       <img
         src={song.albumArt}

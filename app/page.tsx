@@ -1,5 +1,4 @@
 import Link from "next/link";
-import NowPlaying from "@/components/NowPlaying";
 export default function Home() {
   return (
     <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
@@ -17,19 +16,25 @@ export default function Home() {
           hi there! I'm
           <span className="pen-regular">
             {" "}
-            Fay{" "}
-            <a href="https://swwd.vercel.app" target="_blank" className="inline-block align-top -translate-y-2">
+            Fay ☺︎
+            {/* <a href="https://swwd.vercel.app" target="_blank" className="inline-block align-top -translate-y-2">
               <img
                 src="/icons/dawg.png"
-                className="w-10 h-10 sm:w-14 sm:h-14 hover:scale-110 hover:animate-float transition-transform cursor-pointer"
+                className="w-10 h-10 sm:w-14 sm:h-14 hover:animate-float transition-transform cursor-pointer"
                 alt="dawg"
               />
-            </a>
+            </a> */}
           </span>
         </h1>
 
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
+          <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2">
+            <span className="border-b border-gray-600">
+              telling stories, designing everything.
+            </span>
+          </p>
+
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
@@ -37,9 +42,9 @@ export default function Home() {
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
-                href="https://uwaterloo.ca/"
+                href="https://uwaterloo.ca/about"
               >
-                <span className="pen-regular">UWaterloo</span>
+                <span className="pen-regular">University of Waterloo</span>
               </a>
             </span>
           </p>
@@ -47,24 +52,19 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              software developer intern @{" "}
+              software developer @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular">DFO</span>
+                <span className="pen-regular">Fisheries and Oceans</span>
               </a>{" "}
             </span>
-          </p>
-          <p className="flex flex-row gap-1 sm:gap-2 items-center">
-            <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-            <span>design enthusiast + ai lover ᢉ𐭩</span>
           </p>
         </div>
         {/*buttons*/}
         <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
-          <NowPlaying />
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"

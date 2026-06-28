@@ -31,7 +31,7 @@ export default function NowPlaying() {
       title={song.isPlaying ? "currently listening" : "last listened to"}
       className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 transition-colors fade-in"
     >
-      <span className="coding-regular overflow-hidden max-w-[100px] sm:max-w-[200px] inline-block align-middle lowercase">
+      <span className="coding-regular overflow-hidden max-w-[67px] sm:max-w-[167px] inline-block align-middle lowercase">
 
         {/* wrapper for marquee animation which is activated when music is playing*/}
         <span className={song.isPlaying ? "marquee" : "whitespace-nowrap"}>

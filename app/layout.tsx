@@ -63,12 +63,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="relative flex items-center justify-center w-full">
               {/* edit the space between each icon here, using gap */}
               <div className="flex gap-2 sm:gap-4 items-center">
-                {/* <a
+                <a
                   href="mailto:f26wu@uwaterloo.ca"
                   className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
                 >
                   <img src="/icons/email.png" />
-                </a> */}
+                </a>
                 <a
                   href="https://www.linkedin.com/in/fayranw/"
                   target="_blank"
@@ -81,20 +81,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <div title="uw cs webring">
                   <Webring />
                 </div>
-
-                {/* <a
-                  href="https://x.com/wrufay"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-                >
-                  <img src="/icons/x.png" />
-                </a> */}
                 <a
                   href="https://github.com/wrufay"
                   target="_blank"
                   className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px]"
                 >
                   <img src="/icons/github.png" />
+                </a>
+
+                <a
+                  href="https://x.com/wrufay"
+                  target="_blank"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
+                >
+                  <img src="/icons/x.png" />
                 </a>
               </div>
 

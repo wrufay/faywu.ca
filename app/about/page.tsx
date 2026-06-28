@@ -159,6 +159,8 @@ const timeline: TimelineItem[] = [
 export default function About() {
   return (
     // this main container has 2 Children.
+    // idk why something looks wrong with this page, we also need to MAKE the spacing consistent
+    // hopefully using some ui/ux concepts i will LEARN
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
       <p className="px-10 serif-bold text-gray-700">a peek into my life ᝰ.ᐟ</p>

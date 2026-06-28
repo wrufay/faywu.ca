@@ -55,6 +55,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500 w-full -mx-10">
           <div className="flex flex-col gap-2">
+            {/* BIBLE VERSE */}
+            {/* what to do with this? i want to perhaps have it link somewhere, maybe this could also rotate through my favourite verses
+            could link to my own writing on the verse as well or sth creative like that */}
             <p className="pen-regular text-center">1 Thessalonians 5:16-18</p>
 
             <div className="relative flex items-center justify-center w-full">

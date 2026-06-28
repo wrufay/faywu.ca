@@ -97,10 +97,10 @@ export default function About() {
       <section className="flex flex-col items-center justify-center">
         {/* p text at the top of page */}
         <p className="mb-8 text-sm sm:text-base">
-          <span className="font-bold">free-time trinkets. </span>
-          click to see{" "}
+          <span className="font-bold">trinkets. </span>
+          click on one to see the{" "}
           <span className="border-b border-gray-300">
-            backstories behind the build
+            backstory behind the build
           </span>
         </p>
 

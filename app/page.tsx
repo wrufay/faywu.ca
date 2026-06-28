@@ -30,8 +30,10 @@ export default function Home() {
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2">
+            {/* yk what would be a cool idea, if this was like a "status" type of componenent that i can change externally without editing code */}
+            {/* like edit with a terminal command */}
             <span className="border-b border-gray-600">
-              telling stories, designing everything.
+              telling stories though code & design
             </span>
           </p>
 

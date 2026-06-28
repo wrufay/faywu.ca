@@ -5,11 +5,18 @@ export default function Home() {
   return (
     <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
       {/*main title text section*/}
+      <div className="fade-in relative flex justify-center items-center">
 
-      <div className="fade-in">
+        {/* fay wu picture */}
+        <img
+          src="/designs/me.png"
+          className="absolute w-26 sm:w-42 opacity-50 z-0 sm:-translate-x-12 -translate-x-8"
+          alt="me"
+        />
+        {/* logo picture */}
         <img
           src="/designs/frontfay.png"
-          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float"
+          className="relative w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-90 animate-float z-10 sm:translate-x-6 translate-x-5 rotate-4"
           alt="colourful hand-drawn logo that says fay wu"
         />
       </div>

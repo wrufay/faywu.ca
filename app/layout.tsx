@@ -19,29 +19,36 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ViewerTracker />
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
-          <Link href="/" className="text-sm sm:text-base hover:opacity-67">
+          <Link
+            href="/"
+            title="back home"
+            className="text-sm sm:text-base hover:opacity-67"
+          >
             ↻
           </Link>
           <Link
             href="/projects"
+            title="fun trinkets i make in my free time"
             className=" text-sm sm:text-base hover:opacity-67"
           >
             projects
           </Link>
           <Link
             href="/about"
+            title="behind the scenes"
             className=" text-sm sm:text-base hover:opacity-67"
           >
             about
           </Link>
           <Link
             href="/collections"
+            title="where creativity reigns"
             className="text-sm sm:text-base hover:opacity-67"
           >
             collections
           </Link>
         </nav>
-        
+
         {children}
         <footer className="mt-auto py-6 text-xs text-gray-500 w-full -mx-10">
           <div className="flex flex-col gap-2">
@@ -49,7 +56,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
             <div className="relative flex items-center justify-center w-full">
               <div className="absolute left-0">
-                <Webring/>
+                <Webring />
               </div>
 
               <div className="flex gap-4 items-center">
@@ -83,10 +90,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </div>
 
               <div className="absolute right-0">
-                <LikeCounter/>
+                <LikeCounter />
               </div>
             </div>
-
           </div>
         </footer>
       </body>

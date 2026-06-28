@@ -38,13 +38,13 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              computer science @{" "}
+              computer science (2a) @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://uwaterloo.ca/about"
               >
-                <span className="pen-regular">University of Waterloo</span>
+                <span className="pen-regular">UWaterloo</span>
               </a>
             </span>
           </p>
@@ -52,17 +52,18 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              software developer @{" "}
+              software developer ⚓︎{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular">Fisheries and Oceans</span>
+                <span className="pen-regular">Gov. of Canada</span>
               </a>{" "}
             </span>
           </p>
         </div>
+
         {/*buttons*/}
         <div className="flex flex-row gap-2 sm:gap-3 justify-center items-center coding-regular fade-in-bounce-delayed text-xs sm:text-base">
           <a
@@ -73,6 +74,16 @@ export default function Home() {
             let's{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
               connect!
+            </span>
+          </a>
+
+          <a
+            href="/work"
+            className="px-3 py-2 sm:px-4 sm:py-2 bg-white hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
+          >
+            see{" "}
+            <span className="text-[var(--aritzia-blue)] coding-bold">
+              my work
             </span>
           </a>
         </div>

@@ -67,6 +67,16 @@ html {
   transition: 0.3s ease;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 8s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
 .typing-animation {
   display: inline-block;
   width: 0;

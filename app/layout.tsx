@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 import Webring from "@/components/Webring";
 import ViewerTracker from "@/components/ViewerTracker";
+import NowPlaying from "@/components/NowPlaying";
 
 export const metadata: Metadata = {
   title: "Fay Wu",
@@ -15,7 +16,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-10">
+      {/* here is where the HORIZONTAL (x-dir) body padding is */}
+      {/* y-dir padding is unique to each page (should make this consistent perhaps) */}
+      <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">
         <ViewerTracker />
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
@@ -55,17 +58,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <p className="pen-regular text-center">1 Thessalonians 5:16-18</p>
 
             <div className="relative flex items-center justify-center w-full">
-              <div className="absolute left-0">
-                <Webring />
-              </div>
-
-              <div className="flex gap-4 items-center">
-                <a
+              {/* edit the space between each icon here, using gap */}
+              <div className="flex gap-2 sm:gap-4 items-center">
+                {/* <a
                   href="mailto:f26wu@uwaterloo.ca"
                   className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
                 >
                   <img src="/icons/email.png" />
-                </a>
+                </a> */}
                 <a
                   href="https://www.linkedin.com/in/fayranw/"
                   target="_blank"
@@ -73,13 +73,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 >
                   <img src="/icons/linkedin.png" />
                 </a>
-                <a
+
+                {/* CS WEBRING */}
+                <div title="uw cs webring">
+                  <Webring />
+                </div>
+
+                {/* <a
                   href="https://x.com/wrufay"
                   target="_blank"
                   className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
                 >
                   <img src="/icons/x.png" />
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/wrufay"
                   target="_blank"
@@ -87,6 +93,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 >
                   <img src="/icons/github.png" />
                 </a>
+              </div>
+
+              <div className="absolute left-0">
+                <NowPlaying />
               </div>
 
               <div className="absolute right-0">

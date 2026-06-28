@@ -1,6 +1,5 @@
 import CollectionsItem from "@/components/CollectionsItem";
 import Link from "next/link";
-import NowPlaying from "@/components/NowPlaying";
 
 export default function Collections() {
   return (
@@ -14,9 +13,6 @@ export default function Collections() {
           keyword="artwork"
           delay={0}
         />
-      <div className="w-full max-w-xs">
-        <NowPlaying />
-      </div>
       {/* <Link
             href="/message"
             className="px-3 py-2 sm:px-4 coding-regular sm:py-2 max-w-xs sm:w-xs hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg bg-[var(--sunny-yellow)]/15"

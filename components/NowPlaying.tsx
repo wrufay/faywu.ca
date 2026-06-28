@@ -28,21 +28,17 @@ export default function NowPlaying() {
     <a
       href={song.songUrl}
       target="_blank"
-      className="group flex items-center gap-2 bg-white hover:bg-gray-100/50 hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg px-3 py-2 sm:px-4 sm:py-2 w-full"
+      title={song.isPlaying ? "currently listening" : "last listened to"}
+      className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 transition-colors fade-in"
     >
-      <img
-        src={song.albumArt}
-        className="w-5 h-5 sm:w-6 sm:h-6 rounded-sm flex-shrink-0 opacity-67 group-hover:opacity-100"
-        alt={song.title}
-      />
-      <div className="text-left min-w-0">
-        <p className="text-[8px] sm:text-[9px] text-gray-400 coding-regular leading-tight">
-          {song.isPlaying ? "▶ now playing" : "last played"}
-        </p>
-        <p className="text-[10px] sm:text-[11px] text-gray-700 truncate leading-tight lowercase">
-          {song.title}
-        </p>
-      </div>
+      <span className="coding-regular overflow-hidden max-w-[100px] sm:max-w-[200px] inline-block align-middle lowercase">
+
+        {/* wrapper for marquee animation which is activated when music is playing*/}
+        <span className={song.isPlaying ? "marquee" : "whitespace-nowrap"}>
+          {song.isPlaying ? "▶" : "⏸"} {song.title}
+          {song.isPlaying && <>&nbsp;&nbsp;&nbsp;▶ {song.title}</>}
+        </span>
+      </span>
     </a>
   );
 }

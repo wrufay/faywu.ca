@@ -45,7 +45,7 @@ export default function LikeCounter() {
       setLikes(data.likes);
       setHasLiked(false);
 
-      // save like in localsotrage
+      // save like in localsotrage (removed this)
       // localStorage.setItem("userHasLiked", "true");
     } catch (error) {
       console.error("Failed to increment likes:", error);

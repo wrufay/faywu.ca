@@ -1,4 +1,6 @@
 import Link from "next/link";
+import GitHubStatus from "@/components/GitHubStatus";
+
 export default function Home() {
   return (
     <main className="flex flex-grow flex-col gap-6 sm:gap-10 items-center justify-center">
@@ -29,18 +31,12 @@ export default function Home() {
 
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
-          <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2">
-            {/* yk what would be a cool idea, if this was like a "status" type of componenent that i can change externally without editing code */}
-            {/* like edit with a terminal command */}
-            <span className="border-b border-gray-600">
-              telling stories though code & design
-            </span>
-          </p>
+          <GitHubStatus />
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              computer science (2a) @{" "}
+              computer science @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"

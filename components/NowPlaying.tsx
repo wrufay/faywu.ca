@@ -15,8 +15,9 @@ export default function NowPlaying() {
   useEffect(() => {
     const load = () =>
       fetch("/api/spotify")
-        .then((r) => r.json())
-        .then((d) => setSong(d.title ? d : null));
+        .then((r) => r.ok ? r.json() : null)
+        .then((d) => setSong(d?.title ? d : null))
+        .catch(() => setSong(null));
     load();
     const id = setInterval(load, 60_000);
     return () => clearInterval(id);
@@ -32,11 +33,9 @@ export default function NowPlaying() {
       className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 transition-colors fade-in"
     >
       <span className="coding-regular overflow-hidden max-w-[67px] sm:max-w-[167px] inline-block align-middle lowercase">
-
         {/* wrapper for marquee animation which is activated when music is playing*/}
-        <span className={song.isPlaying ? "marquee" : "whitespace-nowrap"}>
-          {song.isPlaying ? "▶" : "⏸"} {song.title}
-          {song.isPlaying && <>&nbsp;&nbsp;&nbsp;▶ {song.title}</>}
+        <span className="marquee">
+          {song.isPlaying ? "▶" : "⬢"} {song.title}&nbsp;&nbsp;&nbsp;{song.isPlaying ? "▶" : "⬢"} {song.title}
         </span>
       </span>
     </a>

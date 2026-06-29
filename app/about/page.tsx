@@ -163,7 +163,7 @@ export default function About() {
     // hopefully using some ui/ux concepts i will LEARN
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 serif-bold text-gray-700">a peek into my life ᝰ.ᐟ</p>
+      <p className="px-10 serif-bold text-gray-700">a peek into my life ᝰ</p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* about/timeline cards */}
         {timeline.map((item, i) => (

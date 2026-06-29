@@ -13,7 +13,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/koinyou",
       // demoVideo: "/demos/projectoriginlow.mp4",
       insideDesc: "Open source project + a work in progress :)",
-      date: "jan. 2026",
+      date: "Jan. 2026",
     },
     {
       title: "project origin",
@@ -26,7 +26,7 @@ export default function About() {
       demoVideo: "/demos/projectoriginlow.mp4",
       insideDesc:
         "Project submitted to UofTHacks13. Built first mobile app, learning how to use Blender to create 3d models and implement them into the UI",
-      date: "jan. 2026",
+      date: "Jan. 2026",
     },
     {
       title: "uw sleeper",
@@ -42,7 +42,7 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
         "Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway. Bridging the gap between Waterloo students and sleep - because sleep is your superpower.",
-      date: "dec. 2025",
+      date: "Dec. 2025",
     },
     {
       title: "coco",
@@ -59,7 +59,7 @@ export default function About() {
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
         "Facilitate co-op application tracking with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization. Currently working on implementing a backend to improve security and user experience!",
-      date: "dec. 2025",
+      date: "Dec. 2025",
     },
     {
       title: "firstloved",
@@ -72,7 +72,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "/demos/firstloved.mp4",
       insideDesc: `Reducing Bible study friction through Python application made with Streamlit using Anthropic API and Supabase data storage, containerized with Docker, deployed on Render. No more opening a hundred tabs for a Bible study - everything's in one place with FirstLoved.`,
-      date: "nov. 2025",
+      date: "Nov. 2025",
     },
     {
       title: "clearpharma",
@@ -86,7 +86,7 @@ export default function About() {
       demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
         "Allowing patients and pharmacists to communicate transparently with our HTML, CSS and Javascript web application, built in 36 hours for UW's Technology in Pharmacy hackathon. Featuring a dual-dashboard display, securely storing sensitive data in Firebase.",
-      date: "nov. 2025",
+      date: "Nov. 2025",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",
     },
@@ -97,10 +97,10 @@ export default function About() {
       <section className="flex flex-col items-center justify-center">
         {/* p text at the top of page */}
         <p className="mb-8 text-sm sm:text-base">
-          <span className="font-bold">trinkets. </span>
-          click on one to see the{" "}
+          <span className="font-bold">trinkets! </span>try
+          {" "}
           <span className="border-b border-gray-300">
-            backstory behind the build
+            clicking on one
           </span>
         </p>
 
@@ -128,10 +128,9 @@ export default function About() {
         {/* for the text at the bottom */}
 
         {/* p text at the bottom of page - consistent class styling but mb is mt. */}
-        <p className="mt-8 text-sm sm:text-base">
-          replacing <span className="font-bold">perfect</span> with{" "}
-          <span className="font-bold">progress</span> through flops and reps ⚙
-        </p>
+        {/* <p className="mt-8 text-sm sm:text-base">
+          replacing perfect with progress through flops and reps
+        </p> */}
       </section>
     </main>
   );

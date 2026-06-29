@@ -35,13 +35,13 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              2a computer science @{" "}
+              computer science @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] hover:opacity-100"
                 target="_blank"
                 href="https://uwaterloo.ca/about"
               >
-                <span className="pen-regular">UWaterloo</span>
+                <span className="pen-regular">University of Waterloo</span>
               </a>
             </span>
           </p>
@@ -55,7 +55,7 @@ export default function Home() {
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular">Gov. of Canada</span>
+                <span className="pen-regular">Government of Canada</span>
               </a>{" "}
             </span>
           </p>

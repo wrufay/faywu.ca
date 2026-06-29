@@ -30,6 +30,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             ↻
           </Link>
           <Link
+            href="/work"
+            title="fun trinkets i make in my free time"
+            className=" text-sm sm:text-base hover:opacity-67"
+          >
+            work
+          </Link>
+          <Link
             href="/projects"
             title="fun trinkets i make in my free time"
             className=" text-sm sm:text-base hover:opacity-67"
@@ -42,13 +49,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             className=" text-sm sm:text-base hover:opacity-67"
           >
             about
-          </Link>
-          <Link
-            href="/collections"
-            title="where creativity reigns"
-            className="text-sm sm:text-base hover:opacity-67"
-          >
-            collections
           </Link>
         </nav>
 

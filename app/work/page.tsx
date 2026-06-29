@@ -11,12 +11,12 @@ export default function Work() {
 
         {/* todo: make spacing consistent */}
         <div className="flex flex-col mb-0 sm:mb-0">
-          <h2 className="text-lg coding-regular text-gray-300 text-left flex items-center">
+          <h2 className="text-lg coding-regular text-gray-300 text-left flex items-center mb-2">
             Fisheries and Oceans Canada | May 2026 - Present
           </h2>
 
           <div className="flex flex-col gap-3">
-            <p className="serif-bold text-gray-600 text-left sm:text-lg flex items-center gap-2">
+            <p className="serif-bold text-gray-600 text-left text-lg flex items-center gap-2">
               software developer ⚓︎ internship
             </p>
             <div>
@@ -40,11 +40,11 @@ export default function Work() {
                 Shelf ship traffic.
               </p>
               <p className="text-sm text-left  text-gray-400">
-                ↳ 40M rows of AIS data ingested into Docker-containerized
-                PostgreSQL database
+                ↳ 40M rows of AIS data ingested into containerized PostgreSQL
+                database
               </p>
               <p className="text-sm text-left  text-gray-400">
-                ↳ 8k vessels served on FastAPI backend running Python scripts
+                ↳ 8k vessels served on FastAPI backend
               </p>
             </div>
             <div className="grid grid-cols-2 gap-3 mt-1">
@@ -70,7 +70,7 @@ export default function Work() {
             <span className="coding-bold text-xs text-gray-500 uppercase">
               technologies ·
             </span>
-            {["Python3", "Linux", "SQL", "Matplotlib"].map((tag) => (
+            {["Python3", "Linux", "SQL", "Matplotlib", "Docker"].map((tag) => (
               <span
                 key={tag}
                 className="text-[10px] coding-regular text-[var(--crimson-red)] border border-[var(--crimson-red)]/67 rounded-full px-2 py-0.5"

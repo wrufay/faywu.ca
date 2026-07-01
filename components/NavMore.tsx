@@ -42,21 +42,21 @@ export default function NavMore() {
           <Link
             href="/about"
             className="hover:text-gray-500 hover:bg-[var(--aritzia-blue)]/20 border-b border-gray-200 w-full px-2 py-1 rounded-t-lg"
-            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
+            onClick={() => {}}
           >
             about
           </Link>
           <Link
             href="/gallery"
             className="hover:text-gray-500 hover:bg-[var(--crimson-red)]/20 w-full px-2 py-1"
-            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
+            onClick={() => {}}
           >
             gallery
           </Link>
           <Link
             href="/sandbox"
             className="hover:text-gray-500 /20 border-t hover:bg-[var(--sunny-yellow)]/20 border-gray-200 w-full px-2 py-1 rounded-b-lg"
-            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
+            onClick={() => {}}
           >
             sandbox
           </Link>

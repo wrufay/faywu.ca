@@ -28,7 +28,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             href="/"
             title="back home"
             className="text-sm sm:text-base hover:opacity-67"
-            sfx={false}
           >
             ↻
           </NavLink>

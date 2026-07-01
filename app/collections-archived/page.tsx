@@ -1,5 +1,4 @@
 import CollectionsItem from "@/components/CollectionsItem";
-import Link from "next/link";
 
 export default function Collections() {
   return (

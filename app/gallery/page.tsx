@@ -104,9 +104,11 @@ export default function Test() {
   };
   return (
     <main className="py-10 flex flex-grow flex-col gap-4 sm:gap-6 justify-center items-center">
+      <h1 className="text-sm sm:text-base">favourite pieces throughout the years</h1>
+
       {/* painting card */}
-      <div className="max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-sm fade-in">
-        <p className="text-[9px] sm:text-xs text-gray-500 flex flex-row justify-between coding-regular">
+      <div className="max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-lg fade-in">
+        <p className="text-[9px] sm:text-xs text-[var(--aritzia-blue)]/67 flex flex-row justify-between coding-regular">
           {/* index+1 and title  */}
           <span className="text-left">{paintings[curPainting].title}</span>
           <span className="text-right">
@@ -123,7 +125,7 @@ export default function Test() {
 
           <Image
             key={curPainting}
-            className="w-full border border-gray-200 opacity-86 rounded-sm select-none "
+            className="w-full border border-gray-200 opacity-86 select-none"
             src={paintings[curPainting].url}
             alt={paintings[curPainting].title}
             width={400}
@@ -141,7 +143,7 @@ export default function Test() {
 
         <p className="text-[9px] sm:text-xs text-gray-500 flex flex-row justify-between coding-regular">
           {/* year and medium  */}
-          <span className="text-left">{paintings[curPainting].year}</span>{" "}
+          <span className="text-left text-[var(--crimson-red)]/80">created in {paintings[curPainting].year}</span>{" "}
           <span className="text-right">{paintings[curPainting].medium}</span>
         </p>
       </div>

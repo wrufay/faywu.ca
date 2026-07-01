@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 import Webring from "@/components/Webring";
 import ViewerTracker from "@/components/ViewerTracker";
 import NowPlaying from "@/components/NowPlaying";
+import NavMore from "@/components/NavMore";
 
 export const metadata: Metadata = {
   title: "Fay Wu",
@@ -43,13 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           >
             projects
           </Link>
-          <Link
-            href="/about"
-            title="behind the scenes"
-            className=" text-sm sm:text-base hover:opacity-67"
-          >
-            about
-          </Link>
+          <NavMore />
         </nav>
 
         {children}

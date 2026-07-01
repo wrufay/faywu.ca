@@ -35,7 +35,7 @@ export default function NavMore() {
         </span>
       </button>
       <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 nav-collapse ${open ? "open" : ""}`}>
-        <div className="flex flex-col items-center border border-gray-200 rounded-lg bg-[#fffef9] text-xs sm:text-sm min-w-max">
+        <div className="flex flex-col items-center border border-gray-200 rounded-lg bg-[#fffef9] text-sm min-w-max">
           <Link
             href="/about"
             className="hover:text-gray-500 hover:bg-[var(--aritzia-blue)]/20 border-b border-gray-200 w-full px-2 py-1 rounded-t-lg"

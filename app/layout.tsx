@@ -1,9 +1,9 @@
 import "./globals.css";
-import Link from "next/link";
 import LikeCounter from "@/components/LikeCounter";
+import NavLink from "@/components/NavLink";
 import { Metadata } from "next";
 import { ReactNode } from "react";
-import Webring from "@/components/Webring";
+import FooterLinks from "@/components/FooterLinks";
 import ViewerTracker from "@/components/ViewerTracker";
 import NowPlaying from "@/components/NowPlaying";
 import NavMore from "@/components/NavMore";
@@ -24,27 +24,28 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ViewerTracker />
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
-          <Link
+          <NavLink
             href="/"
             title="back home"
             className="text-sm sm:text-base hover:opacity-67"
+            sfx={false}
           >
             ↻
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="/work"
             title="fun trinkets i make in my free time"
             className=" text-sm sm:text-base hover:opacity-67"
           >
             work
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             href="/projects"
             title="fun trinkets i make in my free time"
             className=" text-sm sm:text-base hover:opacity-67"
           >
             projects
-          </Link>
+          </NavLink>
           <NavMore />
           <NavMusic />
         </nav>
@@ -59,41 +60,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
             <div className="relative flex items-center justify-center w-full">
               {/* edit the space between each icon here, using gap */}
-              <div className="flex gap-1 sm:gap-2 items-center">
-                {/* <a
-                  href="mailto:f26wu@uwaterloo.ca"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-                >
-                  <img src="/icons/email.png" />
-                </a> */}
-                <a
-                  href="https://www.linkedin.com/in/fayranw/"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-                >
-                  <img src="/icons/linkedin.png" />
-                </a>
-
-                {/* CS WEBRING */}
-                <div title="uw cs webring">
-                  <Webring />
-                </div>
-                <a
-                  href="https://github.com/wrufay"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px]"
-                >
-                  <img src="/icons/github.png" />
-                </a>
-
-                {/* <a
-                  href="https://x.com/wrufay"
-                  target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"
-                >
-                  <img src="/icons/x.png" />
-                </a> */}
-              </div>
+              <FooterLinks />
 
               <div className="absolute left-0">
                 <NowPlaying />

@@ -19,7 +19,10 @@ export default function NavMore() {
   return (
     <div className="relative" ref={ref}>
       <button
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => {
+          if (!open) new Audio("/sfx/click.mp3").play().catch(() => {});
+          setOpen((o) => !o);
+        }}
         className="text-sm sm:text-base hover:opacity-67 cursor-pointer flex items-center gap-1"
       >
         more
@@ -39,21 +42,21 @@ export default function NavMore() {
           <Link
             href="/about"
             className="hover:text-gray-500 hover:bg-[var(--aritzia-blue)]/20 border-b border-gray-200 w-full px-2 py-1 rounded-t-lg"
-            onClick={() => setOpen(false)}
+            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
           >
             about
           </Link>
           <Link
             href="/gallery"
             className="hover:text-gray-500 hover:bg-[var(--crimson-red)]/20 w-full px-2 py-1"
-            onClick={() => setOpen(false)}
+            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
           >
             gallery
           </Link>
           <Link
             href="/sandbox"
             className="hover:text-gray-500 /20 border-t hover:bg-[var(--sunny-yellow)]/20 border-gray-200 w-full px-2 py-1 rounded-b-lg"
-            onClick={() => setOpen(false)}
+            onClick={() => new Audio("/sfx/tap.mp3").play().catch(() => {})}
           >
             sandbox
           </Link>

@@ -34,15 +34,7 @@ export default function NavMore() {
           ▾
         </span>
       </button>
-      <div
-        style={{
-          maxHeight: open ? "200px" : "0",
-          opacity: open ? 1 : 0,
-          overflow: "hidden",
-          transition: "max-height 0.25s ease, opacity 0.2s ease",
-        }}
-        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50"
-      >
+      <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 nav-collapse ${open ? "open" : ""}`}>
         <div className="flex flex-col items-center border border-gray-200 rounded-lg bg-[#fffef9] text-xs sm:text-sm min-w-max">
           <Link
             href="/about"

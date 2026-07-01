@@ -1,11 +1,17 @@
 export default function Sandbox() {
   return (
     <main className="flex flex-grow items-center justify-center w-full">
-      <iframe
-        className="h-[120px] w-[250px] shadow-md"
-        src="https://bandcamp.com/EmbeddedPlayer/album=1894914042/size=large/bgcol=ffffff/linkcol=333333/artwork=none/track=134381612/transparent=true/"
-        seamless
-      />
+      <div className="bg-white shadow-sm rounded-lg px-6 py-4">
+        <ul>
+          <li className="list-disc list-inside">make notes app</li>
+          <li className="list-disc list-inside">games and quiz</li>
+          <li className="list-disc list-inside">
+            <a href="https://www.koinyou.com/verse/ecclesiastes/6/7" target="_blank" rel="noopener noreferrer" className="pen-regular">
+              ecclesiastes 6:7
+            </a>
+          </li>
+        </ul>
+      </div>
     </main>
   );
 }

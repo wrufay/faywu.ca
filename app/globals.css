@@ -227,6 +227,29 @@ html {
   animation: scaleIn 0.3s ease-out;
 }
 
+.nav-popover {
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.nav-popover.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.nav-collapse {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+.nav-collapse.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
 @keyframes rollDown {
   from { max-height: 0; opacity: 0; transform: translateY(-4px); }
   to   { max-height: 200px; opacity: 1; transform: translateY(0); }

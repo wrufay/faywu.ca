@@ -25,9 +25,14 @@ export default function NowPlaying() {
 
   if (!song) return null;
 
+  const url =
+    song.artist === "Elspeth Eastman"
+      ? `https://elspetheastman.bandcamp.com/track/${song.title.toLowerCase().replace(/[()]/g, "").replace(/\s+/g, "-")}`
+      : song.songUrl;
+
   return (
     <a
-      href={song.songUrl}
+      href={url}
       target="_blank"
       title={song.isPlaying ? "currently listening" : "last listened to"}
       className="flex items-center gap-1 text-xs text-gray-500 hover:text-gray-700 transition-colors fade-in"

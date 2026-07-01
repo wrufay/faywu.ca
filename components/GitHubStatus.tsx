@@ -6,7 +6,7 @@ export default async function GitHubStatus() {
 
     const json = await res.json();
     const bio = json?.bio;
-    if (!bio) return null;
+    if (!bio) return <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2"><span className="border-b border-gray-600">telling stories through code ✿˖°</span></p>;
 
     return (
       <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2">
@@ -16,6 +16,6 @@ export default async function GitHubStatus() {
       </p>
     );
   } catch {
-    return null;
+    return <p className="flex flex-row gap-1 sm:gap-2 items-center mb-2"><span className="border-b border-gray-600">telling stories through code ✿˖°</span></p>;
   }
 }

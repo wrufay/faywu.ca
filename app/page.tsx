@@ -74,7 +74,7 @@ export default function Home() {
             </span>
           </a>
 
-          <a
+          <Link
             href="/work"
             className="px-3 py-2 sm:px-4 sm:py-2 bg-white hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
           >
@@ -82,7 +82,7 @@ export default function Home() {
             <span className="text-[var(--aritzia-blue)] coding-bold">
               my work
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

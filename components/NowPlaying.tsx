@@ -23,7 +23,7 @@ export default function NowPlaying() {
     return () => clearInterval(id);
   }, []);
 
-  if (!song) return null;
+  if (!song) return <span className="text-xs coding-regular text-gray-400">no music playing</span>;
 
   const url =
     song.artist === "Elspeth Eastman"

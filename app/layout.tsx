@@ -50,16 +50,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </nav>
 
         {children}
-        <footer className="mt-auto pt-6 pb-4 text-xs text-gray-500 w-full -mx-4 sm:-mx-10">
+        <footer className="mt-auto pt-6 mb-4 sm:mb-6 text-xs text-gray-500 w-full -mx-4 sm:-mx-10">
           <div className="flex flex-col gap-2">
             {/* BIBLE VERSE */}
             {/* what to do with this? i want to perhaps have it link somewhere, maybe this could also rotate through my favourite verses
             could link to my own writing on the verse as well or sth creative like that */}
-            <p className="pen-regular text-center">1 Thessalonians 5:16-18</p>
+            <a href="https://www.koinyou.com/verse/1thessalonians/5/16-18" target="_blank" rel="noopener noreferrer" className="pen-regular text-center hover:opacity-67">1 Thessalonians 5:16-18</a>
 
             <div className="relative flex items-center justify-center w-full">
               {/* edit the space between each icon here, using gap */}
-              <div className="flex gap-2 sm:gap-4 items-center">
+              <div className="flex gap-1 sm:gap-2 items-center">
                 {/* <a
                   href="mailto:f26wu@uwaterloo.ca"
                   className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5  hover:translate-y-[-2px]"

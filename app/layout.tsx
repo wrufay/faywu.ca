@@ -8,6 +8,7 @@ import ViewerTracker from "@/components/ViewerTracker";
 import NowPlaying from "@/components/NowPlaying";
 import NavMore from "@/components/NavMore";
 import NavMusic from "@/components/NavMusic";
+import ImagePreloader from "@/components/ImagePreloader";
 
 export const metadata: Metadata = {
   title: "Fay Wu",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       {/* y-dir padding is unique to each page (should make this consistent perhaps) */}
       <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">
         <ViewerTracker />
+        <ImagePreloader />
         {/* mini nav */}
         <nav className="mt-8 sm:mt-18 flex justify-center items-center gap-6">
           <NavLink
@@ -55,7 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {/* BIBLE VERSE */}
             {/* what to do with this? i want to perhaps have it link somewhere, maybe this could also rotate through my favourite verses
             could link to my own writing on the verse as well or sth creative like that */}
-            <a href="https://www.koinyou.com/verse/1thessalonians/5/16-18" target="_blank" rel="noopener noreferrer" className="pen-regular text-center hover:opacity-67">1 Thessalonians 5:16-18</a>
+            <a href="https://www.koinyou.com/verse/1thessalonians/5/16-18" target="_blank" rel="noopener noreferrer" className="pen-regular text-center hover:opacity-67 w-fit mx-auto">1 Thessalonians 5:16-18</a>
 
             <div className="relative flex items-center justify-center w-full">
               {/* edit the space between each icon here, using gap */}

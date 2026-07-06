@@ -19,7 +19,7 @@ export default function HoverImage({ src, alt, href, label, caption, className, 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block cursor-none"
+      className="group relative flex flex-col cursor-none"
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         if (tooltipRef.current) {
@@ -33,7 +33,7 @@ export default function HoverImage({ src, alt, href, label, caption, className, 
     >
       <img src={src} alt={alt} className={className} style={style} />
       {caption && (
-        <p className="text-xs coding-regular text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity text-center mt-1">
+        <p className="text-xs coding-regular text-gray-400 text-center mt-auto pt-1">
           {caption}
         </p>
       )}

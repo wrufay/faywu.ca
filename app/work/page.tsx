@@ -36,7 +36,7 @@ export default function Work() {
                 className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 transition-transform"
                 style={{ animationDelay: "0.2s" }}
               />
-              <p className="text-xs coding-regular text-gray-400 text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-xs coding-regular text-gray-400 text-center mt-auto pt-1">
                 presented demo to 15+ scientists & stakeholders
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function Work() {
                 className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 transition-transform"
                 style={{ animationDelay: "0.2s" }}
               />
-              <p className="text-xs coding-regular text-gray-400 text-center mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+              <p className="text-xs coding-regular text-gray-400 text-center mt-auto pt-1">
                 built with HTML/CSS/JS & lots of love ≺3
               </p>
             </div>

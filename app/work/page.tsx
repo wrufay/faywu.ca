@@ -29,17 +29,16 @@ export default function Work() {
 
           {/* screenshots */}
           <div className="grid grid-cols-2 gap-3">
-            <div className="group flex flex-col gap-1">
-              <img
-                src="/demos/work1.png"
-                alt="work screenshot 1"
-                className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 transition-transform"
-                style={{ animationDelay: "0.2s" }}
-              />
-              <p className="text-xs coding-regular text-gray-400 text-center mt-auto pt-1">
-                presented demo to 15+ scientists & stakeholders
-              </p>
-            </div>
+            <HoverImage
+              src="/demos/work1.png"
+              alt="work screenshot 1"
+              href="/work/marinepact"
+              label="see case study"
+              caption="presented demo to 15+ scientists & stakeholders"
+              className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 active:scale-98"
+              style={{ animationDelay: "0.2s" }}
+              external={false}
+            />
             <HoverImage
               src="/demos/work2.png"
               alt="work screenshot 2"

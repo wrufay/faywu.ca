@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Dropdown from "@/components/Dropdown";
 import { paintings } from "./data";
@@ -29,6 +29,19 @@ export default function Test() {
     setCurPainting((cur) => (cur >= maxIndex ? 0 : cur + 1));
   const prevPic = () =>
     setCurPainting((cur) => (cur <= 0 ? maxIndex : cur - 1));
+
+  const wheelLock = useRef(false);
+  const handleWheel = (e: React.WheelEvent) => {
+    if (wheelLock.current) return;
+    const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if (delta === 0) return;
+    wheelLock.current = true;
+    if (delta > 0) nextPic();
+    else prevPic();
+    setTimeout(() => {
+      wheelLock.current = false;
+    }, 300);
+  };
 
   const selectMedium = (m: string) => {
     setMediumFilter(m);
@@ -80,7 +93,10 @@ export default function Test() {
           </div>
         </div>
       ) : (
-        <div className="w-full max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-lg fade-in">
+        <div
+          className="w-full max-w-sm flex flex-col gap-2 sm:gap-4 bg-white shadow-sm px-8 py-6 sm:px-10 sm:py-8 border border-gray-100 rounded-lg fade-in"
+          onWheel={handleWheel}
+        >
           <p className="text-[9px] sm:text-xs text-[var(--aritzia-blue)]/67 flex flex-row justify-between coding-regular">
             <span className="text-left">{filtered[curPainting].title}</span>
             <span className="text-right">

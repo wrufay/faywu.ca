@@ -14,7 +14,7 @@ export default function ImageCarousel({ items }: { items: Item[] }) {
 
   return (
     <div className="flex gap-2 flex-col">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden rounded-lg shadow-sm">
         <div
           className="flex flex-row transition-transform duration-300 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
@@ -31,18 +31,28 @@ export default function ImageCarousel({ items }: { items: Item[] }) {
           ))}
         </div>
 
-        <img
-          src="/icons/leftarrow.png"
+        <button
           onClick={prev}
-          alt="previous"
-          className="absolute left-2 top-1/2 -translate-y-1/2 opacity-41 hover:opacity-67 w-3 h-3 cursor-pointer select-none"
-        />
-        <img
-          src="/icons/rightarrow.png"
+          aria-label="previous"
+          className="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-6 rounded-full bg-white/70 hover:bg-white/90 shadow-sm cursor-pointer"
+        >
+          <img
+            src="/icons/leftarrow.png"
+            alt=""
+            className="w-3 h-3 opacity-67 select-none"
+          />
+        </button>
+        <button
           onClick={next}
-          alt="next"
-          className="absolute right-2 top-1/2 -translate-y-1/2 opacity-41 hover:opacity-67 w-3 h-3 cursor-pointer select-none"
-        />
+          aria-label="next"
+          className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-6 h-6 rounded-full bg-white/70 hover:bg-white/90 shadow-sm cursor-pointer"
+        >
+          <img
+            src="/icons/rightarrow.png"
+            alt=""
+            className="w-3 h-3 opacity-67 select-none"
+          />
+        </button>
       </div>
     </div>
   );

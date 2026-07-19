@@ -49,7 +49,7 @@ export default function AboutCard({
     <div
       onMouseMove={handleMouseMove}
       style={{ animationDelay: `${delay}ms` }}
-      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 hover:translate-y-[-4px] transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg fade-in relative overflow-hidden"
+      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg fade-in relative overflow-hidden"
     >
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100"
@@ -90,7 +90,7 @@ export default function AboutCard({
               {descriptions[curIndex].tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 bg-[var(--sunny-yellow)]/15"
+                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500"
                 >
                   {tag}
                 </span>
@@ -117,7 +117,7 @@ export default function AboutCard({
           <span>{descriptions[curIndex].year}</span>
           <img
             onClick={nextExperience}
-            className="select-none hover:scale-110 w-3 h-3"
+            className="select-none hover:scale-110 w-6 h-6 bg-[var(--aritzia-blue)]/15 p-1 rounded-full shadow-sm active:shadow-none active:translate-y-[1px]"
             src="/icons/arrowdown.png"
           />
         </p>

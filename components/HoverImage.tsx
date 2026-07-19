@@ -44,6 +44,18 @@ export default function HoverImage({ src, alt, href, label, caption, className, 
     </>
   );
 
+  if (!href) {
+    return (
+      <div
+        className="group relative flex flex-col cursor-none"
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
+        {inner}
+      </div>
+    );
+  }
+
   if (external) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer"

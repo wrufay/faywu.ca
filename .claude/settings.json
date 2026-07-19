@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /tmp/marinepact3.html -w \"%{http_code}\\\\n\" http://localhost:3000/work/marinepact)"
+    ]
+  }
+}

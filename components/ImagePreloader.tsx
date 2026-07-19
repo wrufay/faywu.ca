@@ -1,5 +1,5 @@
 "use client";
-import { paintings } from "@/app/gallery/data";
+import { paintings } from "@/app/collections/gallery/data";
 
 const projectImages = [
   "/projectpics/koinyou.png",

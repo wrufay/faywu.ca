@@ -23,16 +23,15 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            born: resident of the
+            born: resident of the{" "}
             <a
               href="https://www.google.com/search?q=nova+scotia&oq=nova+scotia&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg8IARAuGBQYhwIYsQMYgAQyBggCECMYJzIPCAMQABhDGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyFQgFEC4YFBjHARiHAhixAxjRAxiABDIGCAYQRRhBMgYIBxBFGEHSAQgxMDYzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold bg-[var(--sunny-yellow)]/21"
             >
-              {" "}
-              big NS{" "}
-            </a>
+              big NS
+            </a>{" "}
             (home is where the heart is)
           </>
         ),
@@ -47,16 +46,15 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            started a
+            started a{" "}
             <a
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold bg-[var(--sunny-yellow)]/21"
             >
-              {" "}
-              collection{" "}
-            </a>
+              collection
+            </a>{" "}
             of mini HTML, CSS & JS projects
           </>
         ),
@@ -70,16 +68,15 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            became an
+            became an{" "}
             <a
               href="https://www.nsisp.ca/our_programs/nova_scotia_student_ambassadors_program"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold"
             >
-              {" "}
-              NSISP ambassador{" "}
-            </a>
+              NSISP ambassador
+            </a>{" "}
             for international students
           </>
         ),
@@ -93,7 +90,7 @@ const timeline: TimelineItem[] = [
               href="https://hfxcodecircle.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold"
             >
               Halifax Code Circle
             </a>{" "}
@@ -102,7 +99,7 @@ const timeline: TimelineItem[] = [
               href="https://hfxlanguages.ca"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold"
             >
               Halifax Language Exchange
             </a>
@@ -114,16 +111,15 @@ const timeline: TimelineItem[] = [
       {
         description: (
           <>
-            won 3rd at
+            won 3rd at{" "}
             <a
               href="https://www.youtube.com/live/14qxzaPh_ME?si=ZLDmthqI6U2gizWK&t=18532"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-regular text-[var(--crimson-red)]"
+              className="opacity-67 hover:opacity-100 coding-bold"
             >
-              {" "}
-              Robofest{" "}
-            </a>
+              Robofest
+            </a>{" "}
             Acadia, attended worlds @ LTU
           </>
         ),
@@ -137,14 +133,14 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "software developer @ DFO",
-        tags: ["full-stack", "uix", "python"],
-        year: "May 2026",
+        description: "research assistant intern @ DFO",
+        tags: ["software development", "ui design"],
+        year: "May 2026 - August 2026",
       },
       {
-        description: "cooking @ University of Waterloo",
-        tags: ["uwccf", "watonomous", "dsa"],
-        year: "Sep 2025",
+        description: "studying @ University of Waterloo",
+        tags: ["uwccf", "watonomous - web dev"],
+        year: "Sep 2025 - May 2030",
       },
     ],
   },

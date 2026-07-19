@@ -10,41 +10,50 @@ export default function Marinepact() {
 
       {/* change min-h-screen for something else here, later. */}
 
-      <div className="relative w-full flex flex-col items-center justify-center gap-4 text-center min-h-screen">
+      <div className="relative w-full flex flex-col items-center justify-center gap-4 text-center min-h-[90vh]">
         <img
-          src="/demos/marinepactbg.png"
+          src="/demos/vessellogo.png"
           alt=""
           aria-hidden
-          className="w-xs sm:w-lg h-32 sm:h-48 shadow-sm object-cover opacity-[0.67] mb-4 pointer-events-none rounded-lg select-none"
+          className="h-32 sm:h-48 object-cover pointer-events-none rounded-lg select-none"
         />
         <h1 className="slide-up-delayed serif-regular text-gray-800 text-6xl sm:text-8xl leading-none tracking-tight">
-          marinepact
+          marinepact <span className="pen-regular">(1)</span>
         </h1>
-        <p className="slide-up-delayed-2 text-sm sm:w-full max-w-xs sm:text-base coding-regular text-gray-700 sm:max-w-sm">
-          all-in-one mapping tool for DFO scientists
+        <p className="slide-up-delayed-2 text-sm sm:w-full max-w-sm sm:text-base coding-regular text-gray-700 sm:max-w-md">
+          suite of tools supporting offshore wind research
         </p>
 
         {/* meta row */}
-        <section className="max-w-lg w-full grid grid-cols-3 text-center">
+        <section className="max-w-lg w-full grid grid-cols-3 text-center gap-4 mt-4">
           <div className="flex flex-col text-gray-700">
-            <p className="pen-regular underline text-lg">Timeline</p>
-            <div className="flex flex-col text-xs coding-regular">
-              <p>1 month</p>
+            <p className="pen-regular border-b text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
+              project Timeline
+            </p>
+            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
+              <p>May 2026</p>
+              <p>-</p>
               <p>June 2026</p>
             </div>
           </div>
           <div className="flex flex-col text-gray-700">
-            <p className="pen-regular underline text-lg">Team</p>
-            <div className="flex flex-col text-xs coding-regular">
+            <p className="pen-regular border-b text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
+              who i worked with
+            </p>
+            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
               <p>1 manager</p>
-              <p>1 dev (me!)</p>
+              <p>+</p>
+              <p>1 developer</p>
             </div>
           </div>
           <div className="flex flex-col text-gray-700">
-            <p className="pen-regular underline text-lg">Skills</p>
-            <div className="flex flex-col text-xs coding-regular">
+            <p className="pen-regular border-b  text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
+              top skills used
+            </p>
+            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
               <p>Full-stack</p>
-              <p>UX design</p>
+              <p>+</p>
+              <p>UI design</p>
             </div>
           </div>
         </section>
@@ -53,7 +62,7 @@ export default function Marinepact() {
       {/* three children inside this div. could bring some styles out into a class later to be less redundant*/}
       <div className="flex flex-col gap-32">
         {/* first section */}
-        <section className="px-8 py-8 flex flex-col gap-16 w-full border rounded-lg border-gray-300">
+        <section className="px-8 py-8 flex flex-col gap-16 w-full rounded-lg border-gray-300 bg-white shadow-sm">
           <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-4xl">
@@ -71,7 +80,7 @@ export default function Marinepact() {
             <p className="tracking-tight">
               Being the sole developer of this tool, I owned the entire software
               development life cycle - from data processing, to design
-              decisions, to deployment.
+              decisions, to design & deployment.
             </p>
           </div>
 
@@ -119,7 +128,7 @@ export default function Marinepact() {
         </section>
 
         {/* second section: design decisions - bulk */}
-        <section className="px-8 py-8 flex flex-col gap-16 w-full border rounded-lg border-gray-300">
+        <section className="px-8 py-8 flex flex-col gap-16 w-full">
           <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-4xl underline">
               design decisions: v1
@@ -128,7 +137,7 @@ export default function Marinepact() {
             <div className="flex gap-2 flex-col">
               <Image
                 src="/demos/prototype.webp"
-                className="w-full object-cover rounded-lg shadow-sm"
+                className="w-full object-cover rounded-lg"
                 width={1664}
                 height={1086}
                 alt=""
@@ -222,7 +231,7 @@ export default function Marinepact() {
               The next software I'll be building involves directly measuring
               offshore wind realization impacts, providing tangible results used
               to inform mitigation decisions.{" "}
-              <span className="coding-regular">▷ Marinepact </span>
+              {/* <span className="coding-regular">▷ Marinepact </span> */}
             </p>
           </div>
         </section>

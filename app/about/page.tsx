@@ -133,14 +133,14 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "research assistant intern @ DFO",
+        description: "currently: government internship",
         tags: ["software development", "ui design"],
-        year: "May 2026 - August 2026",
+        year: "May 2026",
       },
       {
         description: "studying @ University of Waterloo",
-        tags: ["uwccf", "watonomous - web dev"],
-        year: "Sep 2025 - May 2030",
+        tags: ["uwccf", "watonomous bizops"],
+        year: "Sep 2025",
       },
     ],
   },

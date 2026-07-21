@@ -96,13 +96,13 @@ export default function About() {
     <main className="flex flex-grow py-10">
       <section className="flex flex-col items-center justify-center">
         {/* p text at the top of page */}
-        <p className="mb-8 text-sm sm:text-base">
+        {/* <p className="mb-8 text-sm sm:text-base">
           <span className="font-bold">trinkets! </span>try
           {" "}
           <span className="border-b border-gray-300">
             clicking on one
           </span>
-        </p>
+        </p> */}
 
         {/* grid of project cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

@@ -1,68 +1,53 @@
-import SkillTooltip from "@/components/SkillTooltip";
 import Image from "next/image";
 import ImageCarousel from "@/components/ImageCarousel";
 import Link from "next/link";
 
 export default function Marinepact() {
   return (
-    <main className="text-left flex flex-grow flex-col items-start justify-start pb-10 max-w-2xl mx-auto w-full">
-      {/* HERO */}
-
-      {/* change min-h-screen for something else here, later. */}
-
-      <div className="relative w-full flex flex-col items-center justify-center gap-4 text-center min-h-[90vh]">
+    <main className="text-left flex flex-grow flex-col items-start justify-start py-10 max-w-2xl mx-auto w-full">
+      <div className="relative w-full fade-in">
         <img
-          src="/demos/vessellogo.png"
+          src="/demos/coverpage.png"
           alt=""
-          aria-hidden
-          className="h-32 sm:h-48 object-cover pointer-events-none rounded-lg select-none"
+          className="w-full h-56 sm:h-72 rounded-t-lg object-cover select-none"
         />
-        <h1 className="slide-up-delayed serif-regular text-gray-800 text-6xl sm:text-8xl leading-none tracking-tight">
-          marinepact <span className="pen-regular">(1)</span>
-        </h1>
-        <p className="slide-up-delayed-2 text-sm sm:w-full max-w-sm sm:text-base coding-regular text-gray-700 sm:max-w-md">
-          suite of tools supporting offshore wind research
-        </p>
-
-        {/* meta row */}
-        <section className="max-w-lg w-full grid grid-cols-3 text-center gap-4 mt-4">
-          <div className="flex flex-col text-gray-700">
-            <p className="pen-regular border-b text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
-              project Timeline
-            </p>
-            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
-              <p>May 2026</p>
-              <p>-</p>
-              <p>June 2026</p>
-            </div>
-          </div>
-          <div className="flex flex-col text-gray-700">
-            <p className="pen-regular border-b text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
-              who i worked with
-            </p>
-            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
-              <p>1 manager</p>
-              <p>+</p>
-              <p>1 developer</p>
-            </div>
-          </div>
-          <div className="flex flex-col text-gray-700">
-            <p className="pen-regular border-b  text-[var(--aritzia-blue)] text-lg uppercase opacity-67">
-              top skills used
-            </p>
-            <div className="flex flex-row text-xs justify-center gap-1 coding-regular rounded-b-lg  px-2 py-4 bg-[var(--sunny-yellow)]/41">
-              <p>Full-stack</p>
-              <p>+</p>
-              <p>UI design</p>
-            </div>
-          </div>
-        </section>
+        <img
+          src="/demos/canada.jpeg"
+          alt=""
+          className="absolute -bottom-8 left-6 sm:left-8 w-12 sm:w-18 object-cover border rounded-full border-gray-200 select-none"
+        />
       </div>
 
-      {/* three children inside this div. could bring some styles out into a class later to be less redundant*/}
-      <div className="flex flex-col gap-32">
+      <div className="w-full rounded-b-lg bg-white shadow-sm flex flex-col gap-32">
+        {/* header */}
+        <section className="px-6 sm:px-8 pt-10 sm:pt-12 flex flex-col w-full">
+          <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 text-left mb-6">
+            designing software for federally-funded research projects
+          </h1>
+
+          <div className="flex flex-col gap-1">
+            {[
+              { label: "timeline", value: "3 months" },
+              { label: "role", value: "software developer, UX designer" },
+              { label: "team", value: "1 manager" },
+            ].map((row) => (
+              <div
+                key={row.label}
+                className="flex flex-row items-center gap-0 sm:gap-3 py-1 sm:py-1.5"
+              >
+                <span className="text-gray-400 text-xs sm:text-sm w-18 sm:w-24 flex items-center gap-2 shrink-0">
+                  {row.label}
+                </span>
+                <span className="text-gray-800 text-xs sm:text-sm">
+                  {row.value}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* first section */}
-        <section className="px-8 py-8 flex flex-col gap-16 w-full rounded-lg border-gray-300 bg-white shadow-sm">
+        <section className="px-8 flex flex-col gap-16 w-full">
           <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-4xl">
@@ -79,8 +64,7 @@ export default function Marinepact() {
 
             <p className="tracking-tight">
               Being the sole developer of this tool, I owned the entire software
-              development life cycle - from data processing, to design
-              decisions, to design & deployment.
+              development life cycle - from data to deployment.
             </p>
           </div>
 
@@ -99,9 +83,9 @@ export default function Marinepact() {
             </div>
 
             <p className="tracking-tight">
-              The problem: no existing tool could visualize the team's vessel
+              The problem: no existing tool could visualize the scientists' vessel
               and noise data in a way that was interactive, customizable, and
-              presentation-ready for stakeholders.
+              presentation-ready.
             </p>
           </div>
 
@@ -128,7 +112,7 @@ export default function Marinepact() {
         </section>
 
         {/* second section: design decisions - bulk */}
-        <section className="px-8 py-8 flex flex-col gap-16 w-full">
+        <section className="px-8 flex flex-col gap-16 w-full">
           <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-4xl underline">
               design decisions: v1
@@ -174,8 +158,7 @@ export default function Marinepact() {
         </section>
 
         {/* section 3 - same style as the first */}
-
-        <section className="px-8 py-8 flex flex-col gap-16 w-full border rounded-lg border-gray-300">
+        <section className="px-8 pb-8 flex flex-col gap-16 w-full">
           <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-4xl">
@@ -231,7 +214,6 @@ export default function Marinepact() {
               The next software I'll be building involves directly measuring
               offshore wind realization impacts, providing tangible results used
               to inform mitigation decisions.{" "}
-              {/* <span className="coding-regular">▷ Marinepact </span> */}
             </p>
           </div>
         </section>

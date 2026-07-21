@@ -31,9 +31,9 @@ export default function Home() {
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           {/* <GitHubStatus /> */}
-          <p className="serif-bold border-b border-gray-800 mb-2">
+          {/* <p className="serif-bold border-b border-gray-800 mb-2">
             i love telling stories. ❇︎ swe, design
-          </p>
+          </p> */}
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
@@ -44,7 +44,7 @@ export default function Home() {
                 target="_blank"
                 href="https://uwaterloo.ca/about"
               >
-                <span className="pen-regular">University of Waterloo</span>
+                <span className="pen-regular underline">UWaterloo</span>
               </a>
             </span>
           </p>
@@ -52,13 +52,13 @@ export default function Home() {
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
             <span>
-              building software ⚓︎{" "}
+              building @{" "}
               <a
                 className="hover:text-[var(--crimson-red)] active:text-[var(--aritzia-blue)]"
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular">Fisheries and Oceans Can</span>
+                <span className="pen-regular underline">Fisheries and Oceans Can</span>
               </a>{" "}
             </span>
           </p>

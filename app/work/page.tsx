@@ -1,130 +1,63 @@
-import HoverImage from "@/components/HoverImage";
+import Link from "next/link";
 
 export default function Work() {
   return (
-    <main className="flex flex-grow flex-col gap-16 items-start justify-start py-10 max-w-3xl mx-auto w-full">
-      <section
-        className="w-full flex flex-col mt-8 fade-in"
-        style={{ animationDelay: "0s" }}
+    <main className="flex flex-grow flex-col items-center justify-center py-10 max-w-2xl mx-auto w-full">
+      <Link
+        href="/work/marinepact"
+        className="w-full group fade-in hover:translate-y-[-4px] transition-transform"
       >
-        <h2 className="serif-regular text-gray-200 tracking-tight text-6xl text-right">
-          professional
-        </h2>
-
-        {/* todo: make spacing consistent */}
-        <div className="flex flex-col gap-2 sm:gap-4">
-          <div>
-            <h2 className="serif-bold text-gray-600 text-left text-lg">
-              Research Assistant Intern
-            </h2>
-            <p className="text-sm coding-regular text-gray-400 text-left flex items-center border-b border-gray-300">
-              Fisheries and Oceans Canada | May 2026 - Present
-            </p>
-          </div>
-
-          <p className="text-sm text-left flex items-center justify-between gap-2">
-            <span>
-              Building software for federally-funded research projects at DFO.
-            </span>
-            <span className="flex gap-2 shrink-0">
-              {["full-stack development", "product design"].map((tag) => (
-                <span
-                  key={tag}
-                  className="text-[10px] serif-regular border rounded-full px-2 py-0.5"
-                >
-                  {tag}
-                </span>
-              ))}
-            </span>
-          </p>
-
-          {/* screenshots */}
-          <div className="grid grid-cols-2 gap-3">
-            <HoverImage
-              src="/demos/toolfront.webp"
-              alt="map user interface screenshot"
-              href="/work/marinepact"
-              label="see case study"
-              caption="(1) Data visualization tool for ship traffic and ocean layers"
-              className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 active:scale-98"
-              style={{ animationDelay: "0.2s" }}
-              external={false}
-            />
-            <HoverImage
-              src="/demos/wireframefront.webp"
-              alt="wireframe image"
-              href=""
-              label="case study in progress"
-              caption="(2) User interface to communicate pile driving noise impact"
-              className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 active:scale-98"
-              style={{ animationDelay: "0.4s" }}
-            />
-          </div>
+        <div className="relative w-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full rounded-t-lg"
+          >
+            <source src="/demos/vessels.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="/demos/canada.jpeg"
+            alt=""
+            className="absolute -bottom-8 left-6 sm:left-8 w-12 sm:w-18 object-cover border rounded-full border-gray-200 select-none"
+          />
         </div>
-      </section>
 
-      <section
-        className="w-full flex flex-col mt-8 fade-in"
-        style={{ animationDelay: "0.5s" }}
-      >
-        <h2 className="serif-regular text-gray-200 tracking-tight text-6xl text-right">
-          community
-        </h2>
+        <section className="px-6 sm:px-8 pt-10 sm:pt-12 pb-3 sm:pb-6 flex flex-col w-full rounded-b-lg  bg-white shadow-sm transition-shadow group-hover:shadow-md">
+          <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 text-left mb-6">
+            designing software for federally-funded research projects
+          </h1>
 
-        {/* todo: make spacing consistent */}
-        <div className="flex flex-col gap-2 sm:gap-4">
-          <div>
-            <h2 className="serif-bold text-gray-600 text-left text-lg">
-              Founder
-            </h2>
-            <p className="text-sm coding-regular text-gray-400 text-left border-b border-gray-300">
-              Halifax Code Circle, Halifax Language Exchange | November 2024 -
-              June 2025
-            </p>
-          </div>
-
-          <p className="text-sm text-left flex items-center justify-between gap-2">
-            <span>
-              50+ members, 500+ volunteer hours, 70+ meetups over 8 months.
-            </span>
-            <span className="flex gap-2 shrink-0">
-              <span className="text-[10px] serif-regular border rounded-full px-2 py-0.5">
-                web development
-              </span>
-              <a
-                href="https://drive.google.com/drive/u/2/folders/1Rv7DUqPjIlFByNf473ejKTx7Rx3Ofb4j"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[10px] serif-regular border rounded-full px-2 py-0.5 hover:border-[var(--aritzia-blue)] hover:text-[var(--aritzia-blue)] active:scale-98"
+          <div className="flex flex-col gap-1">
+            {[
+              {
+                label: "work",
+                value: "Internship",
+              },
+              {
+                label: "date",
+                value: "May 2026 - present",
+              },
+            ].map((row) => (
+              <div
+                key={row.label}
+                className="flex flex-row items-center gap-0 sm:gap-3 py-1 sm:py-1.5"
               >
-                graphic design
-              </a>
-            </span>
-          </p>
-
-          {/* screenshots */}
-          <div className="grid grid-cols-2 gap-3">
-            <HoverImage
-              src="/demos/community1.webp"
-              alt="halifax code circle screenshot"
-              href="https://hfxcodecircle.ca/"
-              label="hfxcodecircle.ca"
-              caption="(1) Community of high-school builders who love math & code"
-              className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 active:scale-98"
-              style={{ animationDelay: "0.2s" }}
-            />
-            <HoverImage
-              src="/demos/hfxlangfront.webp"
-              alt="halifax language exchange screenshot"
-              href="https://drive.google.com/drive/u/2/folders/1Rv7DUqPjIlFByNf473ejKTx7Rx3Ofb4j"
-              label="hfxlanguages.ca"
-              caption="(2) Learning languages together through activites and curricula"
-              className="rounded-lg w-full object-cover fade-in-bounce hover:scale-102 active:scale-98"
-              style={{ animationDelay: "0.4s" }}
-            />
+                <span className="text-gray-400 text-xs sm:text-sm w-18 sm:w-24 flex items-center gap-2 shrink-0">
+                  {row.label}
+                </span>
+                <span className="text-gray-800 text-xs sm:text-sm">
+                  {row.value}
+                </span>
+              </div>
+            ))}
+            <p className="text-right text-xs sm:text-sm text-gray-400 mt-4 sm:mt-0">
+              click to see more
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+      </Link>
     </main>
   );
 }

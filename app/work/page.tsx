@@ -9,14 +9,13 @@ export default function Work() {
       >
         <div className="relative w-full">
           <video
+            src="/demos/vessels.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full rounded-t-lg"
-          >
-            <source src="/demos/vessels.mp4" type="video/mp4" />
-          </video>
+            className="w-full h-72 sm:h-96 rounded-t-lg object-cover select-none"
+          />
           <img
             src="/demos/canada.jpeg"
             alt=""

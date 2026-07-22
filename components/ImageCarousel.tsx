@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-type Item = { src: string };
+type Item = { src: string; label?: string };
 
 export default function ImageCarousel({ items }: { items: Item[] }) {
   const [index, setIndex] = useState(0);
@@ -20,14 +20,20 @@ export default function ImageCarousel({ items }: { items: Item[] }) {
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {items.map((item, i) => (
-            <Image
-              key={i}
-              src={item.src}
-              className="w-full object-cover shrink-0"
-              width={1664}
-              height={1086}
-              alt=""
-            />
+            <div key={i} className="relative w-full shrink-0">
+              <Image
+                src={item.src}
+                className="w-full object-cover"
+                width={1664}
+                height={1086}
+                alt=""
+              />
+              {item.label && (
+                <span className="absolute top-3 left-3 bg-black/60 text-white text-xs coding-regular px-2 py-1 rounded-md">
+                  {item.label}
+                </span>
+              )}
+            </div>
           ))}
         </div>
 

@@ -7,7 +7,7 @@ export default function About() {
       description:
         "the bible is better together, and there's no koinonia without you.",
       tags: ["typescript", "mern-stack", "tailwindcss"],
-      image: "/projectpics/koinyou.png",
+      image: "/projectpics/koinyou.webp",
       logo: "/projectlogos/koinyoulogo.png",
       projectLink: "https://koinyou.com/",
       githubLink: "https://github.com/wrufay/koinyou",
@@ -20,7 +20,7 @@ export default function About() {
       description:
         "culture-focused duolingo in real life, reconnecting with your lost identity",
       tags: ["typescript", "react native", "mongodb"],
-      image: "/projectpics/best.png",
+      image: "/projectpics/best.webp",
       logo: "/projectlogos/projectoriginlogo.png",
       githubLink: "https://github.com/wrufay/project_origin",
       demoVideo: "/demos/projectoriginlow.mp4",
@@ -33,7 +33,7 @@ export default function About() {
       description:
         "so uw students can find the best napping spots on campus suited to their needs",
       tags: ["typescript", "spring boot", "react"],
-      image: "/projectpics/uwsleeper.png",
+      image: "/projectpics/uwsleeper.webp",
       logo: "/projectlogos/uwsleeperlogo.png",
       projectLink: "https://uwsleeper.vercel.app/",
       githubLink: "https://github.com/wrufay/uwsleeper",
@@ -49,7 +49,7 @@ export default function About() {
       description:
         "track, organize and plan your job applications with ai, all in one place",
       tags: ["javascript", "html", "tailwindcss"],
-      image: "/projectpics/coco.png",
+      image: "/projectpics/coco.webp",
       logo: "/projectlogos/cocologo.png",
       projectLink:
         "https://chromewebstore.google.com/detail/coco-%E0%B3%80%E2%8B%86%EF%BD%A1%CB%9A/ochcceodajaggjehdmifggimjmffbapc",
@@ -66,7 +66,7 @@ export default function About() {
       description:
         "user-centered bible search tool with a llm chat for on-demand scripture commentary",
       tags: ["python", "streamlit", "supabase"],
-      image: "/projectpics/firstloved.png",
+      image: "/projectpics/firstloved.webp",
       logo: "/projectlogos/flowerlogo.png",
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
@@ -79,7 +79,7 @@ export default function About() {
       description:
         "facilitating communication betwen pharmacists and their patients in healthcare",
       tags: ["javascript", "html/css", "firebase"],
-      image: "/projectpics/clearpharma.png",
+      image: "/projectpics/clearpharma.webp",
       logo: "/projectlogos/search.svg",
       projectLink: "https://wrufay.github.io/clearpharma/",
       githubLink: "https://github.com/wrufay/clearpharma",

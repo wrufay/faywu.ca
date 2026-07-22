@@ -2,17 +2,17 @@
 import { paintings } from "@/app/collections/gallery/data";
 
 const projectImages = [
-  "/projectpics/koinyou.png",
+  "/projectpics/koinyou.webp",
   "/projectlogos/koinyoulogo.png",
-  "/projectpics/best.png",
+  "/projectpics/best.webp",
   "/projectlogos/projectoriginlogo.png",
-  "/projectpics/uwsleeper.png",
+  "/projectpics/uwsleeper.webp",
   "/projectlogos/uwsleeperlogo.png",
-  "/projectpics/coco.png",
+  "/projectpics/coco.webp",
   "/projectlogos/cocologo.png",
-  "/projectpics/firstloved.png",
+  "/projectpics/firstloved.webp",
   "/projectlogos/flowerlogo.png",
-  "/projectpics/clearpharma.png",
+  "/projectpics/clearpharma.webp",
 ];
 
 export default function ImagePreloader() {

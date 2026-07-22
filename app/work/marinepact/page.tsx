@@ -9,7 +9,7 @@ export default function Marinepact() {
         <img
           src="/demos/cover.webp"
           alt=""
-          className="w-full h-56 sm:h-72 rounded-t-lg object-cover select-none"
+          className="w-full h-56 sm:h-72 object-cover select-none shadow-sm"
         />
       </div>
 
@@ -42,78 +42,83 @@ export default function Marinepact() {
         </section>
 
         {/* context */}
-        <section className="px-8 flex flex-col gap-16 w-full">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
             <div>
-              <h2 className="w-fit mb-2 pen-regular text-4xl">
+              <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 <span className="bg-[var(--sunny-yellow)]/21">what i did</span>,{" "}
                 in a nutshell.
               </h2>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 I executed the{" "}
                 <span className="coding-regular">design & development</span> of
                 a research tool used within DFO, shipping an end-to-end demo to
-                stakeholders in 30 days.
+                stakeholders in <span className="font-bold">30 days</span>.
               </p>
             </div>
 
-            <p className="tracking-tight">
-              Being the sole developer of this tool, I owned the entire software
-              development life cycle - from data to deployment.
+            <p className="tracking-tight text-sm sm:text-base">
+              Being the <span className="font-bold">sole developer</span> of
+              this tool, I owned the entire software development life cycle -
+              from data to deployment.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div>
-              <h2 className="w-fit mb-2 pen-regular text-4xl">
+              <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 the problem:{" "}
                 <span className="bg-[var(--aritzia-blue)]/21">
                   lack of interactivity.
                 </span>
               </h2>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Fisheries and Oceans Canada is researching the impacts of
-                potential offshore wind energy development on the Scotian Shelf.
+                potential offshore wind energy development on the Scotian
+                Shelf.
               </p>
             </div>
 
-            <p className="tracking-tight">
+            <p className="tracking-tight text-sm sm:text-base">
               The problem: no existing tool could visualize the scientists'
-              vessel and noise data in a way that was interactive, customizable,
-              and presentation-ready.
+              vessel and noise data in a way that was{" "}
+              <span className="font-bold">
+                interactive, customizable, and presentation-ready
+              </span>
+              .
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div>
-              <h2 className="w-fit mb-2 pen-regular text-4xl">
+              <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 <span className="bg-[var(--crimson-red)]/21">
                   understanding
                 </span>{" "}
                 the users.
               </h2>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Two primary users: DFO scientists who need to iterate on data
                 quickly without running models manually, and stakeholders who
                 need clear, shareable results to inform decisions.
               </p>
             </div>
 
-            <p className="tracking-tight">
-              Both groups prioritize presentable results and use efficiency over
-              a perfect product.
+            <p className="tracking-tight text-sm sm:text-base">
+              Both groups prioritize presentable results and use efficiency
+              over a perfect product.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div>
-              <h2 className="w-fit mb-2 pen-regular text-4xl">
+              <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 <span className="underline">speaking</span> to users.
               </h2>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 My supervisor relayed pain points from scientists and other
                 research groups already relying on similar tools - mainly
-                around speed and flexibility.
+                around <span className="font-bold">speed and flexibility</span>.
               </p>
             </div>
 
@@ -121,9 +126,10 @@ export default function Marinepact() {
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
                 <p className="coding-bold text-sm">speed</p>
                 <p className="tracking-tight text-sm text-gray-600">
-                  Existing tools like OceanNavigator took too long to process
-                  and return data - nobody wants to wait 10+ minutes to see a
-                  result.
+                  Existing tools like{" "}
+                  <span className="coding-regular">OceanNavigator</span> took
+                  too long to process and return data - nobody wants to wait
+                  10+ minutes to see a result.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
@@ -139,15 +145,16 @@ export default function Marinepact() {
         </section>
 
         {/* design decisions */}
-        <section className="px-8 flex flex-col gap-16 w-full">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
-            <h2 className="w-fit mb-2 pen-regular text-4xl underline">
+            <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version one: prototype
             </h2>
-            <p className="tracking-tight">
+            <p className="tracking-tight text-sm sm:text-base">
               A simple interface built around one function: turning millions
-              of raw AIS vessel points into something a user could actually
-              see and interact with.
+              of raw <span className="coding-regular">AIS</span> vessel
+              points into something a user could actually see and interact
+              with.
             </p>
             <NotionToggle label="read more">
               <video
@@ -156,21 +163,22 @@ export default function Marinepact() {
                 loop
                 muted
                 playsInline
-                className="w-full object-cover rounded-lg"
+                className="w-full object-cover shadow-sm"
               />
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Prior to even having any interface, 3 weeks of work was solely
-                comparing AIS decoders, writing ingestion scripts and getting a
-                pipeline deployed - no design decisions yet.
+                comparing <span className="coding-regular">AIS decoders</span>,
+                writing ingestion scripts and getting a pipeline deployed - no
+                design decisions yet.
               </p>
             </NotionToggle>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="w-fit mb-2 pen-regular text-4xl underline">
+            <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version 2: skeleton
             </h2>
-            <p className="tracking-tight">
+            <p className="tracking-tight text-sm sm:text-base">
               All primary features - regions, overlays, vessel viewing and
               moorings - became their own side panels, alongside a new base
               map and a redesigned UI.
@@ -183,22 +191,26 @@ export default function Marinepact() {
                   { src: "/demos/v2-regions.webp", label: "regions" },
                 ]}
               />
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Functionally, the interface could have been put to a pause
                 here. However, there were a few UX flaws that I couldn't
                 overlook, and had to address.
               </p>
-              <p className="tracking-tight">
-                Firstly, the largest issue was the flow of the draw region -
-                analysis function. It was unclear where to click to proceed,
-                and repeated icons made functions seem ambiguous - I caught
-                myself clicking the wrong buttons during my own stakeholder
-                demo.
+              <p className="tracking-tight text-sm sm:text-base">
+                Firstly, the largest issue was the flow of the{" "}
+                <span className="coding-regular">draw region - analysis</span>{" "}
+                function. It was unclear where to click to proceed, and
+                repeated icons made functions seem ambiguous -{" "}
+                <span className="italic">
+                  I caught myself clicking the wrong buttons during my own
+                  stakeholder demo
+                </span>
+                .
               </p>
               <img
-                src="/demos/flow-before.svg"
+                src="/demos/flow1.png"
                 alt="before: draw region flow"
-                className="w-full object-contain rounded-lg border border-gray-200"
+                className="w-full object-contain shadow-sm"
               />
               <video
                 src="/demos/uxfix.mp4"
@@ -206,42 +218,49 @@ export default function Marinepact() {
                 loop
                 muted
                 playsInline
-                className="w-full object-cover rounded-lg"
+                className="w-full object-cover shadow-sm"
               />
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 How I addressed it: the draw tool moved into the regions
                 panel itself, so a drawn region behaves like any other region
                 - it persists in a list instead of disappearing after one
-                use. Clicking a region's name toggles its visibility;
-                clicking it on the map selects it for analysis. Splitting
-                "view" from "analyze" got rid of the button-that-changes-
-                meaning problem entirely.
+                use.
               </p>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
+                Clicking a region's name toggles its visibility; clicking it
+                on the map selects it for analysis. Splitting{" "}
+                <span className="italic">"view"</span> from{" "}
+                <span className="italic">"analyze"</span> got rid of the
+                button-that-changes-meaning problem entirely.
+              </p>
+              <p className="tracking-tight text-sm sm:text-base">
                 Secondly, the buttons and panels didn't have enough
                 description. This played a role in the confusion and mixups.
                 I addressed this by changing the left button bar to have a
                 small label for each button instead of showing its function
                 on hover.
               </p>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 It was also difficult to customize the visuals. For instance -
                 there was no way to hide moorings unless you changed the time
                 frame. And for vessels, you couldn't even hide a track after
-                showing it. It seemed as if each feature was separate, not
-                part of a bigger tool. Not great for the user to have to
-                refresh the page each time they wanted to toggle a feature. I
-                had the logic to display the data, but UX decisions were
-                needed to make all the functions cohesive.
+                showing it.
+              </p>
+              <p className="tracking-tight text-sm sm:text-base">
+                It seemed as if each feature was separate, not part of a
+                bigger tool. Not great for the user to have to refresh the
+                page each time they wanted to toggle a feature. I had the
+                logic to display the data, but UX decisions were needed to
+                make all the functions cohesive.
               </p>
             </NotionToggle>
           </div>
 
           <div className="flex flex-col gap-4">
-            <h2 className="w-fit mb-2 pen-regular text-4xl underline">
+            <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version 3: final
             </h2>
-            <p className="tracking-tight">
+            <p className="tracking-tight text-sm sm:text-base">
               The final weeks were about polish - a coherent colour scheme,
               consistent typography, and layout that matched how the tool was
               actually used. Notion-style toggles and more customization tied
@@ -249,9 +268,9 @@ export default function Marinepact() {
             </p>
             <NotionToggle label="read more">
               <img
-                src="/demos/flow-after.svg"
+                src="/demos/flow2.png"
                 alt="after: draw region flow"
-                className="w-full object-contain rounded-lg border border-gray-200"
+                className="w-full object-contain shadow-sm"
               />
               <video
                 src="/demos/drawupdated.mp4"
@@ -259,42 +278,55 @@ export default function Marinepact() {
                 loop
                 muted
                 playsInline
-                className="w-full object-cover rounded-lg"
+                className="w-full object-cover shadow-sm"
               />
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 There were many hiccups in between each iteration - for
-                instance, when implementing the 'see all traffic' feature, I
-                wasn't sure where to place the buttons to choose how the
-                vessels were distinguished by colour.
+                instance, when implementing the{" "}
+                <span className="coding-regular">'see all traffic'</span>{" "}
+                feature, I wasn't sure where to place the buttons to choose
+                how the vessels were distinguished by colour.
               </p>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Initially, clicking see all vessel traffic would also allow
                 you to hover over a filtered list in the vessels panel to see
-                that particular vessel highlighted. However, it wasn't very
-                useful and was even confusing to my supervisor when testing it
+                that particular vessel highlighted.
+              </p>
+              <p className="tracking-tight text-sm sm:text-base">
+                However, it wasn't very useful and was{" "}
+                <span className="italic">
+                  even confusing to my supervisor when testing it
+                </span>{" "}
                 - he couldn't get to where he wanted without me showing him
-                how first. That signalled a real flaw in the UX. So, I removed
-                that ability to focus on vessels when displaying in a region,
-                since it was too messy to combine both panels in one feature.
+                how first. That signalled a real flaw in the UX.
               </p>
-              <p className="tracking-tight">
-                Letting users switch base maps mattered functionally, not just
-                aesthetically - bathymetry reads clearly on the dark map,
-                while the noise layer, a different type of overlay, doesn't.
+              <p className="tracking-tight text-sm sm:text-base">
+                So, I removed that ability to focus on vessels when
+                displaying in a region, since it was too messy to combine
+                both panels in one feature.
               </p>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
+                Letting users switch base maps mattered{" "}
+                <span className="font-bold">
+                  functionally, not just aesthetically
+                </span>{" "}
+                - bathymetry reads clearly on the dark map, while the noise
+                layer, a different type of overlay, doesn't.
+              </p>
+              <p className="tracking-tight text-sm sm:text-base">
                 Notion-style toggles, originally built just to resize labels,
-                got extended to the vessel list after my supervisor tried
-                them and asked for the same on that panel - since only one
-                vessel is selected at a time, it never needed to show a long
-                list. He said "make it smaller," so I made it adjustable.
+                got extended to the vessel list after my supervisor tried them
+                and asked for the same on that panel - since only one vessel
+                is selected at a time, it never needed to show a long list. He
+                said <span className="italic">"make it smaller,"</span> so I
+                made it adjustable.
               </p>
             </NotionToggle>
           </div>
         </section>
 
         {/* reflections and wrapup */}
-        <section className="px-8 flex flex-col gap-16 w-full">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
             <video
               src="/demos/updatecustomize.mp4"
@@ -302,63 +334,77 @@ export default function Marinepact() {
               loop
               muted
               playsInline
-              className="w-full object-cover rounded-lg"
+              className="w-full object-cover shadow-sm"
             />
-            <p className="tracking-tight">
+            <p className="tracking-tight text-sm sm:text-base">
               Currently, this is where we're leaving this user interface - at
-              least the design portion. My job was to create the foundational
-              architecture for other co-op students and developers to build
-              upon in the future. Hence, I've been picking away at
-              documentation, file organization, and other chore-type tasks
-              related to the data pipeline. Overall, making sure the tool
-              fulfills its purpose of supporting scientists in their research.
+              least the design portion. My job was to create the{" "}
+              <span className="font-bold">foundational architecture</span>{" "}
+              for other co-op students and developers to build upon in the
+              future.
+            </p>
+            <p className="tracking-tight text-sm sm:text-base">
+              Hence, I've been picking away at documentation, file
+              organization, and other chore-type tasks related to the data
+              pipeline - overall, making sure the tool fulfills its purpose of
+              supporting scientists in their research.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div>
-              <h2 className="w-fit mb-2 pen-regular text-4xl">
+              <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 <span className="underline">demo</span> time
               </h2>
-              <p className="tracking-tight">
+              <p className="tracking-tight text-sm sm:text-base">
                 Presented a demo of the completed tool to a group of 15+,
                 involving research scientists, stakeholders and marine
-                regulators. The unspoken cues revealed the most about where
-                friction lived - when someone couldn't navigate from one place
-                to another, that was my sign to iterate.
+                regulators.{" "}
+                <span className="italic">
+                  The unspoken cues revealed the most about where friction
+                  lived
+                </span>{" "}
+                - when someone couldn't navigate from one place to another,
+                that was my sign to iterate.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
-                <p className="coding-bold text-sm">design isn't just code</p>
+                <p className="coding-bold text-sm text-[var(--crimson-red)]">design isn't just code</p>
                 <p className="tracking-tight text-sm text-gray-600">
                   I started this project the way I start everything - with
-                  code. Running into real UX friction taught me the
-                  difference between fixing a problem and preventing it in
-                  the first place.
+                  code. Running into real UX friction taught me the{" "}
+                  <span className="italic">
+                    difference between fixing a problem and preventing it
+                  </span>{" "}
+                  in the first place.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
-                <p className="coding-bold text-sm">you're not the user</p>
+                <p className="coding-bold text-sm text-[var(--aritzia-blue)]">you're not the user</p>
                 <p className="tracking-tight text-sm text-gray-600">
                   You can't build a real product only from your own lens.
                   Understanding how users actually think, and translating
-                  that into pixels, was the steepest part of this project -
-                  harder than any technical challenge.
+                  that into pixels, was the steepest part of this project -{" "}
+                  <span className="font-bold">
+                    harder than any technical challenge
+                  </span>
+                  .
                 </p>
               </div>
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
-                <p className="coding-bold text-sm">wearing every hat</p>
+                <p className="coding-bold text-sm text-[var(--crimson-red)]">wearing every hat</p>
                 <p className="tracking-tight text-sm text-gray-600">
-                  A friend once joked that I was the "SWE, PM and client" of
-                  my own work. That's the best part - I get to try things
-                  I've never done, on builds that have a real impact for
-                  research I care about.
+                  A friend once joked that I was the{" "}
+                  <span className="italic">"SWE, PM and client"</span> of my
+                  own work. That's the best part - I get to try things I've
+                  never done, on builds that have a real impact for research I
+                  care about.
                 </p>
               </div>
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
-                <p className="coding-bold text-sm">give people choice</p>
+                <p className="coding-bold text-sm text-[var(--aritzia-blue)]">give people choice</p>
                 <p className="tracking-tight text-sm text-gray-600">
                   People change their minds - that's exactly why you build in
                   flexibility. Letting users adjust styles, change
@@ -371,9 +417,9 @@ export default function Marinepact() {
         </section>
 
         {/* next steps */}
-        <section className="px-8 pb-8 flex flex-col gap-16 w-full">
+        <section className="px-6 sm:px-8 pb-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
-            <h2 className="w-fit mb-2 pen-regular text-4xl">
+            <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
               <span className="underline">next</span> steps
             </h2>
 
@@ -390,10 +436,13 @@ export default function Marinepact() {
               <div className="border border-gray-200 rounded-lg p-4 flex flex-col gap-1">
                 <p className="coding-bold text-sm">what's next</p>
                 <p className="tracking-tight text-sm text-gray-600">
-                  A tool for directly measuring offshore wind impacts, giving
-                  tangible results to inform mitigation decisions. It has a
-                  more defined problem, scope and user group - so I'm
-                  investing more upfront in speaking with users and
+                  A tool for{" "}
+                  <span className="font-bold">
+                    directly measuring offshore wind impacts
+                  </span>
+                  , giving tangible results to inform mitigation decisions.
+                  It has a more defined problem, scope and user group - so
+                  I'm investing more upfront in speaking with users and
                   wireframing (low-fi done, high-fi next).
                 </p>
               </div>

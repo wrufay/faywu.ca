@@ -7,7 +7,7 @@ export default function Collections() {
       <CollectionsItem
           name="library"
           description="stuff i've read before, and in the process of reading"
-          img="/projectpics/blog.png"
+          img="/projectpics/blog.webp"
           keyword="books"
           link="/collections/library"
           delay={300}
@@ -15,7 +15,7 @@ export default function Collections() {
         <CollectionsItem
           name="gallery"
           description="some of my favourite art pieces throughout the years"
-          img="/projectpics/gallery.png"
+          img="/projectpics/gallery.webp"
           keyword="artwork"
           link="/collections/gallery"
           delay={300}

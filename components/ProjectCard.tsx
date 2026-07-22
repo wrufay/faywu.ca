@@ -87,6 +87,7 @@ export default function ProjectCard({
               controls
               autoPlay
               loop
+              muted
             >
               <source src={demoVideo} type="video/mp4" />
             </video>

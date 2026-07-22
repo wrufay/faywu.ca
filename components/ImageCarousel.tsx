@@ -14,7 +14,7 @@ export default function ImageCarousel({ items }: { items: Item[] }) {
 
   return (
     <div className="flex gap-2 flex-col">
-      <div className="relative overflow-hidden rounded-lg">
+      <div className="relative overflow-hidden shadow-sm">
         <div
           className="flex flex-row transition-transform duration-300 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}

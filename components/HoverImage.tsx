@@ -32,11 +32,11 @@ export default function HoverImage({ src, alt, href, label, caption, className, 
     <>
       <img src={src} alt={alt} className={className} style={style} />
       {caption && (
-        <p className="text-xs coding-regular text-gray-400 text-center mt-auto pt-1">{caption}</p>
+        <p className="text-xs coding-regular text-gray-400 dark:text-gray-500 text-center mt-auto pt-1">{caption}</p>
       )}
       <span
         ref={tooltipRef}
-        className="pointer-events-none absolute top-0 left-0 z-50 coding-regular text-[10px] bg-[var(--aritzia-blue)]/80 text-white px-2 py-1 rounded-md whitespace-nowrap opacity-0"
+        className="pointer-events-none absolute top-0 left-0 z-50 coding-regular text-[10px] bg-[color-mix(in_srgb,var(--aritzia-blue)_80%,transparent)] text-white px-2 py-1 rounded-md whitespace-nowrap opacity-0"
         style={{ transition: "opacity 0.15s ease" }}
       >
         {label}

@@ -28,7 +28,7 @@ const timeline: TimelineItem[] = [
               href="https://www.google.com/search?q=nova+scotia&oq=nova+scotia&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMg8IARAuGBQYhwIYsQMYgAQyBggCECMYJzIPCAMQABhDGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyFQgFEC4YFBjHARiHAhixAxjRAxiABDIGCAYQRRhBMgYIBxBFGEHSAQgxMDYzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-bold bg-[var(--sunny-yellow)]/21"
+              className="opacity-67 hover:opacity-100 coding-bold bg-[color-mix(in_srgb,var(--sunny-yellow)_21%,transparent)]"
             >
               big NS
             </a>{" "}
@@ -51,7 +51,7 @@ const timeline: TimelineItem[] = [
               href="https://codepen.io/collection/ZQLJbJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-67 hover:opacity-100 coding-bold bg-[var(--sunny-yellow)]/21"
+              className="opacity-67 hover:opacity-100 coding-bold bg-[color-mix(in_srgb,var(--sunny-yellow)_21%,transparent)]"
             >
               collection
             </a>{" "}
@@ -159,7 +159,7 @@ export default function About() {
     // hopefully using some ui/ux concepts i will LEARN
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 sm:text-base text-sm serif-bold text-gray-700">
+      <p className="px-10 sm:text-base text-sm serif-bold text-gray-700 dark:text-gray-400">
         a peek into my life ᝰ{" "}
       </p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">

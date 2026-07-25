@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 import Webring from "@/components/Webring";
 
 import ViewerTracker from "@/components/ViewerTracker";
-import NavMusic from "@/components/NavMusic";
+import ThemeToggle from "@/components/ThemeToggle";
 import ImagePreloader from "@/components/ImagePreloader";
 
 export const metadata: Metadata = {
@@ -16,10 +16,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const stored = localStorage.getItem("theme");
+                const dark = stored
+                  ? stored === "dark"
+                  : window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.classList.toggle("dark", dark);
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
       {/* here is where the HORIZONTAL (x-dir) body padding is */}
       {/* y-dir padding is unique to each page (should make this consistent perhaps) */}
-      <body className="bg-amber-50/30 text-gray-700 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">
+      <body className="bg-amber-50/30 dark:bg-stone-900 text-gray-700 dark:text-gray-400 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">
         <ViewerTracker />
         <ImagePreloader />
         {/* mini nav */}
@@ -52,7 +67,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           >
             collections
           </NavLink>
-          <NavMusic />
+          <ThemeToggle />
         </nav>
 
         {children}
@@ -72,14 +87,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <div className="flex gap-2 sm:gap-3 items-center">
                 <a
                   href="mailto:f26wu@uwaterloo.ca"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px]"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px] dark:invert"
                 >
                   <img src="/icons/email.png" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/fayranw/"
                   target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px]"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px] dark:invert"
                 >
                   <img src="/icons/linkedin.png" />
                 </a>
@@ -89,14 +104,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <a
                   href="https://github.com/wrufay"
                   target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px]"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px] dark:invert"
                 >
                   <img src="/icons/github.png" />
                 </a>
                 <a
                   href="https://x.com/wrufay"
                   target="_blank"
-                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px]"
+                  className="opacity-50 hover:opacity-67 w-4 h-4 sm:w-5 sm:h-5 hover:translate-y-[-2px] active:scale-94 active:translate-y-[1px] dark:invert"
                 >
                   <img src="/icons/x.png" />
                 </a>

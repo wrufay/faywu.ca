@@ -8,12 +8,12 @@ export default function Home() {
       <div className="fade-in">
         <img
           src="/designs/frontfay.png"
-          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float"
+          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float dark:brightness-75"
           alt="colourful hand-drawn logo that says fay wu"
         />
       </div>
       <div className="max-w-md flex flex-col gap-4 sm:gap-6">
-        <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 typing-animation">
+        <h1 className="text-3xl sm:text-5xl font-semibold text-gray-900 dark:text-gray-200 typing-animation">
           hi there! I'm
           <span className="pen-regular">
             {" "}
@@ -29,7 +29,7 @@ export default function Home() {
         </h1>
 
         {/* star bullets and lines */}
-        <div className="text-sm sm:text-lg text-gray-600 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
+        <div className="text-sm sm:text-lg text-gray-600 dark:text-gray-400 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           {/* <GitHubStatus /> */}
           {/* <p className="serif-bold border-b border-gray-800 mb-2">
             i love telling stories. ❇︎ swe, design
@@ -69,7 +69,7 @@ export default function Home() {
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"
-            className="px-3 py-2 sm:px-4 sm:py-2 bg-white hover:translate-y-[-2px] active:scale-98 active:translate-y-[1px]  transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
+            className="px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-800 hover:translate-y-[-2px] active:scale-98 active:translate-y-[1px]  transition-transform border border-gray-300 dark:border-stone-600 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
           >
             let's{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
@@ -78,7 +78,7 @@ export default function Home() {
           </a>
           <Link
             href="/about"
-            className="px-3 py-2 sm:px-4 sm:py-2 active:scale-98 active:translate-y-[1px] bg-white hover:translate-y-[-2px] transition-transform border border-gray-300 text-gray-800 rounded-lg hover:bg-gray-100/50"
+            className="px-3 py-2 sm:px-4 sm:py-2 active:scale-98 active:translate-y-[1px] bg-white dark:bg-stone-800 hover:translate-y-[-2px] transition-transform border border-gray-300 dark:border-stone-600 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
           >
             more about{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">me</span>

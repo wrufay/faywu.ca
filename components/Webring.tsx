@@ -1,25 +1,26 @@
 export default function Webring() {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "2px",
-      }}
-      className="coding-regular"
-    >
+    <div className="coding-regular flex items-center gap-0.5">
       <a href="https://cs.uwatering.com/#https://faywu.ca?nav=prev">
-        <img src="/icons/leftarrow.png" alt="prev" style={{ width: "10px", height: "10px", opacity: 0.41 }} />
+        <img
+          src="/icons/leftarrow.png"
+          alt="prev"
+          className="w-2.5 h-2.5 opacity-41 dark:invert"
+        />
       </a>
       <a href="https://cs.uwatering.com/#https://faywu.ca/" target="_blank">
         <img
           src="https://cs.uwatering.com/icon.black.svg"
           alt="CS Webring"
-          style={{ width: "18px", height: "auto", opacity: 0.41 }}
+          className="w-[18px] h-auto opacity-41 dark:invert"
         />
       </a>
       <a href="https://cs.uwatering.com/#https://faywu.ca?nav=next">
-        <img src="/icons/rightarrow.png" alt="next" style={{ width: "10px", height: "10px", opacity: 0.41 }} />
+        <img
+          src="/icons/rightarrow.png"
+          alt="next"
+          className="w-2.5 h-2.5 opacity-41 dark:invert"
+        />
       </a>
     </div>
   );

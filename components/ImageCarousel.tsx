@@ -23,7 +23,7 @@ export default function ImageCarousel({ items }: { items: Item[] }) {
             <div key={i} className="relative w-full shrink-0">
               <Image
                 src={item.src}
-                className="w-full object-cover"
+                className="w-full object-cover dark:brightness-75"
                 width={1664}
                 height={1086}
                 alt=""

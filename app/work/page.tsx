@@ -14,17 +14,17 @@ export default function Work() {
             loop
             muted
             playsInline
-            className="w-full h-72 sm:h-96 rounded-t-lg object-cover select-none"
+            className="w-full h-72 sm:h-96 rounded-t-lg object-cover select-none dark:brightness-75"
           />
           <img
             src="/demos/canada.jpeg"
             alt=""
-            className="absolute -bottom-8 left-6 sm:left-8 w-12 sm:w-18 object-cover border rounded-full border-gray-200 select-none"
+            className="absolute -bottom-8 left-6 sm:left-8 w-12 sm:w-18 object-cover border rounded-full border-gray-200 dark:border-stone-600 select-none dark:brightness-75"
           />
         </div>
 
-        <section className="px-6 sm:px-8 pt-10 sm:pt-12 pb-3 sm:pb-6 flex flex-col w-full rounded-b-lg  bg-white shadow-sm transition-shadow group-hover:shadow-md">
-          <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 text-left mb-6">
+        <section className="px-6 sm:px-8 pt-10 sm:pt-12 pb-3 sm:pb-6 flex flex-col w-full rounded-b-lg  bg-white dark:bg-stone-800 shadow-sm transition-shadow group-hover:shadow-md">
+          <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 dark:text-gray-400 text-left mb-6">
             designing software for federally-funded research projects
           </h1>
 
@@ -43,15 +43,15 @@ export default function Work() {
                 key={row.label}
                 className="flex flex-row items-center gap-0 sm:gap-3 py-1 sm:py-1.5"
               >
-                <span className="text-gray-400 text-xs sm:text-sm w-18 sm:w-24 flex items-center gap-2 shrink-0">
+                <span className="text-gray-400 dark:text-gray-500 text-xs sm:text-sm w-18 sm:w-24 flex items-center gap-2 shrink-0">
                   {row.label}
                 </span>
-                <span className="text-gray-800 text-xs sm:text-sm">
+                <span className="text-gray-800 dark:text-gray-300 text-xs sm:text-sm">
                   {row.value}
                 </span>
               </div>
             ))}
-            <p className="text-right text-xs sm:text-sm text-gray-400 mt-4 sm:mt-0">
+            <p className="text-right text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-4 sm:mt-0">
               click to see more
             </p>
           </div>

@@ -49,7 +49,7 @@ export default function AboutCard({
     <div
       onMouseMove={handleMouseMove}
       style={{ animationDelay: `${delay}ms` }}
-      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 transition-transform bg-white cursor-pointer shadow-sm border border-gray-100 rounded-lg fade-in relative overflow-hidden"
+      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 transition-transform bg-white dark:bg-stone-800 cursor-pointer shadow-sm border border-gray-100 dark:border-stone-700 rounded-lg fade-in relative overflow-hidden"
     >
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100"
@@ -65,7 +65,7 @@ export default function AboutCard({
       />
       <div className="flex flex-col gap-3 relative z-10">
         <h1 className="text-2xl sm:text-3xl flex flex-row justify-center items-center gap-3">
-          <img src={imgLink} className="w-8 h-8 opacity-67" />
+          <img src={imgLink} className="w-8 h-8 opacity-67 dark:invert" />
           <span className="pen-regular text-3xl sm:text-4xl">{title}</span>
         </h1>
 
@@ -90,7 +90,7 @@ export default function AboutCard({
               {descriptions[curIndex].tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="rounded-full border border-gray-200 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500"
+                  className="rounded-full border border-gray-200 dark:border-stone-600 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 dark:text-gray-300"
                 >
                   {tag}
                 </span>
@@ -104,7 +104,7 @@ export default function AboutCard({
           <a
             href="https://drive.google.com/file/d/1zYYHXVqiO7PXd4fT8uIa3KpWvoMADe2t/view?usp=sharing"
             target="_blank"
-            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white transition-colors coding-regular border border-gray-300 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15"
+            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-800 transition-colors coding-regular border border-gray-300 dark:border-stone-600 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[color-mix(in_srgb,var(--sunny-yellow)_15%,transparent)]"
           >
             view my resume
           </a>
@@ -117,7 +117,7 @@ export default function AboutCard({
           <span>{descriptions[curIndex].year}</span>
           <img
             onClick={nextExperience}
-            className="select-none hover:scale-110 w-6 h-6 bg-[var(--aritzia-blue)]/15 p-1 rounded-full shadow-sm active:shadow-none active:translate-y-[1px]"
+            className="select-none hover:scale-110 w-6 h-6 bg-[color-mix(in_srgb,var(--aritzia-blue)_15%,transparent)] p-1 rounded-full shadow-sm active:shadow-none active:translate-y-[1px]"
             src="/icons/arrowdown.png"
           />
         </p>

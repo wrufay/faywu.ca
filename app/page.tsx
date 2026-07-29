@@ -32,7 +32,7 @@ export default function Home() {
         <div className="text-sm sm:text-lg text-gray-600 dark:text-gray-400 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           {/* <GitHubStatus /> */}
           <p className="serif-bold border-b border-gray-800 mb-2 dark:border-gray-500">
-            ⊹ telling stories through design ࣪ ˖
+            ⊹ i like software, stories, & design ࣪ ˖
           </p>
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">

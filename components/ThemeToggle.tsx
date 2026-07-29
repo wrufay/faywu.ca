@@ -17,7 +17,7 @@ export default function ThemeToggle() {
       title="toggle dark mode"
       className="text-sm sm:text-base hover:opacity-67 active:text-[var(--aritzia-blue)] cursor-pointer"
     >
-      {isDark ? "☼" : "☾"}
+      {isDark ? "⏾" : "☼"}
     </button>
   );
 }

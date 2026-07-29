@@ -133,13 +133,13 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "currently: government internship",
-        tags: ["software development", "ui design"],
+        description: "building @ gov. of Canada",
+        tags: ["swe", "design"],
         year: "May 2026",
       },
       {
         description: "studying @ University of Waterloo",
-        tags: ["uwccf", "watonomous bizops"],
+        tags: ["uwccf"],
         year: "Sep 2025",
       },
     ],

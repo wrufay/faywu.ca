@@ -239,6 +239,16 @@ html {
   animation: scaleIn 0.3s ease-out;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee 8s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
 .nav-popover {
   opacity: 0;
   transform: translateY(-6px);

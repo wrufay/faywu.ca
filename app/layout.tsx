@@ -7,6 +7,8 @@ import Webring from "@/components/Webring";
 import ViewerTracker from "@/components/ViewerTracker";
 import ThemeToggle from "@/components/ThemeToggle";
 import ImagePreloader from "@/components/ImagePreloader";
+import NowPlaying from "@/components/NowPlaying";
+import LikeCounter from "@/components/LikeCounter";
 
 export const metadata: Metadata = {
   title: "Fay Wu",
@@ -102,13 +104,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </a>
               </div>
 
-              {/* <div className="absolute left-0">
+              <div className="absolute left-0">
                 <NowPlaying />
-              </div> */}
+              </div>
 
-              {/* <div className="absolute right-0">
+              <div className="absolute right-0">
                 <LikeCounter />
-              </div> */}
+              </div>
             </div>
           </div>
         </footer>

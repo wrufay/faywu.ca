@@ -18,6 +18,10 @@ interface AboutCardProps {
   bgColour: string;
 }
 
+const tagLinks: Record<string, string> = {
+  uwccf: "https://uwccf.com/",
+};
+
 export default function AboutCard({
   delay = 0,
   title,
@@ -87,14 +91,26 @@ export default function AboutCard({
               key={`tags-${curIndex}`}
               className="flex flex-wrap gap-2 justify-center mt-1 animate-scroll-up"
             >
-              {descriptions[curIndex].tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="rounded-full border border-gray-200 dark:border-stone-600 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 dark:text-gray-300"
-                >
-                  {tag}
-                </span>
-              ))}
+              {descriptions[curIndex].tags.map((tag, index) => {
+                const href = tagLinks[tag];
+                const className =
+                  "rounded-full border border-gray-200 dark:border-stone-600 px-2 py-0.5 sm:py-1 sm:px-2.5 text-xs text-gray-500 dark:text-gray-300";
+                return href ? (
+                  <a
+                    key={index}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${className} hover:text-gray-700 dark:hover:text-gray-100 transition-colors`}
+                  >
+                    {tag}
+                  </a>
+                ) : (
+                  <span key={index} className={className}>
+                    {tag}
+                  </span>
+                );
+              })}
             </div>
           )}
         </div>

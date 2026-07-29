@@ -6,26 +6,28 @@ export default function About() {
       title: "koinYou",
       description:
         "the bible is better together, and there's no koinonia without you.",
-      tags: ["typescript", "mern-stack", "tailwindcss"],
+      tags: ["typescript", "mern stack", "tailwindcss"],
       image: "/projectpics/koinyou.webp",
       logo: "/projectlogos/koinyoulogo.png",
       projectLink: "https://koinyou.com/",
       githubLink: "https://github.com/wrufay/koinyou",
       // demoVideo: "/demos/projectoriginlow.mp4",
-      insideDesc: "Open source project + a work in progress :)",
+      insideDesc: "Currently under construction",
       date: "Jan. 2026",
     },
     {
       title: "project origin",
       description:
         "culture-focused duolingo in real life, reconnecting with your lost identity",
-      tags: ["typescript", "react native", "mongodb"],
+      tags: ["expo-go", "react native", "sqlite"],
       image: "/projectpics/best.webp",
       logo: "/projectlogos/projectoriginlogo.png",
       githubLink: "https://github.com/wrufay/project_origin",
       demoVideo: "/demos/projectoriginlow.mp4",
+      linkedinLink:
+        "https://www.linkedin.com/posts/fayranw_putting-8-years-of-duolingo-to-good-use-ugcPost-7484461245916610560-wBAO/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTLLZMBwj9B99bWccqeEF7cPqdop2hUCQ4",
       insideDesc:
-        "Project submitted to UofTHacks13. Built first mobile app, learning how to use Blender to create 3d models and implement them into the UI",
+        "Project submitted to UofTHacks13. Built my first mobile app with React Native!",
       date: "Jan. 2026",
     },
     {
@@ -41,7 +43,7 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7413275582198853634/",
       insideDesc:
-        "Built full-stack React, Typescript application styled with TailwindCSS, calling Spring Boot REST API with PostgreSQL database, deployed end-to-end using Vercel and Railway. Bridging the gap between Waterloo students and sleep - because sleep is your superpower.",
+        "Built a Spring Boot REST API and React front-end styled with Tailwind. First time fiddling with databases, learned Postgres and deployed the app end-to-end. Bridging the gap between Waterloo students and sleep - because sleep is your superpower.",
       date: "Dec. 2025",
     },
     {
@@ -58,7 +60,7 @@ export default function About() {
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7410149681709756418/",
       insideDesc:
-        "Facilitate co-op application tracking with Coco, an HTML and Vanilla JS Chrome extension styled with TailwindCSS. Uses Anthropic API to power various AI features such as autofill, resume analysis and sort-by-role folder organization. Currently working on implementing a backend to improve security and user experience!",
+        "Dabbled with Claude API to make a 'smart' job application tracker. Built with HTML, Tailwind CSS, JavaScript and deployed as a Chrome extension.",
       date: "Dec. 2025",
     },
     {
@@ -71,7 +73,7 @@ export default function About() {
       projectLink: "https://firstloved.cc/",
       githubLink: "https://github.com/wrufay/firstlovedbible",
       demoVideo: "/demos/firstloved.mp4",
-      insideDesc: `Reducing Bible study friction through Python application made with Streamlit using Anthropic API and Supabase data storage, containerized with Docker, deployed on Render. No more opening a hundred tabs for a Bible study - everything's in one place with FirstLoved.`,
+      insideDesc: `Made a Python application reducing scripture reading friction on Streamlit. Used Supabase to create a SQL database schema for user auth, deployed using Docker & Render. No more opening a hundred tabs for a Bible study - everything's in one place with FirstLoved.`,
       date: "Nov. 2025",
     },
     {
@@ -85,7 +87,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/clearpharma",
       demoVideo: "/demos/clearpharmabest.mp4",
       insideDesc:
-        "Allowing patients and pharmacists to communicate transparently with our HTML, CSS and Javascript web application, built in 36 hours for UW's Technology in Pharmacy hackathon. Featuring a dual-dashboard display, securely storing sensitive data in Firebase.",
+        "Led the design for a healthcare application faciliating patient-pharmacist communication. Created a dual-dashboard interface and integrated Firebase for real-time data sync. Built in 36 hours, submitted to HackRX '25.",
       date: "Nov. 2025",
       linkedinLink:
         "https://www.linkedin.com/feed/update/urn:li:activity:7398514348320620544/",

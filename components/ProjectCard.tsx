@@ -37,7 +37,7 @@ export default function ProjectCard({
   return (
     <>
       <div
-        className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white dark:bg-stone-800 w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100 dark:border-stone-700 "
+        className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white dark:bg-stone-800 w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100 dark:border-stone-900 "
         style={{ animationDelay: `${delay}ms` }}
       >
         <img

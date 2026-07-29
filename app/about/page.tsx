@@ -159,7 +159,7 @@ export default function About() {
     // hopefully using some ui/ux concepts i will LEARN
     <main className="flex flex-grow flex-col gap-4 sm:gap-10 items-center justify-center py-10">
       {/* intro text */}
-      <p className="px-10 sm:text-base text-sm serif-bold text-gray-700 dark:text-gray-400">
+      <p className="w-fit px-4 sm:text-base text-sm serif-bold text-gray-700 dark:text-stone-900 bg-white/10 ">
         a peek into my life ᝰ{" "}
       </p>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">

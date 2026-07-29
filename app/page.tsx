@@ -8,7 +8,7 @@ export default function Home() {
       <div className="fade-in">
         <img
           src="/designs/frontfay.png"
-          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float dark:brightness-75"
+          className="w-30 h-15 sm:w-50 sm:h-25 object-cover mx-auto opacity-86 animate-float dark:brightness-90"
           alt="colourful hand-drawn logo that says fay wu"
         />
       </div>
@@ -31,9 +31,9 @@ export default function Home() {
         {/* star bullets and lines */}
         <div className="text-sm sm:text-lg text-gray-600 dark:text-gray-400 flex flex-col items-center fade-in delay-1 gap-0.5 sm:gap-1">
           {/* <GitHubStatus /> */}
-          {/* <p className="serif-bold border-b border-gray-800 mb-2">
-            i love telling stories. ❇︎ swe, design
-          </p> */}
+          <p className="serif-bold border-b border-gray-800 mb-2 dark:border-gray-500">
+            ⊹ i like software, growth, & design ࣪ ˖
+          </p>
 
           <p className="flex flex-row gap-1 sm:gap-2 items-center">
             <img src="/icons/star.png" className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
@@ -58,7 +58,9 @@ export default function Home() {
                 target="_blank"
                 href="https://www.dfo-mpo.gc.ca/index-eng.html"
               >
-                <span className="pen-regular underline">Fisheries and Oceans Can</span>
+                <span className="pen-regular underline">
+                  Fisheries and Oceans Can
+                </span>
               </a>{" "}
             </span>
           </p>
@@ -69,7 +71,7 @@ export default function Home() {
           <a
             href="https://www.linkedin.com/in/fayranw/"
             target="_blank"
-            className="px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-800 hover:translate-y-[-2px] active:scale-98 active:translate-y-[1px]  transition-transform border border-gray-300 dark:border-stone-600 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
+            className="px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-800 hover:translate-y-[-2px] active:scale-98 active:translate-y-[1px]  transition-transform border border-gray-300 hover:dark:border-stone-600 dark:border-stone-800 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
           >
             let's{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">
@@ -78,7 +80,7 @@ export default function Home() {
           </a>
           <Link
             href="/about"
-            className="px-3 py-2 sm:px-4 sm:py-2 active:scale-98 active:translate-y-[1px] bg-white dark:bg-stone-800 hover:translate-y-[-2px] transition-transform border border-gray-300 dark:border-stone-600 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
+            className="px-3 py-2 sm:px-4 sm:py-2 active:scale-98 active:translate-y-[1px] bg-white dark:bg-stone-800 hover:translate-y-[-2px] transition-transform border border-gray-300 hover:dark:border-stone-600 dark:border-stone-800 text-gray-800 dark:text-gray-300 rounded-lg hover:bg-gray-100/50 dark:hover:bg-stone-800"
           >
             more about{" "}
             <span className="text-[var(--aritzia-blue)] coding-bold">me</span>

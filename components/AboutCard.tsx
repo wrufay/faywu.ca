@@ -49,7 +49,7 @@ export default function AboutCard({
     <div
       onMouseMove={handleMouseMove}
       style={{ animationDelay: `${delay}ms` }}
-      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 transition-transform bg-white dark:bg-stone-800 cursor-pointer shadow-sm border border-gray-100 dark:border-stone-700 rounded-lg fade-in relative overflow-hidden"
+      className="group px-4 py-8 sm:p-8 w-full max-w-2xs md:w-2xs h-50 transition-transform bg-white dark:bg-stone-800 cursor-pointer shadow-sm border border-gray-100 dark:border-stone-900 rounded-lg fade-in relative overflow-hidden"
     >
       <motion.div
         className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100"
@@ -104,7 +104,7 @@ export default function AboutCard({
           <a
             href="https://drive.google.com/file/d/1zYYHXVqiO7PXd4fT8uIa3KpWvoMADe2t/view?usp=sharing"
             target="_blank"
-            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-800 transition-colors coding-regular border border-gray-300 dark:border-stone-600 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[color-mix(in_srgb,var(--sunny-yellow)_15%,transparent)]"
+            className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-900 transition-colors coding-regular border border-gray-300 dark:border-stone-900 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15 hover:dark:border-stone-700 dark:hover:bg-stone-900 active:dark:bg-stone-800"
           >
             view my resume
           </a>

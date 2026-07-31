@@ -4,12 +4,12 @@ export default function Collections() {
   return (
     <main className="py-10 flex flex-grow justify-center items-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <CollectionsItem
-          name="library"
-          description="stuff i've read before, and in the process of reading"
-          img="/projectpics/blog.webp"
-          keyword="books"
-          link="/collections/library"
+        <CollectionsItem
+          name="playlists"
+          description="curated youtube playlists i've discovered, for every season. "
+          img="/projectpics/music.webp"
+          keyword="music"
+          link="/collections/playlists"
           delay={300}
         />
         <CollectionsItem

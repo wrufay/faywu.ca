@@ -10,9 +10,13 @@ export default function PlaylistRow({
   title,
   playlistUrl,
   description,
-}: PlaylistEntry) {
+  delay = 0,
+}: PlaylistEntry & { delay?: number }) {
   return (
-    <div className="border-b border-gray-100 dark:border-stone-800 py-3 flex flex-col gap-1 sm:grid sm:grid-cols-[9rem_1fr_2.5rem] sm:items-start sm:gap-0 text-left">
+    <div
+      style={{ animationDelay: `${delay}ms` }}
+      className="border-b border-gray-100 dark:border-stone-800 py-3 flex flex-col gap-1 sm:grid sm:grid-cols-[9rem_1fr_2.5rem] sm:items-start sm:gap-0 text-left opacity-0 fade-in"
+    >
       <div className="flex items-center justify-between sm:contents">
         <span className="coding-bold text-sm text-gray-800 dark:text-gray-300 text-left sm:order-1 sm:pr-4">
           {title}

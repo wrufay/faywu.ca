@@ -29,4 +29,10 @@ export const playlists: PlaylistEntry[] = [
     description:
       "giggling at texts while Claude breaks my silly side project at *1:05*am; just coasting because I can.",
   },
+  {
+    title: "vintage love",
+    playlistUrl: "https://youtu.be/OLatB2VPXcQ?si=BeHkMjFlOIBgPghV&t=980",
+    description:
+      "summer in *eleven weeks*. too busy painting & reading Kazuo Ishiguro to notice that spring's here",
+  },
 ];

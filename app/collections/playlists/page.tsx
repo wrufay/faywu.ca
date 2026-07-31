@@ -10,8 +10,8 @@ export default function Playlists() {
           worth a million.
         </p>
         <div className="flex flex-col">
-          {playlists.map((p) => (
-            <PlaylistRow key={p.title} {...p} />
+          {playlists.map((p, i) => (
+            <PlaylistRow key={p.title} {...p} delay={i * 100} />
           ))}
         </div>
       </div>

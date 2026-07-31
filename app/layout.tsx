@@ -17,7 +17,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+                document.documentElement.classList.toggle("dark", dark);
+              } catch (_) {}
+            `,
+          }}
+        />
+      </head>
       {/* here is where the HORIZONTAL (x-dir) body padding is */}
       {/* y-dir padding is unique to each page (should make this consistent perhaps) */}
       <body className="bg-amber-50/30 dark:bg-stone-900/90 text-gray-700 dark:text-gray-400 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">

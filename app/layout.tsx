@@ -11,9 +11,41 @@ import LikeCounter from "@/components/LikeCounter";
 import NowPlaying from "@/components/NowPlaying";
 
 export const metadata: Metadata = {
-  title: "Fay Wu",
-  description: "Personal website somewhat inspired by Notion",
+  metadataBase: new URL("https://faywu.ca"),
+  title: {
+    default: "Fay Wu",
+    template: "%s | Fay Wu",
+  },
+  description:
+    "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
   icons: { icon: "/icons/dawg.png" },
+  alternates: { canonical: "https://faywu.ca" },
+  openGraph: {
+    title: "Fay Wu",
+    description:
+      "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
+    url: "https://faywu.ca",
+    siteName: "Fay Wu",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Fay Wu",
+    description:
+      "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Fay Wu",
+  url: "https://faywu.ca",
+  sameAs: [
+    "https://www.linkedin.com/in/fayranw/",
+    "https://github.com/wrufay",
+    "https://x.com/wrufay",
+  ],
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -34,6 +66,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       {/* here is where the HORIZONTAL (x-dir) body padding is */}
       {/* y-dir padding is unique to each page (should make this consistent perhaps) */}
       <body className="bg-amber-50/30 dark:bg-stone-900/90 text-gray-700 dark:text-gray-400 serif-regular text-center min-h-screen items-center flex flex-col px-4 sm:px-10">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <ViewerTracker />
         <ImagePreloader />
         {/* mini nav */}

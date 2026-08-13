@@ -1,5 +1,11 @@
 import { playlists } from "./data";
 import PlaylistRow from "@/components/PlaylistRow";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Playlists",
+  description: "Curated playlists Fay Wu has discovered, for every season.",
+};
 
 export default function Playlists() {
   return (

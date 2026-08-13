@@ -1,6 +1,13 @@
 import ImageCarousel from "@/components/ImageCarousel";
 import NotionToggle from "@/components/NotionToggle";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MarinePact",
+  description:
+    "Case study: designing MarinePact for Fisheries and Oceans Canada.",
+};
 
 export default function Marinepact() {
   return (

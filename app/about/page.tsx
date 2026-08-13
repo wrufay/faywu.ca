@@ -1,5 +1,11 @@
 import AboutCard from "@/components/AboutCard";
 import { ReactNode } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Fay Wu's timeline — past, present, and what's next.",
+};
 
 interface Description {
   description: string | ReactNode;

@@ -1,4 +1,10 @@
 import CollectionsItem from "@/components/CollectionsItem";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Collections",
+  description: "Other stuff to look at — playlists, art, and more.",
+};
 
 export default function Collections() {
   return (

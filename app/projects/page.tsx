@@ -1,4 +1,10 @@
 import ProjectCard from "@/components/ProjectCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Fun trinkets and side projects made by Fay Wu.",
+};
 
 export default function About() {
   const collections = [

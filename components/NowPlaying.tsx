@@ -26,7 +26,7 @@ export default function NowPlaying() {
   if (!song)
     return (
       <span className="text-[10px] sm:text-xs coding-regular text-gray-400 dark:text-gray-600">
-        no music playing
+        © Fay Wu
       </span>
     );
 
@@ -45,11 +45,11 @@ export default function NowPlaying() {
       title={song.isPlaying ? "currently listening" : "last listened to"}
       className="flex items-center gap-1 text-[10px] sm:text-xs text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors fade-in"
     >
-      <span className="coding-regular overflow-hidden max-w-[67px] sm:max-w-[167px] inline-block align-middle lowercase">
+      <span className="coding-regular overflow-hidden max-w-[41px] sm:max-w-[167px] inline-block align-middle lowercase">
         {/* wrapper for marquee animation which is activated when music is playing*/}
         <span className="marquee">
-          {song.isPlaying ? "▶" : "⬢"} {song.title}&nbsp;&nbsp;&nbsp;
-          {song.isPlaying ? "▶" : "⬢"} {song.title}
+          {song.isPlaying ? "▶" : "⬢"} {song.artist}&nbsp;&nbsp;&nbsp;
+          {song.isPlaying ? "▶" : "⬢"} {song.artist}
         </span>
       </span>
     </a>

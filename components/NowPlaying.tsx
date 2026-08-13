@@ -25,7 +25,7 @@ export default function NowPlaying() {
 
   if (!song)
     return (
-      <span className="text-xs coding-regular text-gray-400 dark:text-gray-600">
+      <span className="text-[10px] sm:text-xs coding-regular text-gray-400 dark:text-gray-600">
         no music playing
       </span>
     );
@@ -43,7 +43,7 @@ export default function NowPlaying() {
       href={url}
       target="_blank"
       title={song.isPlaying ? "currently listening" : "last listened to"}
-      className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors fade-in"
+      className="flex items-center gap-1 text-[10px] sm:text-xs text-gray-500 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors fade-in"
     >
       <span className="coding-regular overflow-hidden max-w-[67px] sm:max-w-[167px] inline-block align-middle lowercase">
         {/* wrapper for marquee animation which is activated when music is playing*/}

@@ -8,6 +8,7 @@ import ViewerTracker from "@/components/ViewerTracker";
 import ThemeToggle from "@/components/ThemeToggle";
 import ImagePreloader from "@/components/ImagePreloader";
 import LikeCounter from "@/components/LikeCounter";
+import NowPlaying from "@/components/NowPlaying";
 
 export const metadata: Metadata = {
   title: "Fay Wu",
@@ -115,8 +116,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </a>
               </div>
 
-              <div className="absolute left-0 text-xs text-gray-400 dark:text-gray-600 coding-regular">
-                © 2026 Fay Wu
+              <div className="absolute left-0">
+                <NowPlaying />
               </div>
 
               <div className="absolute right-0">

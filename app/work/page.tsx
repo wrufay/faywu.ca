@@ -35,7 +35,7 @@ export default function Work() {
             <span className="pen-regular tracking-tight border-b-2 border-[var(--crimson-red)]/67">
               interactivity
             </span>{" "}
-            to research workflows at <span className="text-[var(--aritzia-blue)] coding-bold">DFO</span>
+            to research workflows at DFO
           </h1>
 
           <div className="flex flex-col gap-1">
@@ -44,10 +44,7 @@ export default function Work() {
                 label: "work",
                 value: "Internship",
               },
-              {
-                label: "role",
-                value: "Research Assistant",
-              },
+              
               {
                 label: "date",
                 value: "May 2026 - Aug 2026",
@@ -66,7 +63,7 @@ export default function Work() {
               </div>
             ))}
             <p className="text-right text-xs sm:text-sm text-gray-400 dark:text-gray-500 mt-4 sm:mt-0">
-              click for full story!
+              click...
             </p>
           </div>
         </section>

@@ -139,13 +139,23 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
-        description: "building @ gov. of Canada",
-        tags: ["swe", "design"],
+        description: "campus leader @ Notion",
+        tags: ["community", "events @ uwaterloo"],
+        year: "Aug 2026",
+      },
+      {
+        description: "growth lead @ Hack Canada",
+        tags: ["content creation", "building stuff!"],
+        year: "Aug 2026",
+      },
+      {
+        description: "intern @ Fisheries and Oceans Can.",
+        tags: ["software development", "UI design"],
         year: "May 2026",
       },
       {
         description: "studying @ University of Waterloo",
-        tags: ["uwccf"],
+        tags: ["UWCCF", "WATonomous web dev"],
         year: "Sep 2025",
       },
     ],

@@ -9,15 +9,17 @@ export const metadata: Metadata = {
 export default function Collections() {
   return (
     <main className="py-10 flex flex-grow justify-center items-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <CollectionsItem
+      {/* grid grid-cols-1 sm:grid-cols-2 gap-8 */}
+      {/* put that classname back when you want to have multiple elements */}
+      <div>
+        {/* <CollectionsItem
           name="playlists"
           description="curated youtube playlists i've discovered, for every season. "
           img="/projectpics/music.webp"
           keyword="music"
           link="/collections/playlists"
           delay={300}
-        />
+        /> */}
         <CollectionsItem
           name="gallery"
           description="some of my favourite art pieces throughout the years"

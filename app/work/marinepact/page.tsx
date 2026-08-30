@@ -24,7 +24,7 @@ export default function Marinepact() {
         {/* header */}
         <section className="px-6 sm:px-8 pt-10 sm:pt-12 flex flex-col w-full">
           <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 dark:text-gray-400 text-left mb-6">
-            software for federally-funded research projects
+            building software for a federally-funded research project
           </h1>
 
           <div className="flex flex-col gap-1">
@@ -53,8 +53,10 @@ export default function Marinepact() {
           <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
-                <span className="bg-[color-mix(in_srgb,var(--sunny-yellow)_21%,transparent)]">what i did</span>,{" "}
-                in a nutshell.
+                <span className="bg-[color-mix(in_srgb,var(--sunny-yellow)_21%,transparent)]">
+                  what i did
+                </span>
+                , in a nutshell.
               </h2>
               <p className="tracking-tight text-sm sm:text-base">
                 I executed the{" "}
@@ -81,8 +83,7 @@ export default function Marinepact() {
               </h2>
               <p className="tracking-tight text-sm sm:text-base">
                 Fisheries and Oceans Canada is researching the impacts of
-                potential offshore wind energy development on the Scotian
-                Shelf.
+                potential offshore wind energy development on the Scotian Shelf.
               </p>
             </div>
 
@@ -160,10 +161,10 @@ export default function Marinepact() {
             <NotionToggle
               summary={
                 <>
-                  A simple interface built around one function: turning
-                  millions of raw{" "}
-                  <span className="coding-regular">AIS</span> vessel points
-                  into something a user could actually see and interact with.
+                  A simple interface built around one function: turning millions
+                  of raw <span className="coding-regular">AIS</span> vessel
+                  points into something a user could actually see and interact
+                  with.
                 </>
               }
             >
@@ -192,8 +193,8 @@ export default function Marinepact() {
               summary={
                 <>
                   All primary features - regions, overlays, vessel viewing and
-                  moorings - became their own side panels, alongside a new
-                  base map and a redesigned UI.
+                  moorings - became their own side panels, alongside a new base
+                  map and a redesigned UI.
                 </>
               }
             >
@@ -274,11 +275,11 @@ export default function Marinepact() {
             <NotionToggle
               summary={
                 <>
-                  The final weeks were about polish - a coherent colour
-                  scheme, consistent typography, and layout that matched how
-                  the tool was actually used. Notion-style toggles and more
-                  customization tied it together, and the draw-region flow
-                  finally worked cleanly.
+                  The final weeks were about polish - a coherent colour scheme,
+                  consistent typography, and layout that matched how the tool
+                  was actually used. Notion-style toggles and more customization
+                  tied it together, and the draw-region flow finally worked
+                  cleanly.
                 </>
               }
             >
@@ -476,7 +477,7 @@ export default function Marinepact() {
         href="/work"
         className="mt-16 mx-auto text-sm coding-regular text-gray-500 hover:opacity-67"
       >
-        ◀︎ back to work
+        ◀︎ return for now
       </Link>
     </main>
   );

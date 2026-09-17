@@ -1,5 +1,8 @@
 todo / want to add (month added)
 
+
+note. right now it's pretty nonchalant but i want to add a section for like... story?
+
 _june '26_
 
 - [ ] work page with job (comprehensive) + design stuff

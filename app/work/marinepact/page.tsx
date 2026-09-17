@@ -12,29 +12,26 @@ export const metadata: Metadata = {
 export default function Marinepact() {
   return (
     <main className="text-left flex flex-grow flex-col items-start justify-start py-10 max-w-2xl mx-auto w-full">
-      {/* <div className="relative w-full fade-in">
+      <div className="relative w-full fade-in">
         <img
           src="/demos/cover.webp"
           alt=""
           className="w-full h-56 sm:h-72 object-cover select-none shadow-sm dark:brightness-75"
         />
-      </div> */}
+      </div>
 
-      <div className="w-full flex flex-col gap-32">
+      <div className="w-full rounded-b-lg bg-white dark:bg-stone-800 shadow-sm flex flex-col gap-32">
         {/* header */}
         <section className="px-6 sm:px-8 pt-10 sm:pt-12 flex flex-col w-full">
           <h1 className="serif-bold italic text-xl sm:text-2xl text-gray-700 dark:text-gray-400 text-left mb-6">
-            bringing interactivity to research workflows at DFO
+            building software for a federally-funded research project
           </h1>
 
           <div className="flex flex-col gap-1">
             {[
               { label: "timeline", value: "3 months" },
-              { label: "role", value: "Research assistant" },
-              {
-                label: "worked with",
-                value: "1 manager, 1 associate scientist",
-              },
+              { label: "role", value: "software developer, UI designer" },
+              { label: "team", value: "1 manager" },
             ].map((row) => (
               <div
                 key={row.label}
@@ -52,7 +49,7 @@ export default function Marinepact() {
         </section>
 
         {/* context */}
-        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full fade-in">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
@@ -121,7 +118,7 @@ export default function Marinepact() {
             </p>
           </div>
 
-          {/* <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <div>
               <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
                 <span className="underline">speaking</span> to users.
@@ -152,24 +149,12 @@ export default function Marinepact() {
                 </p>
               </div>
             </div>
-          </div> */}
-        </section>
-
-        <section className="px-6 sm:px-8 flex flex-col gap-5 sm:gap-8 w-full">
-          <p className="text-3xl pen-regular text-center text-[var(--aritzia-blue)] ">
-            <span className="text-[var(--crimson-red)]">! </span>oh no, this
-            story is under construction
-          </p>
-          <p>
-            I'm currently working hard on this project summary. Check back to
-            see the final result and impact made ☺︎ 
-          </p>
+          </div>
         </section>
 
         {/* design decisions */}
-        {/* <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full"> */}
-
-        {/* <div className="flex flex-col gap-4">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
+          <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version one: prototype
             </h2>
@@ -198,9 +183,9 @@ export default function Marinepact() {
                 design decisions yet.
               </p>
             </NotionToggle>
-          </div> */}
+          </div>
 
-        {/* <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version 2: skeleton
             </h2>
@@ -281,9 +266,9 @@ export default function Marinepact() {
                 cohesive.
               </p>
             </NotionToggle>
-          </div> */}
+          </div>
 
-        {/* <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl underline">
               version 3: final
             </h2>
@@ -353,11 +338,11 @@ export default function Marinepact() {
                 adjustable.
               </p>
             </NotionToggle>
-          </div> */}
-        {/* </section> */}
+          </div>
+        </section>
 
         {/* reflections and wrapup */}
-        {/* <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
+        <section className="px-6 sm:px-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
             <video
               src="/demos/updatecustomize.mp4"
@@ -451,10 +436,10 @@ export default function Marinepact() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* next steps */}
-        {/* <section className="px-6 sm:px-8 pb-8 flex flex-col gap-10 sm:gap-16 w-full">
+        <section className="px-6 sm:px-8 pb-8 flex flex-col gap-10 sm:gap-16 w-full">
           <div className="flex flex-col gap-4">
             <h2 className="w-fit mb-2 pen-regular text-2xl sm:text-4xl">
               <span className="underline">next</span> steps
@@ -485,14 +470,26 @@ export default function Marinepact() {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
+
+        <section className="px-6 sm:px-8 pb-8 flex flex-col gap-5 sm:gap-8 w-full">
+          <p className="text-3xl pen-regular text-center text-[var(--aritzia-blue)] ">
+            <span className="text-[var(--crimson-red)]">! </span>oh no, this
+            story is under construction
+          </p>
+          <p>
+            this only covers the first month of the project, and I'm still
+            reworking parts of it. Check back to see the final result and
+            impact made ☺︎
+          </p>
+        </section>
       </div>
 
       <Link
         href="/work"
-        className="mt-16 mx-auto text-base sm:text-lg serif-regular text-gray-500 hover:opacity-67 py-0.5 px-2 border border-gray-500 rounded-full"
+        className="mt-16 mx-auto text-sm coding-regular text-gray-500 hover:opacity-67"
       >
-        ⇠
+        ◀︎ return for now
       </Link>
     </main>
   );

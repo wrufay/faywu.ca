@@ -9,18 +9,18 @@ export const metadata: Metadata = {
 export default function About() {
   const collections = [
     {
-      title: "koinYou",
+      title: "paint-a-pint",
       description:
-        "the bible is better together, and there's no koinonia without you.",
-      tags: ["typescript", "mern stack", "tailwindcss"],
-      image: "/projectpics/koinyou.webp",
-      logo: "/projectlogos/koinyoulogo.png",
-      projectLink: "https://koinyou.com/",
-      githubLink: "https://github.com/wrufay/koinyou",
-      // demoVideo: "/demos/projectoriginlow.mp4",
+        "a room to paint in - anytime, anywhere. made for joy of creation, without the friction",
+      tags: ["html/css", , "javascript", "three.js", "webgl"],
+      image: "/projectpics/paintapint.webp",
+      logo: "/projectlogos/paintapintlogo.webp",
+      projectLink: "https://www.paint-a-pint.com/",
+      githubLink: "https://github.com/wrufay/paint-a-pint",
+      demoVideo: "/demos/paintapint.mp4",
       insideDesc:
-        "A full-stack web app to fetch any Bible verse, chapter or passage on the spot, using API.bible. Implemented social features such as prayer walls and shared verses to encourage fellowship through koinonia.",
-      date: "Jan. 2026",
+        "Hack the North 2026 semi-finalist (top 10%)! Digital simulation of acrylic painting made for avid makers, minus the hassle and fumes. Built with HTML/CS and Three.js for 3D models and Spectral.js for mixing as pigments. Keeping the artist in me alive.",
+      date: "Sept. 2026",
     },
     {
       title: "project origin",

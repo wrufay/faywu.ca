@@ -12,7 +12,7 @@ export default function About() {
       title: "paint-a-pint",
       description:
         "a room to paint in - anytime, anywhere. made for joy of creation, without the friction",
-      tags: ["html/css", , "javascript", "three.js", "webgl"],
+      tags: ["html/css", "javascript", "three.js", "webgl"],
       image: "/projectpics/paintapint.webp",
       logo: "/projectlogos/paintapintlogo.webp",
       projectLink: "https://www.paint-a-pint.com/",

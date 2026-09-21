@@ -12,14 +12,14 @@ export default function About() {
       title: "paint-a-pint",
       description:
         "a room to paint in - anytime, anywhere. made for joy of creation, without the friction",
-      tags: ["html/css", "javascript", "three.js", "webgl"],
+      tags: ["html/css", "javascript", "three.js"],
       image: "/projectpics/paintapint.webp",
       logo: "/projectlogos/paintapintlogo.webp",
       projectLink: "https://www.paint-a-pint.com/",
       githubLink: "https://github.com/wrufay/paint-a-pint",
       demoVideo: "/demos/paintapint.mp4",
       insideDesc:
-        "Hack the North 2026 semi-finalist (top 10%)! Digital simulation of acrylic painting made for avid makers, minus the hassle and fumes. Built with HTML/CSS and Three.js for 3D models and Spectral.js for mixing as pigments, to keep the artist in me alive.",
+        "Hack the North 2026 semi-finalist (top 10%)! Digital simulation of acrylic painting made for avid makers, minus the hassle and fumes. Built with HTML/CSS and Three.js + WebGL for 3D models and Spectral.js for mixing as pigments; keeping the artist in me alive.",
       date: "Sept. 2026",
     },
     {

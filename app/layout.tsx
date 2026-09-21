@@ -82,18 +82,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             ↻
           </NavLink>
           <NavLink
-            href="/work"
-            title="info and case studies"
-            className=" text-sm sm:text-base hover:opacity-67 active:text-[var(--aritzia-blue)]"
-          >
-            work
-          </NavLink>
-          <NavLink
             href="/projects"
             title="fun trinkets i made"
             className=" text-sm sm:text-base hover:opacity-67 active:text-[var(--aritzia-blue)]"
           >
             projects
+          </NavLink>
+          <NavLink
+            href="/work"
+            title="info and case studies"
+            className=" text-sm sm:text-base hover:opacity-67 active:text-[var(--aritzia-blue)]"
+          >
+            work
           </NavLink>
           <NavLink
             href="/collections"

@@ -19,7 +19,7 @@ export default function About() {
       githubLink: "https://github.com/wrufay/paint-a-pint",
       demoVideo: "/demos/paintapint.mp4",
       insideDesc:
-        "Hack the North 2026 semi-finalist (top 10%)! Digital simulation of acrylic painting made for avid makers, minus the hassle and fumes. Built with HTML/CS and Three.js for 3D models and Spectral.js for mixing as pigments. Keeping the artist in me alive.",
+        "Hack the North 2026 semi-finalist (top 10%)! Digital simulation of acrylic painting made for avid makers, minus the hassle and fumes. Built with HTML/CSS and Three.js for 3D models and Spectral.js for mixing as pigments, to keep the artist in me alive.",
       date: "Sept. 2026",
     },
     {

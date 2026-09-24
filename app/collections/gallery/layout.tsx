@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Favourite art pieces Fay Wu has made throughout the years.",
+  description: "some of my favourite paintings & other art pieces, by me",
 };
 
 export default function GalleryLayout({ children }: { children: ReactNode }) {

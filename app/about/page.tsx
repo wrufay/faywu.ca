@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Fay Wu's timeline — past, present, and what's next.",
+  description: "a bit more about myself, my background, and the road i'm on",
 };
 
 interface Description {
@@ -139,6 +139,16 @@ const timeline: TimelineItem[] = [
     bgColour: "rgba(239, 95, 51, 0.08)",
     descriptions: [
       {
+        description: "studying @ University of Waterloo",
+        tags: ["UWCCF", "WATonomous web dev"],
+        year: "Sep 2025",
+      },
+      {
+        description: "research assistant @ Government of Canada",
+        tags: ["software development", "UI design"],
+        year: "May 2026",
+      },
+      {
         description: "campus leader @ Notion",
         tags: ["community", "events @ uwaterloo"],
         year: "Aug 2026",
@@ -147,16 +157,6 @@ const timeline: TimelineItem[] = [
         description: "growth lead @ Hack Canada",
         tags: ["content creation", "building stuff!"],
         year: "Aug 2026",
-      },
-      {
-        description: "intern @ Fisheries and Oceans Can.",
-        tags: ["software development", "UI design"],
-        year: "May 2026",
-      },
-      {
-        description: "studying @ University of Waterloo",
-        tags: ["UWCCF", "WATonomous web dev"],
-        year: "Sep 2025",
       },
     ],
   },

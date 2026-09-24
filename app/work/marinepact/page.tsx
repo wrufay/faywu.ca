@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "MarinePact",
+  title: "marinepact",
   description:
-    "Case study: designing MarinePact for Fisheries and Oceans Canada.",
+    "a case study: designing MarinePact for Fisheries and Oceans Canada",
 };
 
 export default function Marinepact() {

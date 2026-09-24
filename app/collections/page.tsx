@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Collections",
-  description: "Other stuff to look at — playlists, art, and more.",
+  description: "extras!",
 };
 
 export default function Collections() {

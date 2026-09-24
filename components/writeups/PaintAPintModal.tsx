@@ -197,17 +197,17 @@ export default function PaintAPintModal({ project }: { project: Project }) {
             <img
               src="/demos/paint-ideas.webp"
               alt="brainstorming notes: anything, ideas - social media, nova scotia, art..."
-              className="w-1/3 shadow-sm -rotate-3"
+              className="w-2/5 shadow-sm -rotate-3"
             />
             <img
               src="/demos/paint-claude-chat.webp"
               alt="a chat message: that's not a hackathon project, that's a multi-month passion project"
-              className="w-1/3 shadow-sm rotate-2 sm:mt-8"
+              className="w-[30%] shadow-sm rotate-2 sm:mt-8"
             />
             <img
               src="/demos/paint-cutlist.webp"
               alt="a list of ideas crossed out: hardware, basic web app, machine learning/ai, computer vision..."
-              className="w-1/3 shadow-sm -rotate-1"
+              className="w-[30%] shadow-sm -rotate-1"
             />
           </div>
         </div>

@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work",
-  description: "Case studies from Fay Wu's software engineering work.",
+  title: "works",
+  description: "some writeups about the internship work i've done!",
 };
 
 export default function Work() {

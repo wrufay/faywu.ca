@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://faywu.ca"),
   title: {
     default: "Fay Wu",
-    template: "%s | Fay Wu",
+    template: "%s by fay wu",
   },
   description:
     "a whimsical computer science major at the university of waterloo who's always creating.",

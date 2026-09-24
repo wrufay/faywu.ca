@@ -244,6 +244,12 @@ export default function PaintAPintModal({ project }: { project: Project }) {
           </table>
         </div>
 
+        <img
+          src="/demos/paint-room-canvas-polaroids.webp"
+          alt="two polaroids: entering the room, and inside the canvas"
+          className="w-full shadow-sm"
+        />
+
         <div className="flex flex-col gap-8 sm:gap-10">
           <h2 className="pen-regular text-2xl sm:text-4xl">How it works</h2>
           {aspects.map((a) => (

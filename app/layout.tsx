@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   description:
     "a whimsical computer science major at the university of waterloo who's always creating.",
-  icons: { icon: "/icons/mushroom.png" },
+  icons: { icon: "/icons/star-red.png" },
   alternates: { canonical: "https://faywu.ca" },
   openGraph: {
     title: "Fay Wu",

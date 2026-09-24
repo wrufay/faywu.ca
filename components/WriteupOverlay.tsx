@@ -3,10 +3,17 @@
 import { useRouter } from "next/navigation";
 import { useEffect, ReactNode } from "react";
 
-export default function WriteupOverlay({ children }: { children: ReactNode }) {
+interface WriteupOverlayProps {
+  children: ReactNode;
+  // when reached via a direct visit (no /projects loaded behind it to pop
+  // back to), pass the path to navigate to on close instead of router.back()
+  closeTo?: string;
+}
+
+export default function WriteupOverlay({ children, closeTo }: WriteupOverlayProps) {
   const router = useRouter();
 
-  const close = () => router.back();
+  const close = () => (closeTo ? router.push(closeTo) : router.back());
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {

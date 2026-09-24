@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getProject } from "@/lib/projects";
 import ProjectPageBody from "@/components/writeups/ProjectPageBody";
 import ProjectModalContent from "@/components/writeups/ProjectModalContent";
+import ProjectsGrid from "@/components/ProjectsGrid";
 import RouteModal from "@/components/RouteModal";
 import WriteupOverlay from "@/components/WriteupOverlay";
 
@@ -21,6 +22,21 @@ export function renderProjectFullPage(slug: string) {
   if (project.writeup) {
     const Writeup = project.writeup;
     return <Writeup />;
+  }
+
+  // fullPage projects render the same overlay-over-the-grid look whether
+  // you clicked through from /projects or landed here directly (a fresh
+  // load has no /projects page behind it to pop back to, so closeTo tells
+  // the overlay to navigate there instead of using router.back())
+  if (project.fullPage) {
+    return (
+      <>
+        <ProjectsGrid />
+        <WriteupOverlay closeTo="/projects">
+          <ProjectPageBody project={project} />
+        </WriteupOverlay>
+      </>
+    );
   }
 
   return (

@@ -144,7 +144,7 @@ const timeline: TimelineItem[] = [
         year: "Sep 2025",
       },
       {
-        description: "research assistant @ Government of Canada",
+        description: "research assistant @ Canadian Gov.",
         tags: ["software development", "UI design"],
         year: "May 2026",
       },

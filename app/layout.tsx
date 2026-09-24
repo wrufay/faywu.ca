@@ -170,8 +170,8 @@ export default function RootLayout({
               </div>
 
               <div className="absolute right-0 flex items-center gap-2 sm:gap-3">
-                <ThemeToggle />
                 <LikeCounter />
+                <ThemeToggle />
               </div>
             </div>
           </div>

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     template: "%s | Fay Wu",
   },
   description:
-    "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
+    "a whimsical computer science major at the university of waterloo who's always creating.",
   icons: { icon: "/icons/dawg.png" },
   alternates: { canonical: "https://faywu.ca" },
   openGraph: {
     title: "Fay Wu",
     description:
-      "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
+      "a whimsical computer science major at the university of waterloo who's always creating.",
     url: "https://faywu.ca",
     siteName: "Fay Wu",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Fay Wu",
     description:
-      "Fay Wu's personal website — software engineering case studies, projects, and other things, built like a Notion page.",
+      "a whimsical computer science major at the university of waterloo who's always creating.",
   },
 };
 
@@ -48,7 +48,13 @@ const personJsonLd = {
   ],
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+  modal,
+}: {
+  children: ReactNode;
+  modal: ReactNode;
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -102,10 +108,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           >
             collections
           </NavLink>
-          <ThemeToggle />
+          <NavLink
+            href="/about"
+            title="about me"
+            className="text-sm sm:text-base hover:opacity-67 active:text-[var(--aritzia-blue)]"
+          >
+            ☰
+          </NavLink>
         </nav>
 
         {children}
+        {modal}
         <footer className="mt-auto pt-6 mb-4 sm:mb-6 text-xs text-gray-500 w-full -mx-4 sm:-mx-10">
           <div className="flex flex-col gap-2">
             <a
@@ -156,7 +169,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <NowPlaying />
               </div>
 
-              <div className="absolute right-0">
+              <div className="absolute right-0 flex items-center gap-2 sm:gap-3">
+                <ThemeToggle />
                 <LikeCounter />
               </div>
             </div>

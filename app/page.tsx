@@ -1,5 +1,5 @@
-import GitHubStatus from "@/components/GitHubStatus";
 import Link from "next/link";
+import GitHubStatus from "@/components/GitHubStatus";
 
 export default function Home() {
   return (

@@ -118,7 +118,7 @@ export default function AboutCard({
         {/* add resume button for the future card */}
         {title == "future" && (
           <a
-            href="https://drive.google.com/file/d/11XVnLs6t-OeUmwRIwAHotAd9hcKmjw-j/view?usp=sharing"
+            href="https://drive.google.com/file/d/1e8dVEsJu0c8IyUcix_jNXZPXj9qpOAJJ/view?usp=sharing"
             target="_blank"
             className="self-center w-auto cursor-pointer px-3 py-2 sm:px-4 sm:py-2 bg-white dark:bg-stone-900 transition-colors coding-regular border border-gray-300 dark:border-stone-900 text-[var(--aritzia-blue)] rounded-lg text-sm hover:bg-[var(--sunny-yellow)]/15 hover:dark:border-stone-700 dark:hover:bg-stone-900 active:dark:bg-stone-800"
           >

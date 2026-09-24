@@ -6,6 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* old edge/IE */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* chrome/safari/webkit */
 }
 
 /* fonts */

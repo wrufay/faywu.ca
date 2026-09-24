@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "about",
   description: "a bit more about myself, my background, and the road i'm on",
 };
 

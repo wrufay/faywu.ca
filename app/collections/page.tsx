@@ -2,7 +2,7 @@ import CollectionsItem from "@/components/CollectionsItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Collections",
+  title: "collections",
   description: "extras!",
 };
 

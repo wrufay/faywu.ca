@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProject } from "@/lib/projects";
 import ProjectPageBody from "@/components/writeups/ProjectPageBody";
@@ -24,32 +23,31 @@ export function renderProjectFullPage(slug: string) {
     return <Writeup />;
   }
 
-  // fullPage projects render the same overlay-over-the-grid look whether
-  // you clicked through from /projects or landed here directly (a fresh
-  // load has no /projects page behind it to pop back to, so closeTo tells
-  // the overlay to navigate there instead of using router.back())
+  // every project shows the grid behind it whether you clicked through from
+  // /projects or landed here directly (a fresh load has no /projects page
+  // behind it to pop back to, so closeTo tells the modal to navigate there
+  // instead of using router.back()) - fullPage projects get the big
+  // page-styled overlay, everyone else gets the compact centered modal
   if (project.fullPage) {
     return (
       <>
         <ProjectsGrid />
-        <WriteupOverlay closeTo="/projects">
+        <WriteupOverlay closeTo="/projects?noanim=1">
           <ProjectPageBody project={project} />
         </WriteupOverlay>
       </>
     );
   }
 
-  return (
-    <main className="text-left flex flex-grow flex-col items-start justify-start py-10 max-w-2xl mx-auto w-full">
-      <ProjectPageBody project={project} />
+  const Content = project.modalContent ?? ProjectModalContent;
 
-      <Link
-        href="/projects"
-        className="mt-16 mx-auto text-sm coding-regular text-gray-500 hover:opacity-67"
-      >
-        ◀︎ return for now
-      </Link>
-    </main>
+  return (
+    <>
+      <ProjectsGrid />
+      <RouteModal closeTo="/projects?noanim=1">
+        <Content project={project} />
+      </RouteModal>
+    </>
   );
 }
 

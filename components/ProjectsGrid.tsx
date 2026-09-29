@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
 
-export default function ProjectsGrid() {
+export default function ProjectsGrid({ animate = true }: { animate?: boolean }) {
   return (
     <main className="flex flex-grow py-10">
       <section className="flex flex-col items-center justify-center">
@@ -14,6 +14,7 @@ export default function ProjectsGrid() {
               description={project.description}
               image={project.image}
               delay={i * 300}
+              animate={animate}
               tags={project.tags}
               logo={project.logo}
               date={project.date}

@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description: "fun trinkets and weekend projects.",
 };
 
-export default function About() {
-  return <ProjectsGrid />;
+export default async function About({
+  searchParams,
+}: {
+  searchParams: Promise<{ noanim?: string }>;
+}) {
+  const { noanim } = await searchParams;
+  return <ProjectsGrid animate={!noanim} />;
 }

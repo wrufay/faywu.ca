@@ -9,6 +9,10 @@ interface ProjectCardProps {
   logo: string;
   date: string;
   delay?: number;
+  // false when this card is landing on /projects right after closing a
+  // direct-visit project modal - skips the entrance animation so it doesn't
+  // look like the page just reloaded. true (default) for a normal visit.
+  animate?: boolean;
 }
 
 export default function ProjectCard({
@@ -20,13 +24,14 @@ export default function ProjectCard({
   logo,
   date,
   delay = 0,
+  animate = true,
 }: ProjectCardProps) {
   return (
     <Link
       href={`/${slug}`}
       scroll={false}
-      className="flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white dark:bg-stone-800 w-full max-w-xs md:w-xs rounded-lg opacity-0 fade-in border border-gray-100 dark:border-stone-900 cursor-pointer"
-      style={{ animationDelay: `${delay}ms` }}
+      className={`flex flex-col hover:translate-y-[-4px] transition-transform shadow-sm hover:shadow-md serif-regular bg-white dark:bg-stone-800 w-full max-w-xs md:w-xs rounded-lg border border-gray-100 dark:border-stone-900 cursor-pointer ${animate ? "opacity-0 fade-in" : ""}`}
+      style={animate ? { animationDelay: `${delay}ms` } : undefined}
     >
       <img
         src={image}

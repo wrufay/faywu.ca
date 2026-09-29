@@ -224,7 +224,7 @@ export default function Marinepact() {
               <img
                 src="/demos/flow1.png"
                 alt="before: draw region flow"
-                className="w-full object-contain shadow-sm dark:brightness-75"
+                className="w-full object-contain dark:brightness-75"
               />
               <video
                 src="/demos/uxfix.mp4"
@@ -286,7 +286,7 @@ export default function Marinepact() {
               <img
                 src="/demos/flow2.png"
                 alt="after: draw region flow"
-                className="w-full object-contain shadow-sm dark:brightness-75"
+                className="w-full object-contain dark:brightness-75"
               />
               <video
                 src="/demos/drawupdated.mp4"
